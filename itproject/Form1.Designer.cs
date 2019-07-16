@@ -60,16 +60,16 @@
             this.sidePanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.sidePanel.Location = new System.Drawing.Point(0, 0);
             this.sidePanel.Name = "sidePanel";
-            this.sidePanel.Size = new System.Drawing.Size(294, 815);
+            this.sidePanel.Size = new System.Drawing.Size(335, 815);
             this.sidePanel.TabIndex = 0;
             // 
             // topPanel
             // 
             this.topPanel.BackColor = System.Drawing.Color.DodgerBlue;
             this.topPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.topPanel.Location = new System.Drawing.Point(294, 0);
+            this.topPanel.Location = new System.Drawing.Point(335, 0);
             this.topPanel.Name = "topPanel";
-            this.topPanel.Size = new System.Drawing.Size(941, 10);
+            this.topPanel.Size = new System.Drawing.Size(900, 10);
             this.topPanel.TabIndex = 1;
             // 
             // logoPanel
@@ -97,7 +97,7 @@
             this.buttonEmployees.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonEmployees.Location = new System.Drawing.Point(23, 26);
             this.buttonEmployees.Name = "buttonEmployees";
-            this.buttonEmployees.Size = new System.Drawing.Size(251, 74);
+            this.buttonEmployees.Size = new System.Drawing.Size(285, 74);
             this.buttonEmployees.TabIndex = 3;
             this.buttonEmployees.Text = "Employees";
             this.buttonEmployees.UseVisualStyleBackColor = true;
@@ -108,7 +108,7 @@
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.Location = new System.Drawing.Point(23, 129);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(251, 74);
+            this.button2.Size = new System.Drawing.Size(285, 74);
             this.button2.TabIndex = 4;
             this.button2.Text = "Time and Attendance";
             this.button2.UseVisualStyleBackColor = true;
@@ -119,7 +119,7 @@
             this.buttonLeaveRequestPortal.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonLeaveRequestPortal.Location = new System.Drawing.Point(23, 234);
             this.buttonLeaveRequestPortal.Name = "buttonLeaveRequestPortal";
-            this.buttonLeaveRequestPortal.Size = new System.Drawing.Size(251, 74);
+            this.buttonLeaveRequestPortal.Size = new System.Drawing.Size(285, 74);
             this.buttonLeaveRequestPortal.TabIndex = 5;
             this.buttonLeaveRequestPortal.Text = "Leave Request Portal";
             this.buttonLeaveRequestPortal.UseVisualStyleBackColor = true;
@@ -130,7 +130,7 @@
             this.buttonLeaveManagement.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonLeaveManagement.Location = new System.Drawing.Point(22, 320);
             this.buttonLeaveManagement.Name = "buttonLeaveManagement";
-            this.buttonLeaveManagement.Size = new System.Drawing.Size(251, 74);
+            this.buttonLeaveManagement.Size = new System.Drawing.Size(286, 74);
             this.buttonLeaveManagement.TabIndex = 6;
             this.buttonLeaveManagement.Text = "Leave Management";
             this.buttonLeaveManagement.UseVisualStyleBackColor = true;
@@ -141,7 +141,7 @@
             this.buttonPayroll.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonPayroll.Location = new System.Drawing.Point(23, 424);
             this.buttonPayroll.Name = "buttonPayroll";
-            this.buttonPayroll.Size = new System.Drawing.Size(251, 74);
+            this.buttonPayroll.Size = new System.Drawing.Size(285, 74);
             this.buttonPayroll.TabIndex = 7;
             this.buttonPayroll.Text = "Payroll";
             this.buttonPayroll.UseVisualStyleBackColor = true;
@@ -152,7 +152,7 @@
             this.buttonCustomers.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonCustomers.Location = new System.Drawing.Point(23, 526);
             this.buttonCustomers.Name = "buttonCustomers";
-            this.buttonCustomers.Size = new System.Drawing.Size(251, 74);
+            this.buttonCustomers.Size = new System.Drawing.Size(285, 74);
             this.buttonCustomers.TabIndex = 8;
             this.buttonCustomers.Text = "Customers";
             this.buttonCustomers.UseVisualStyleBackColor = true;
@@ -163,7 +163,7 @@
             this.buttonProjectsAndTasks.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonProjectsAndTasks.Location = new System.Drawing.Point(23, 627);
             this.buttonProjectsAndTasks.Name = "buttonProjectsAndTasks";
-            this.buttonProjectsAndTasks.Size = new System.Drawing.Size(251, 74);
+            this.buttonProjectsAndTasks.Size = new System.Drawing.Size(285, 74);
             this.buttonProjectsAndTasks.TabIndex = 4;
             this.buttonProjectsAndTasks.Text = "Projects and Tasks";
             this.buttonProjectsAndTasks.UseVisualStyleBackColor = true;
@@ -174,7 +174,7 @@
             this.buttonStocks.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonStocks.Location = new System.Drawing.Point(22, 718);
             this.buttonStocks.Name = "buttonStocks";
-            this.buttonStocks.Size = new System.Drawing.Size(251, 74);
+            this.buttonStocks.Size = new System.Drawing.Size(286, 74);
             this.buttonStocks.TabIndex = 9;
             this.buttonStocks.Text = "Stocks";
             this.buttonStocks.UseVisualStyleBackColor = true;
