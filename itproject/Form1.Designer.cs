@@ -159,6 +159,8 @@
             // 
             // buttonProjectsAndTasks
             // 
+            this.buttonProjectsAndTasks.Image = ((System.Drawing.Image)(resources.GetObject("buttonProjectsAndTasks.Image")));
+            this.buttonProjectsAndTasks.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonProjectsAndTasks.Location = new System.Drawing.Point(23, 627);
             this.buttonProjectsAndTasks.Name = "buttonProjectsAndTasks";
             this.buttonProjectsAndTasks.Size = new System.Drawing.Size(251, 74);
@@ -168,6 +170,8 @@
             // 
             // buttonStocks
             // 
+            this.buttonStocks.Image = ((System.Drawing.Image)(resources.GetObject("buttonStocks.Image")));
+            this.buttonStocks.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonStocks.Location = new System.Drawing.Point(22, 718);
             this.buttonStocks.Name = "buttonStocks";
             this.buttonStocks.Size = new System.Drawing.Size(251, 74);
