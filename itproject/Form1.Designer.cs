@@ -197,7 +197,7 @@
             this.employeeDetailsUserControl1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("employeeDetailsUserControl1.BackgroundImage")));
             this.employeeDetailsUserControl1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.employeeDetailsUserControl1.ForeColor = System.Drawing.Color.White;
-            this.employeeDetailsUserControl1.Location = new System.Drawing.Point(309, 244);
+            this.employeeDetailsUserControl1.Location = new System.Drawing.Point(415, 232);
             this.employeeDetailsUserControl1.Name = "employeeDetailsUserControl1";
             this.employeeDetailsUserControl1.Size = new System.Drawing.Size(672, 337);
             this.employeeDetailsUserControl1.TabIndex = 3;

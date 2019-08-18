@@ -38,6 +38,7 @@ namespace itproject
             c.Email = txtEmail.Text;
             c.Dept = comboBox2.Text;
             c.Date = txtJoinedDate.Text;
+            c.Salary = double.Parse(txtSal.Text);
 
             //insert data into database using the method created
             bool success = c.Insert(c);
@@ -70,6 +71,7 @@ namespace itproject
             c.Email = txtEmail.Text;
             c.Dept = comboBox2.Text;
             c.Date = txtJoinedDate.Text;
+            c.Salary = double.Parse(txtSal.Text);
 
             bool success = c.Update(c);
             if (success == true)
@@ -99,6 +101,7 @@ namespace itproject
             txtEmail.Text = "";
             comboBox2.Text = "";
             txtJoinedDate.Text = "";
+            txtSal.Text = "";
         }
 
         private void LblGender_Click(object sender, EventArgs e)
@@ -121,6 +124,7 @@ namespace itproject
             txtEmail.Text = dataGridViewDetails.Rows[rowIndex].Cells[6].Value.ToString();
             comboBox2.Text = dataGridViewDetails.Rows[rowIndex].Cells[7].Value.ToString();
             txtJoinedDate.Text = dataGridViewDetails.Rows[rowIndex].Cells[8].Value.ToString();
+            txtSal.Text = dataGridViewDetails.Rows[rowIndex].Cells[9].Value.ToString();
         }
 
         private void DataGridViewDetails_CellContentClick(object sender, DataGridViewCellEventArgs e)

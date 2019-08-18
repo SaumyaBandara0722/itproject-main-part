@@ -20,6 +20,7 @@ namespace itproject.Classes
         public string Email { get; set; }
         public string Dept { get; set; }
         public string Date { get; set; }
+        public double Salary { get; set; }
 
         static string myconnstrng = ConfigurationManager.ConnectionStrings["connstrng"].ConnectionString;
 
@@ -84,7 +85,7 @@ namespace itproject.Classes
             try
             {
                 //command to insert data
-                string sql = "INSERT INTO Employees (EmpName, Bdy, Gender, Address, Phone, Email, Department, JoinedDate) VALUES(@EmpName, @Bdy, @Gender, @Address, @Phone, @Email, @Department, @JoinedDate)";
+                string sql = "INSERT INTO Employees (EmpName, Bdy, Gender, Address, Phone, Email, Department, JoinedDate, BasicSal) VALUES(@EmpName, @Bdy, @Gender, @Address, @Phone, @Email, @Department, @JoinedDate, @BasicSal)";
                 SqlCommand cmd = new SqlCommand(sql, conn);
                 //create parameters to add data
                 cmd.Parameters.AddWithValue("@EmpName", c.EmpName);
@@ -95,6 +96,7 @@ namespace itproject.Classes
                 cmd.Parameters.AddWithValue("@Email", c.Email);
                 cmd.Parameters.AddWithValue("@Department", c.Dept);
                 cmd.Parameters.AddWithValue("@JoinedDate", c.Date);
+                cmd.Parameters.AddWithValue("@BasicSal", c.Salary);
 
                 conn.Open();
                 int rows = cmd.ExecuteNonQuery();
@@ -128,7 +130,7 @@ namespace itproject.Classes
             try
             {
                 //command to updata data
-                string sql = "UPDATE Employees SET EmpName=@EmpName, Bdy=@Bdy, Gender=@Gender, Address=@Address, Phone=@Phone, Email=@Email, Department=@Department, JoinedDate=@JoinedDate WHERE EmpId=@EmpId";
+                string sql = "UPDATE Employees SET EmpName=@EmpName, Bdy=@Bdy, Gender=@Gender, Address=@Address, Phone=@Phone, Email=@Email, Department=@Department, JoinedDate=@JoinedDate, BasicSal=@BasicSal WHERE EmpId=@EmpId";
                 SqlCommand cmd = new SqlCommand(sql, conn);
 
                 //create parameters to add data               
@@ -140,8 +142,9 @@ namespace itproject.Classes
                 cmd.Parameters.AddWithValue("@Email", c.Email);
                 cmd.Parameters.AddWithValue("@Department", c.Dept);
                 cmd.Parameters.AddWithValue("@JoinedDate", c.Date);
+                cmd.Parameters.AddWithValue("@BasicSal", c.Salary);
                 cmd.Parameters.AddWithValue("EmpId", c.EmpId);
-
+               
                 conn.Open();
 
                 int rows = cmd.ExecuteNonQuery();
