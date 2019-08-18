@@ -22,7 +22,9 @@ namespace itproject
 
         private void EmployeeRegistration_Load(object sender, EventArgs e)
         {
-          
+            //Display details of a paticular employee in the datagrid when the application is loaded
+            DataTable dt = c.SelectView();
+            dataGridViewDetails.DataSource = dt;
         }
 
         private void Button1_Click(object sender, EventArgs e)
@@ -58,7 +60,26 @@ namespace itproject
 
         private void Button2_Click(object sender, EventArgs e)
         {
+            //get data from textboxes
+            c.EmpId = int.Parse(txtempId.Text);
+            c.EmpName = txtempName.Text;
+            c.Bdy = txtBdy.Text;
+            c.Gender = comboBox1.Text;
+            c.Address = txtAdd.Text;
+            c.Phone = txtNum.Text;
+            c.Email = txtEmail.Text;
+            c.Dept = comboBox2.Text;
+            c.Date = txtJoinedDate.Text;
 
+            bool success = c.Update(c);
+            if (success == true)
+            {
+                MessageBox.Show("Employee details are successfully updated");
+            }
+            else
+            {
+                MessageBox.Show("Failed to update details");
+            }
         }
 
         //method to clear data in the fields
@@ -85,17 +106,23 @@ namespace itproject
 
             //identify the row which is clicked by mouse
             int rowIndex = e.RowIndex;
-            txtempName.Text = dataGridViewDetails.Rows[rowIndex].Cells[0].Value.ToString();
-            txtBdy.Text = dataGridViewDetails.Rows[rowIndex].Cells[1].Value.ToString();
-            comboBox1.Text = dataGridViewDetails.Rows[rowIndex].Cells[2].Value.ToString();
-            txtAdd.Text = dataGridViewDetails.Rows[rowIndex].Cells[3].Value.ToString();
-            txtNum.Text = dataGridViewDetails.Rows[rowIndex].Cells[4].Value.ToString();
-            txtEmail.Text = dataGridViewDetails.Rows[rowIndex].Cells[5].Value.ToString();
-            comboBox2.Text = dataGridViewDetails.Rows[rowIndex].Cells[6].Value.ToString();
-            txtJoinedDate.Text = dataGridViewDetails.Rows[rowIndex].Cells[7].Value.ToString();
+            txtempId.Text = dataGridViewDetails.Rows[rowIndex].Cells[0].Value.ToString();
+            txtempName.Text = dataGridViewDetails.Rows[rowIndex].Cells[1].Value.ToString();
+            txtBdy.Text = dataGridViewDetails.Rows[rowIndex].Cells[2].Value.ToString();
+            comboBox1.Text = dataGridViewDetails.Rows[rowIndex].Cells[3].Value.ToString();
+            txtAdd.Text = dataGridViewDetails.Rows[rowIndex].Cells[4].Value.ToString();
+            txtNum.Text = dataGridViewDetails.Rows[rowIndex].Cells[5].Value.ToString();
+            txtEmail.Text = dataGridViewDetails.Rows[rowIndex].Cells[6].Value.ToString();
+            comboBox2.Text = dataGridViewDetails.Rows[rowIndex].Cells[7].Value.ToString();
+            txtJoinedDate.Text = dataGridViewDetails.Rows[rowIndex].Cells[8].Value.ToString();
         }
 
         private void DataGridViewDetails_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void Button3_Click(object sender, EventArgs e)
         {
 
         }
