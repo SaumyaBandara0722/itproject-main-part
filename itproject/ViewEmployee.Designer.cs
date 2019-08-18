@@ -36,6 +36,7 @@
             this.lblSearch = new System.Windows.Forms.Label();
             this.txtId = new System.Windows.Forms.TextBox();
             this.lblSelectedEmp = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmployeeList)).BeginInit();
             this.SuspendLayout();
@@ -97,9 +98,9 @@
             // 
             // txtId
             // 
-            this.txtId.Location = new System.Drawing.Point(317, 410);
+            this.txtId.Location = new System.Drawing.Point(302, 407);
             this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(216, 20);
+            this.txtId.Size = new System.Drawing.Size(58, 20);
             this.txtId.TabIndex = 10;
             // 
             // lblSelectedEmp
@@ -112,11 +113,25 @@
             this.lblSelectedEmp.TabIndex = 11;
             this.lblSelectedEmp.Text = "Selected Employee Id";
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Orange;
+            this.button1.Font = new System.Drawing.Font("Microsoft Tai Le", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.button1.Location = new System.Drawing.Point(366, 401);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(183, 37);
+            this.button1.TabIndex = 12;
+            this.button1.Text = "UPDATE SELECTED EMPLOYEE";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            // 
             // ViewEmployee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.lblSelectedEmp);
             this.Controls.Add(this.txtId);
             this.Controls.Add(this.pictureBox1);
@@ -143,5 +158,6 @@
         private System.Windows.Forms.Label lblSearch;
         private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.Label lblSelectedEmp;
+        private System.Windows.Forms.Button button1;
     }
 }

@@ -341,17 +341,17 @@
         private System.Windows.Forms.Label lblempName;
         private System.Windows.Forms.Label lblempId;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox txtJoinedDate;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox txtAdd;
-        private System.Windows.Forms.TextBox txtNum;
-        private System.Windows.Forms.TextBox txtEmail;
-        private System.Windows.Forms.TextBox txtBdy;
-        private System.Windows.Forms.TextBox txtempName;
-        private System.Windows.Forms.TextBox txtempId;
         private System.Windows.Forms.Label lblSal;
-        private System.Windows.Forms.TextBox txtSal;
-        private System.Windows.Forms.DataGridView dataGridViewDetails;
+        public System.Windows.Forms.DataGridView dataGridViewDetails;
+        public System.Windows.Forms.TextBox txtempId;
+        public System.Windows.Forms.TextBox txtJoinedDate;
+        public System.Windows.Forms.ComboBox comboBox2;
+        public System.Windows.Forms.ComboBox comboBox1;
+        public System.Windows.Forms.TextBox txtAdd;
+        public System.Windows.Forms.TextBox txtNum;
+        public System.Windows.Forms.TextBox txtEmail;
+        public System.Windows.Forms.TextBox txtBdy;
+        public System.Windows.Forms.TextBox txtempName;
+        public System.Windows.Forms.TextBox txtSal;
     }
 }

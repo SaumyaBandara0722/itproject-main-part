@@ -129,7 +129,7 @@ namespace itproject
 
         private void DataGridViewDetails_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+           
         }
 
         private void Button3_Click(object sender, EventArgs e)
