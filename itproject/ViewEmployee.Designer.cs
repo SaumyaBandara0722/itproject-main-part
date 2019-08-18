@@ -34,6 +34,8 @@
             this.dgvEmployeeList = new System.Windows.Forms.DataGridView();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.lblSearch = new System.Windows.Forms.Label();
+            this.txtId = new System.Windows.Forms.TextBox();
+            this.lblSelectedEmp = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmployeeList)).BeginInit();
             this.SuspendLayout();
@@ -54,23 +56,25 @@
             // 
             this.button4.BackColor = System.Drawing.Color.IndianRed;
             this.button4.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(329, 393);
+            this.button4.Location = new System.Drawing.Point(555, 401);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(118, 37);
             this.button4.TabIndex = 8;
             this.button4.Text = "DELETE";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.Button4_Click);
             // 
             // dgvEmployeeList
             // 
             this.dgvEmployeeList.BackgroundColor = System.Drawing.Color.Thistle;
             this.dgvEmployeeList.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgvEmployeeList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvEmployeeList.Location = new System.Drawing.Point(132, 50);
+            this.dgvEmployeeList.Location = new System.Drawing.Point(132, 60);
             this.dgvEmployeeList.Name = "dgvEmployeeList";
             this.dgvEmployeeList.Size = new System.Drawing.Size(541, 324);
             this.dgvEmployeeList.TabIndex = 7;
             this.dgvEmployeeList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvEmployeeList_CellContentClick);
+            this.dgvEmployeeList.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DgvEmployeeList_RowHeaderMouseClick);
             // 
             // textBox1
             // 
@@ -89,11 +93,30 @@
             this.lblSearch.TabIndex = 5;
             this.lblSearch.Text = "Search Employee";
             // 
+            // txtId
+            // 
+            this.txtId.Location = new System.Drawing.Point(317, 410);
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(216, 20);
+            this.txtId.TabIndex = 10;
+            // 
+            // lblSelectedEmp
+            // 
+            this.lblSelectedEmp.AutoSize = true;
+            this.lblSelectedEmp.Font = new System.Drawing.Font("Sitka Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSelectedEmp.Location = new System.Drawing.Point(128, 407);
+            this.lblSelectedEmp.Name = "lblSelectedEmp";
+            this.lblSelectedEmp.Size = new System.Drawing.Size(168, 23);
+            this.lblSelectedEmp.TabIndex = 11;
+            this.lblSelectedEmp.Text = "Selected Employee Id";
+            // 
             // ViewEmployee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblSelectedEmp);
+            this.Controls.Add(this.txtId);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.dgvEmployeeList);
@@ -116,5 +139,7 @@
         private System.Windows.Forms.DataGridView dgvEmployeeList;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label lblSearch;
+        private System.Windows.Forms.TextBox txtId;
+        private System.Windows.Forms.Label lblSelectedEmp;
     }
 }
