@@ -47,13 +47,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddEmployeeUserControl.cs">
+    <Compile Include="Classes\Employee.cs" />
+    <Compile Include="EmployeeDetailsUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="AddEmployeeUserControl.Designer.cs">
-      <DependentUpon>AddEmployeeUserControl.cs</DependentUpon>
+    <Compile Include="EmployeeDetailsUserControl.Designer.cs">
+      <DependentUpon>EmployeeDetailsUserControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Classes\Employees.cs" />
+    <Compile Include="EmployeeRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeRegistration.Designer.cs">
+      <DependentUpon>EmployeeRegistration.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,8 +68,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="AddEmployeeUserControl.resx">
-      <DependentUpon>AddEmployeeUserControl.cs</DependentUpon>
+    <Compile Include="ViewEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewEmployee.Designer.cs">
+      <DependentUpon>ViewEmployee.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="EmployeeDetailsUserControl.resx">
+      <DependentUpon>EmployeeDetailsUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeRegistration.resx">
+      <DependentUpon>EmployeeRegistration.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -77,6 +92,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ViewEmployee.resx">
+      <DependentUpon>ViewEmployee.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -90,5 +108,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

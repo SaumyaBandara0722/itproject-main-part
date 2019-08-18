@@ -15,6 +15,17 @@ namespace itproject
         public Form1()
         {
             InitializeComponent();
+
+        }
+
+        private void AddEmployeeUserControl1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
