@@ -2,7 +2,9 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -56,6 +58,25 @@ namespace itproject
         {
             int rowIndex = e.RowIndex;
             txtId.Text = dgvEmployeeList.Rows[rowIndex].Cells[0].Value.ToString();
+        }
+
+        static string myconnstr = ConfigurationManager.ConnectionStrings["connstrng"].ConnectionString;
+
+        private void TextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PictureBox1_Click(object sender, EventArgs e)
+        {
+            //get the value from textbox
+            string keyword = textBox1.Text;
+
+            SqlConnection conn = new SqlConnection(myconnstr);
+            SqlDataAdapter sda = new SqlDataAdapter("SELECT * FROM Employees WHERE EmpName LIKE '%" + keyword + "%' OR Department LIKE '%" + keyword + "%'", conn);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+            dgvEmployeeList.DataSource = dt;
         }
     }
 }
