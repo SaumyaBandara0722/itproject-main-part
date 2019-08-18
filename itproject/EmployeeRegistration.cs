@@ -78,6 +78,8 @@ namespace itproject
 
                 DataTable dt = c.SelectView();
                 dataGridViewDetails.DataSource = dt;
+
+                Clear();
             }
             else
             {
@@ -88,6 +90,7 @@ namespace itproject
         //method to clear data in the fields
         public void Clear()
         {
+            txtempId.Text = "";
             txtempName.Text = "";
             txtBdy.Text = "";
             comboBox1.Text = "";
@@ -127,7 +130,7 @@ namespace itproject
 
         private void Button3_Click(object sender, EventArgs e)
         {
-
+            Clear();
         }
     }
 }
