@@ -131,7 +131,7 @@ namespace itproject.Classes
                 string sql = "UPDATE Employees SET EmpName=@EmpName, Bdy=@Bdy, Gender=@Gender, Address=@Address, Phone=@Phone, Email=@Email, Department=@Department, JoinedDate=@JoinedDate WHERE EmpId=@EmpId";
                 SqlCommand cmd = new SqlCommand(sql, conn);
 
-                //create parameters to add data 
+                //create parameters to add data               
                 cmd.Parameters.AddWithValue("@EmpName", c.EmpName);
                 cmd.Parameters.AddWithValue("@Bdy", c.Bdy);
                 cmd.Parameters.AddWithValue("@Gender", c.Gender);
@@ -140,7 +140,8 @@ namespace itproject.Classes
                 cmd.Parameters.AddWithValue("@Email", c.Email);
                 cmd.Parameters.AddWithValue("@Department", c.Dept);
                 cmd.Parameters.AddWithValue("@JoinedDate", c.Date);
-              
+                cmd.Parameters.AddWithValue("EmpId", c.EmpId);
+
                 conn.Open();
 
                 int rows = cmd.ExecuteNonQuery();

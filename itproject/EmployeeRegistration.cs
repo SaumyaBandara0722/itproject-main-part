@@ -75,6 +75,9 @@ namespace itproject
             if (success == true)
             {
                 MessageBox.Show("Employee details are successfully updated");
+
+                DataTable dt = c.SelectView();
+                dataGridViewDetails.DataSource = dt;
             }
             else
             {
