@@ -32,6 +32,15 @@ namespace itproject
             //Load data into data GridView
             DataTable dt = c.Select();
             dgvEmployeeList.DataSource = dt;
+
+
+            //change datagridView header colour
+            for(int i=0; i<dgvEmployeeList.Columns.Count; i++)
+            {
+                dgvEmployeeList.Columns[i].HeaderCell.Style.Font = new Font("Sitka Text", 10, FontStyle.Bold);
+                dgvEmployeeList.Columns[i].HeaderCell.Style.BackColor = Color.Plum;
+                dgvEmployeeList.EnableHeadersVisualStyles = false;
+            }
         }
 
         private void Button4_Click(object sender, EventArgs e)

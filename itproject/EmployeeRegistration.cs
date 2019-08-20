@@ -25,6 +25,14 @@ namespace itproject
             //Display details of a paticular employee in the datagrid when the application is loaded
             DataTable dt = c.SelectView();
             dataGridViewDetails.DataSource = dt;
+
+            //change datagridView header colour
+            for (int i = 0; i < dataGridViewDetails.Columns.Count; i++)
+            {
+                dataGridViewDetails.Columns[i].HeaderCell.Style.Font = new Font("Sitka Text", 10, FontStyle.Bold);
+                dataGridViewDetails.Columns[i].HeaderCell.Style.BackColor = Color.Plum;
+                dataGridViewDetails.EnableHeadersVisualStyles = false;
+            }
         }
 
         private void Button1_Click(object sender, EventArgs e)
