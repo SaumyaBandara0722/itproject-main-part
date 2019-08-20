@@ -70,6 +70,7 @@
             this.ForeColor = System.Drawing.Color.White;
             this.Name = "EmployeeDetailsUserControl";
             this.Size = new System.Drawing.Size(672, 337);
+            this.Load += new System.EventHandler(this.EmployeeDetailsUserControl_Load);
             this.ResumeLayout(false);
 
         }

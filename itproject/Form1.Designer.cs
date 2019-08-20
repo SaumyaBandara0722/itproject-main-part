@@ -160,6 +160,7 @@
             this.buttonEmployees.TabIndex = 3;
             this.buttonEmployees.Text = "Employees";
             this.buttonEmployees.UseVisualStyleBackColor = true;
+            this.buttonEmployees.Click += new System.EventHandler(this.ButtonEmployees_Click);
             // 
             // topPanel
             // 

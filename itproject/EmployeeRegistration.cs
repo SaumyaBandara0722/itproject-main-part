@@ -37,63 +37,77 @@ namespace itproject
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            //get the value from input field
-            c.EmpName = txtempName.Text;
-            c.Bdy = txtBdy.Text;
-            c.Gender = comboBox1.Text;
-            c.Address = txtAdd.Text;
-            c.Phone = txtNum.Text;
-            c.Email = txtEmail.Text;
-            c.Dept = comboBox2.Text;
-            c.Date = txtJoinedDate.Text;
-            c.Salary = double.Parse(txtSal.Text);
-
-            //insert data into database using the method created
-            bool success = c.Insert(c);
-            if (success == true)
+            if (txtempName.Text == "" || txtBdy.Text == "" || comboBox1.Text == "" || txtAdd.Text == "" || txtNum.Text == "" || txtEmail.Text == "" || comboBox2.Text == "" || txtJoinedDate.Text == "" || txtSal.Text == "")
             {
-                MessageBox.Show("New Employee Successfully Inserted");
-
-                //Display details of a paticular employee in the datagrid
-                DataTable dt = c.SelectView();
-                dataGridViewDetails.DataSource = dt;
-
-                //call the clear method
-                Clear();
+                MessageBox.Show("Cannot keep empty fields");
             }
             else
-            {
-                MessageBox.Show("Failed to add new employee.Try again");
+            { 
+                //get the value from input field
+                c.EmpName = txtempName.Text;
+                c.Bdy = txtBdy.Text;
+                c.Gender = comboBox1.Text;
+                c.Address = txtAdd.Text;
+                c.Phone = txtNum.Text;
+                c.Email = txtEmail.Text;
+                c.Dept = comboBox2.Text;
+                c.Date = txtJoinedDate.Text;
+                c.Salary = double.Parse(txtSal.Text);
+      
+                //insert data into database using the method created
+                bool success = c.Insert(c);
+                if (success == true)
+                {
+                     MessageBox.Show("New Employee Successfully Inserted");
+
+                     //Display details of a paticular employee in the datagrid
+                     DataTable dt = c.SelectView();
+                     dataGridViewDetails.DataSource = dt;
+
+                     //call the clear method
+                     Clear();
+                }
+                else
+                {
+                     MessageBox.Show("Failed to add new employee.Try again");
+                }               
             }
         }
 
         private void Button2_Click(object sender, EventArgs e)
         {
-            //get data from textboxes
-            c.EmpId = int.Parse(txtempId.Text);
-            c.EmpName = txtempName.Text;
-            c.Bdy = txtBdy.Text;
-            c.Gender = comboBox1.Text;
-            c.Address = txtAdd.Text;
-            c.Phone = txtNum.Text;
-            c.Email = txtEmail.Text;
-            c.Dept = comboBox2.Text;
-            c.Date = txtJoinedDate.Text;
-            c.Salary = double.Parse(txtSal.Text);
-
-            bool success = c.Update(c);
-            if (success == true)
+            if (txtempName.Text == "" || txtBdy.Text == "" || comboBox1.Text == "" || txtAdd.Text == "" || txtNum.Text == "" || txtEmail.Text == "" || comboBox2.Text == "" || txtJoinedDate.Text == "" || txtSal.Text == "")
             {
-                MessageBox.Show("Employee details are successfully updated");
-
-                DataTable dt = c.SelectView();
-                dataGridViewDetails.DataSource = dt;
-
-                Clear();
+                MessageBox.Show("Cannot keep empty fields");
             }
             else
             {
-                MessageBox.Show("Failed to update details");
+                //get data from textboxes
+                c.EmpId = int.Parse(txtempId.Text);
+                c.EmpName = txtempName.Text;
+                c.Bdy = txtBdy.Text;
+                c.Gender = comboBox1.Text;
+                c.Address = txtAdd.Text;
+                c.Phone = txtNum.Text;
+                c.Email = txtEmail.Text;
+                c.Dept = comboBox2.Text;
+                c.Date = txtJoinedDate.Text;                 
+                c.Salary = double.Parse(txtSal.Text);
+
+                bool success = c.Update(c);
+                if (success == true)
+                {
+                    MessageBox.Show("Employee details are successfully updated");
+
+                    DataTable dt = c.SelectView();
+                    dataGridViewDetails.DataSource = dt;
+
+                    Clear();
+                }
+                else
+                {
+                    MessageBox.Show("Failed to update details");
+                }
             }
         }
 
@@ -143,6 +157,21 @@ namespace itproject
         private void Button3_Click(object sender, EventArgs e)
         {
             Clear();
+        }
+
+        private void TxtNum_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void b(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TxtAdd_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

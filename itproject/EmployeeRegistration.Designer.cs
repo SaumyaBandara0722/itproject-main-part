@@ -153,6 +153,7 @@
             this.txtAdd.Name = "txtAdd";
             this.txtAdd.Size = new System.Drawing.Size(288, 52);
             this.txtAdd.TabIndex = 34;
+            this.txtAdd.TextChanged += new System.EventHandler(this.TxtAdd_TextChanged);
             // 
             // lbladd
             // 
@@ -172,6 +173,7 @@
             this.txtNum.Name = "txtNum";
             this.txtNum.Size = new System.Drawing.Size(288, 20);
             this.txtNum.TabIndex = 32;
+            this.txtNum.TextChanged += new System.EventHandler(this.TxtNum_TextChanged);
             // 
             // lblNum
             // 
@@ -240,6 +242,7 @@
             this.txtempName.Name = "txtempName";
             this.txtempName.Size = new System.Drawing.Size(288, 20);
             this.txtempName.TabIndex = 25;
+            this.txtempName.TextChanged += new System.EventHandler(this.b);
             // 
             // lblempName
             // 

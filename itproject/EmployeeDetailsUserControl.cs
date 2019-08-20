@@ -30,5 +30,10 @@ namespace itproject
             ViewEmployee viewEmp = new ViewEmployee();
             viewEmp.ShowDialog();
         }
+
+        private void EmployeeDetailsUserControl_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
