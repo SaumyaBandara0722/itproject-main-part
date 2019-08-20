@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EmployeeRegistration));
             this.txtJoinedDate = new System.Windows.Forms.TextBox();
             this.lblJoinedDate = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
@@ -65,6 +66,7 @@
             // lblJoinedDate
             // 
             this.lblJoinedDate.AutoSize = true;
+            this.lblJoinedDate.BackColor = System.Drawing.Color.Transparent;
             this.lblJoinedDate.Font = new System.Drawing.Font("Sitka Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblJoinedDate.Location = new System.Drawing.Point(18, 389);
             this.lblJoinedDate.Name = "lblJoinedDate";
@@ -123,6 +125,7 @@
             // lblGender
             // 
             this.lblGender.AutoSize = true;
+            this.lblGender.BackColor = System.Drawing.Color.Transparent;
             this.lblGender.Font = new System.Drawing.Font("Sitka Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGender.Location = new System.Drawing.Point(18, 143);
             this.lblGender.Name = "lblGender";
@@ -154,6 +157,7 @@
             // lbladd
             // 
             this.lbladd.AutoSize = true;
+            this.lbladd.BackColor = System.Drawing.Color.Transparent;
             this.lbladd.Font = new System.Drawing.Font("Sitka Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbladd.Location = new System.Drawing.Point(18, 190);
             this.lbladd.Name = "lbladd";
@@ -172,6 +176,7 @@
             // lblNum
             // 
             this.lblNum.AutoSize = true;
+            this.lblNum.BackColor = System.Drawing.Color.Transparent;
             this.lblNum.Font = new System.Drawing.Font("Sitka Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNum.Location = new System.Drawing.Point(18, 259);
             this.lblNum.Name = "lblNum";
@@ -190,6 +195,7 @@
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
+            this.lblEmail.BackColor = System.Drawing.Color.Transparent;
             this.lblEmail.Font = new System.Drawing.Font("Sitka Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmail.Location = new System.Drawing.Point(18, 302);
             this.lblEmail.Name = "lblEmail";
@@ -208,6 +214,7 @@
             // lblBdy
             // 
             this.lblBdy.AutoSize = true;
+            this.lblBdy.BackColor = System.Drawing.Color.Transparent;
             this.lblBdy.Font = new System.Drawing.Font("Sitka Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBdy.Location = new System.Drawing.Point(18, 100);
             this.lblBdy.Name = "lblBdy";
@@ -218,6 +225,7 @@
             // lblDept
             // 
             this.lblDept.AutoSize = true;
+            this.lblDept.BackColor = System.Drawing.Color.Transparent;
             this.lblDept.Font = new System.Drawing.Font("Sitka Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDept.Location = new System.Drawing.Point(18, 347);
             this.lblDept.Name = "lblDept";
@@ -236,6 +244,7 @@
             // lblempName
             // 
             this.lblempName.AutoSize = true;
+            this.lblempName.BackColor = System.Drawing.Color.Transparent;
             this.lblempName.Font = new System.Drawing.Font("Sitka Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblempName.Location = new System.Drawing.Point(18, 58);
             this.lblempName.Name = "lblempName";
@@ -255,6 +264,7 @@
             // lblempId
             // 
             this.lblempId.AutoSize = true;
+            this.lblempId.BackColor = System.Drawing.Color.Transparent;
             this.lblempId.Font = new System.Drawing.Font("Sitka Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblempId.ForeColor = System.Drawing.SystemColors.ControlText;
             this.lblempId.Location = new System.Drawing.Point(18, 18);
@@ -266,6 +276,7 @@
             // lblSal
             // 
             this.lblSal.AutoSize = true;
+            this.lblSal.BackColor = System.Drawing.Color.Transparent;
             this.lblSal.Font = new System.Drawing.Font("Sitka Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSal.Location = new System.Drawing.Point(18, 434);
             this.lblSal.Name = "lblSal";
@@ -294,6 +305,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(894, 501);
             this.Controls.Add(this.dataGridViewDetails);
             this.Controls.Add(this.txtSal);

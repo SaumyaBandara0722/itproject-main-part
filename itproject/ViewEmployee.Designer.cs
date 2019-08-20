@@ -89,6 +89,7 @@
             // lblSearch
             // 
             this.lblSearch.AutoSize = true;
+            this.lblSearch.BackColor = System.Drawing.Color.Transparent;
             this.lblSearch.Font = new System.Drawing.Font("Sitka Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSearch.Location = new System.Drawing.Point(128, 21);
             this.lblSearch.Name = "lblSearch";
@@ -106,6 +107,7 @@
             // lblSelectedEmp
             // 
             this.lblSelectedEmp.AutoSize = true;
+            this.lblSelectedEmp.BackColor = System.Drawing.Color.Transparent;
             this.lblSelectedEmp.Font = new System.Drawing.Font("Sitka Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSelectedEmp.Location = new System.Drawing.Point(128, 407);
             this.lblSelectedEmp.Name = "lblSelectedEmp";
@@ -130,6 +132,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lblSelectedEmp);
