@@ -96,7 +96,7 @@ namespace itproject.Classes
         {
             bool isSuccess = false;
 
-            SqlConnection conn = new SqlConnection(myConnString);
+           SqlConnection conn = new SqlConnection(myConnString);
 
             try
             {
@@ -137,7 +137,7 @@ namespace itproject.Classes
         {
             bool isSuccess = false;
 
-            SqlConnection conn = new SqlConnection(myConnString);
+           SqlConnection conn = new SqlConnection(myConnString);
 
             try
             {

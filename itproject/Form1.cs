@@ -35,10 +35,32 @@ namespace itproject
 
         private void ButtonLoan_Click(object sender, EventArgs e)
         {
-            loanUserControl11.BringToFront();
+            //  loanUserControl11.BringToFront();
+            loanUserControl1.BringToFront();
         }
 
         private void PictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ButtonStocks_Click(object sender, EventArgs e)
+        {
+            patternAndStockManagement1.BringToFront();
+        }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            Pattern pattern = new Pattern();
+            pattern.ShowDialog();
+        }
+
+        private void PatternAndStockManagement1_Load(object sender, EventArgs e)
         {
 
         }

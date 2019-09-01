@@ -43,16 +43,16 @@ namespace itproject
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            loan.EmpID = Int32.Parse(textBoxEmployeeID.Text);
+//            loan.EmpID = Int32.Parse(textBoxEmployeeID.Text);
 
-            empID = textBoxEmployeeID.Text;
-            loanAmount = textBoxAmount.Text;
-            installment = textBoxInstallment.Text;
-            startDate = dateTimePicker1.Value;
-            endDate = dateTimePicker2.Value;
+  //          empID = textBoxEmployeeID.Text;
+    //        loanAmount = textBoxAmount.Text;
+      //      installment = textBoxInstallment.Text;
+        //    startDate = dateTimePicker1.Value;
+          //  endDate = dateTimePicker2.Value;
 
-            FormLoanConfirm formLoanConfirm = new FormLoanConfirm();
-            formLoanConfirm.Show();
+         //   FormLoanConfirm formLoanConfirm = new FormLoanConfirm();
+           // formLoanConfirm.Show();
         }
 
         private void DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -71,6 +71,11 @@ namespace itproject
         }
 
         private void Label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

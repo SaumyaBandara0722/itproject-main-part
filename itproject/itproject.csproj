@@ -47,6 +47,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\ClassPattern.cs" />
+    <Compile Include="Classes\ClassStock.cs" />
     <Compile Include="Classes\Employee.cs" />
     <Compile Include="Classes\LoanClass.cs" />
     <Compile Include="EmployeeDetailsUserControl.cs">
@@ -78,14 +80,38 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>itprojectDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="LoanUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LoanUserControl.Designer.cs">
+      <DependentUpon>LoanUserControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoanUserControl1.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="LoanUserControl1.Designer.cs">
       <DependentUpon>LoanUserControl1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pattern.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pattern.designer.cs">
+      <DependentUpon>Pattern.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatternAndStockManagement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PatternAndStockManagement.designer.cs">
+      <DependentUpon>PatternAndStockManagement.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Stock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stock.designer.cs">
+      <DependentUpon>Stock.cs</DependentUpon>
+    </Compile>
     <Compile Include="ViewEmployee.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,8 +130,17 @@
     <EmbeddedResource Include="FormLoanConfirm.resx">
       <DependentUpon>FormLoanConfirm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="LoanUserControl.resx">
+      <DependentUpon>LoanUserControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoanUserControl1.resx">
       <DependentUpon>LoanUserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pattern.resx">
+      <DependentUpon>Pattern.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatternAndStockManagement.resx">
+      <DependentUpon>PatternAndStockManagement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -116,6 +151,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Stock.resx">
+      <DependentUpon>Stock.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ViewEmployee.resx">
       <DependentUpon>ViewEmployee.cs</DependentUpon>
     </EmbeddedResource>
