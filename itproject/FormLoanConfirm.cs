@@ -43,12 +43,12 @@ namespace itproject
 
             SqlCommand sqlCommand = new SqlCommand(sql, conn);
 
-            sqlCommand.Parameters.AddWithValue("@EmpID", Int32.Parse(LoanUserControl1.empID));
+            sqlCommand.Parameters.AddWithValue("@EmpID", Int32.Parse(LoanUserControl.empID));
             SqlDataReader dataReader = null;
 
             dataReader = sqlCommand.ExecuteReader();
 
-            textBox1.Text = LoanUserControl1.empID;
+            textBox1.Text = LoanUserControl.empID;
 
             while (dataReader.Read())
             {
@@ -57,10 +57,10 @@ namespace itproject
                 textBox5.Text = dataReader["BasicSalary"].ToString();
             }
 
-            textBox6.Text = LoanUserControl1.loanAmount;
-            textBox7.Text = LoanUserControl1.installment;
-            dateTimePicker1.Value = LoanUserControl1.startDate;
-            dateTimePicker2.Value = LoanUserControl1.endDate;
+            textBox6.Text = LoanUserControl.loanAmount;
+            textBox7.Text = LoanUserControl.installment;
+            dateTimePicker1.Value = LoanUserControl.startDate;
+            dateTimePicker2.Value = LoanUserControl.endDate;
         }
 
         private void Button1_Click(object sender, EventArgs e)

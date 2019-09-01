@@ -51,6 +51,19 @@
     <Compile Include="Classes\ClassStock.cs" />
     <Compile Include="Classes\Employee.cs" />
     <Compile Include="Classes\LoanClass.cs" />
+    <Compile Include="CustomerClass.cs" />
+    <Compile Include="CustomerRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerRegistration.designer.cs">
+      <DependentUpon>CustomerRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Customers.designer.cs">
+      <DependentUpon>Customers.cs</DependentUpon>
+    </Compile>
     <Compile Include="EmployeeDetailsUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -86,11 +99,18 @@
     <Compile Include="LoanUserControl.Designer.cs">
       <DependentUpon>LoanUserControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="LoanUserControl1.cs">
-      <SubType>UserControl</SubType>
+    <Compile Include="MainProjectTask.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LoanUserControl1.Designer.cs">
-      <DependentUpon>LoanUserControl1.cs</DependentUpon>
+    <Compile Include="MainProjectTask.designer.cs">
+      <DependentUpon>MainProjectTask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderClass.cs" />
+    <Compile Include="orders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="orders.designer.cs">
+      <DependentUpon>orders.cs</DependentUpon>
     </Compile>
     <Compile Include="Pattern.cs">
       <SubType>Form</SubType>
@@ -104,8 +124,28 @@
     <Compile Include="PatternAndStockManagement.designer.cs">
       <DependentUpon>PatternAndStockManagement.cs</DependentUpon>
     </Compile>
+    <Compile Include="PayrollManagment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PayrollManagment.designer.cs">
+      <DependentUpon>PayrollManagment.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
+    <Compile Include="ProjectAndTaskClasses\ProjectAndTaskClass.cs" />
+    <Compile Include="projectAndTaskControler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="projectAndTaskControler.designer.cs">
+      <DependentUpon>projectAndTaskControler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectsReportsGenerater.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProjectsReportsGenerater.designer.cs">
+      <DependentUpon>ProjectsReportsGenerater.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportRelatedClasses\ProjectReports.cs" />
     <Compile Include="Stock.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,6 +158,12 @@
     <Compile Include="ViewEmployee.Designer.cs">
       <DependentUpon>ViewEmployee.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="CustomerRegistration.resx">
+      <DependentUpon>CustomerRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customers.resx">
+      <DependentUpon>Customers.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EmployeeDetailsUserControl.resx">
       <DependentUpon>EmployeeDetailsUserControl.cs</DependentUpon>
     </EmbeddedResource>
@@ -133,14 +179,26 @@
     <EmbeddedResource Include="LoanUserControl.resx">
       <DependentUpon>LoanUserControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LoanUserControl1.resx">
-      <DependentUpon>LoanUserControl1.cs</DependentUpon>
+    <EmbeddedResource Include="MainProjectTask.resx">
+      <DependentUpon>MainProjectTask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="orders.resx">
+      <DependentUpon>orders.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pattern.resx">
       <DependentUpon>Pattern.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PatternAndStockManagement.resx">
       <DependentUpon>PatternAndStockManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PayrollManagment.resx">
+      <DependentUpon>PayrollManagment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="projectAndTaskControler.resx">
+      <DependentUpon>projectAndTaskControler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProjectsReportsGenerater.resx">
+      <DependentUpon>ProjectsReportsGenerater.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

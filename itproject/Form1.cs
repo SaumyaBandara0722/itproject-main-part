@@ -36,7 +36,7 @@ namespace itproject
         private void ButtonLoan_Click(object sender, EventArgs e)
         {
             //  loanUserControl11.BringToFront();
-            loanUserControl1.BringToFront();
+            //loanUserControl1.BringToFront();
         }
 
         private void PictureBox1_Click(object sender, EventArgs e)
@@ -61,6 +61,27 @@ namespace itproject
         }
 
         private void PatternAndStockManagement1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ButtonPayroll_Click(object sender, EventArgs e)
+        {
+            new View().Show();
+        }
+
+        private void ButtonProjectsAndTasks_Click(object sender, EventArgs e)
+        {
+            MainProjectTask mainPro = new MainProjectTask();
+            mainPro.ShowDialog();
+        }
+
+        private void ButtonCustomers_Click(object sender, EventArgs e)
+        {
+            customers1.BringToFront();
+        }
+
+        private void LoanUserControl1_Load(object sender, EventArgs e)
         {
 
         }

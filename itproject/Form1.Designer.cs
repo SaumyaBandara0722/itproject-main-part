@@ -43,8 +43,8 @@
             this.logoPanel = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.employeeDetailsUserControl1 = new itproject.EmployeeDetailsUserControl();
-            this.loanUserControl1 = new itproject.LoanUserControl();
             this.patternAndStockManagement1 = new itproject.PatternAndStockManagement();
+            this.customers1 = new itproject.Customers();
             this.sidePanel.SuspendLayout();
             this.logoPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -106,6 +106,7 @@
             this.buttonProjectsAndTasks.TabIndex = 4;
             this.buttonProjectsAndTasks.Text = "Projects and Tasks";
             this.buttonProjectsAndTasks.UseVisualStyleBackColor = true;
+            this.buttonProjectsAndTasks.Click += new System.EventHandler(this.ButtonProjectsAndTasks_Click);
             // 
             // buttonCustomers
             // 
@@ -118,6 +119,7 @@
             this.buttonCustomers.TabIndex = 8;
             this.buttonCustomers.Text = "Customers";
             this.buttonCustomers.UseVisualStyleBackColor = true;
+            this.buttonCustomers.Click += new System.EventHandler(this.ButtonCustomers_Click);
             // 
             // buttonPayroll
             // 
@@ -130,6 +132,7 @@
             this.buttonPayroll.TabIndex = 7;
             this.buttonPayroll.Text = "Payroll";
             this.buttonPayroll.UseVisualStyleBackColor = true;
+            this.buttonPayroll.Click += new System.EventHandler(this.ButtonPayroll_Click);
             // 
             // buttonLeaveManagement
             // 
@@ -224,32 +227,33 @@
             this.employeeDetailsUserControl1.Size = new System.Drawing.Size(896, 415);
             this.employeeDetailsUserControl1.TabIndex = 3;
             // 
-            // loanUserControl1
-            // 
-            this.loanUserControl1.Location = new System.Drawing.Point(369, 26);
-            this.loanUserControl1.Name = "loanUserControl1";
-            this.loanUserControl1.Size = new System.Drawing.Size(1217, 747);
-            this.loanUserControl1.TabIndex = 4;
-            // 
             // patternAndStockManagement1
             // 
-            this.patternAndStockManagement1.Location = new System.Drawing.Point(341, 190);
+            this.patternAndStockManagement1.Location = new System.Drawing.Point(388, 180);
             this.patternAndStockManagement1.Name = "patternAndStockManagement1";
             this.patternAndStockManagement1.Size = new System.Drawing.Size(1043, 567);
             this.patternAndStockManagement1.TabIndex = 5;
             this.patternAndStockManagement1.Load += new System.EventHandler(this.PatternAndStockManagement1_Load);
+            // 
+            // customers1
+            // 
+            this.customers1.Location = new System.Drawing.Point(436, 197);
+            this.customers1.MinimumSize = new System.Drawing.Size(1099, 569);
+            this.customers1.Name = "customers1";
+            this.customers1.Size = new System.Drawing.Size(1099, 569);
+            this.customers1.TabIndex = 6;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1672, 878);
-            this.Controls.Add(this.patternAndStockManagement1);
-            this.Controls.Add(this.loanUserControl1);
-            this.Controls.Add(this.employeeDetailsUserControl1);
             this.Controls.Add(this.logoPanel);
             this.Controls.Add(this.topPanel);
             this.Controls.Add(this.sidePanel);
+            this.Controls.Add(this.employeeDetailsUserControl1);
+            this.Controls.Add(this.patternAndStockManagement1);
+            this.Controls.Add(this.customers1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -278,8 +282,9 @@
         private System.Windows.Forms.Button button2;
         private EmployeeDetailsUserControl employeeDetailsUserControl1;
         private System.Windows.Forms.Button buttonLoan;
-        private LoanUserControl loanUserControl1;
+       // private LoanUserControl loanUserControl1;
         private PatternAndStockManagement patternAndStockManagement1;
+        private Customers customers1;
         //  private LoanUserControl1 loanUserControl11;
     }
 }
