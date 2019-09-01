@@ -15,7 +15,7 @@ namespace itproject
         public Form1()
         {
             InitializeComponent();
-
+            employeeDetailsUserControl1.BringToFront();
         }
 
         private void AddEmployeeUserControl1_Load(object sender, EventArgs e)
@@ -30,7 +30,17 @@ namespace itproject
 
         private void ButtonEmployees_Click(object sender, EventArgs e)
         {
-          
+            employeeDetailsUserControl1.BringToFront();
+        }
+
+        private void ButtonLoan_Click(object sender, EventArgs e)
+        {
+            loanUserControl11.BringToFront();
+        }
+
+        private void PictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
