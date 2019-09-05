@@ -22,7 +22,7 @@ namespace itproject.Classes
 
             try
             {
-                string sql1 = "SELECT * FROM Patterns1";
+                string sql1 = "SELECT * FROM Patterns";
                 SqlCommand cmd1 = new SqlCommand(sql1, conn1);
                 SqlDataAdapter adapter1 = new SqlDataAdapter(cmd1);
 
@@ -51,7 +51,7 @@ namespace itproject.Classes
             SqlConnection conn1 = new SqlConnection(myid);
             try
             {
-               string sql1 = "INSERT INTO Patterns1(PatternID, PatternName, unitPrice, Description) VALUES(@PatternID, @PatternName, @unitPrice, @Description)";
+               string sql1 = "INSERT INTO Patterns(PatternID, PatternName, unitPrice, Description) VALUES(@PatternID, @PatternName, @unitPrice, @Description)";
 
                 SqlCommand cmd1 = new SqlCommand(sql1, conn1);
 
@@ -95,7 +95,7 @@ namespace itproject.Classes
 
             try
             {
-                string sql1 = "UPDATE Patterns1 SET PatternID=@PatternID, PatternName=@PatternName, unitPrice=@unitPrice, Description=@Description WHERE Pid=@Pid";
+                string sql1 = "UPDATE Patterns SET PatternID=@PatternID, PatternName=@PatternName, unitPrice=@unitPrice, Description=@Description WHERE Pid=@Pid";
 
                 SqlCommand cmd1 = new SqlCommand(sql1, conn1);
 
@@ -140,7 +140,7 @@ namespace itproject.Classes
             try
             {
 
-                string sql1 = "DELETE FROM Patterns1 WHERE Pid=@Pid";
+                string sql1 = "DELETE FROM Patterns WHERE Pid=@Pid";
 
                 SqlCommand cmd1 = new SqlCommand(sql1, conn1);
 

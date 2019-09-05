@@ -12,6 +12,22 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -32,6 +48,18 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>2A8A0E0AC0DED60ECD63483175F72E76D50CAE4B</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>itproject_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
@@ -47,8 +75,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminReport.cs" />
+    <Compile Include="Attendance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendance.Designer.cs">
+      <DependentUpon>Attendance.cs</DependentUpon>
+    </Compile>
     <Compile Include="Classes\ClassPattern.cs" />
     <Compile Include="Classes\ClassStock.cs" />
+    <Compile Include="Classes\DatabaseHelper.cs" />
     <Compile Include="Classes\Employee.cs" />
     <Compile Include="Classes\LoanClass.cs" />
     <Compile Include="CustomerClass.cs" />
@@ -93,11 +129,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>itprojectDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="LoanUserControl.cs">
-      <SubType>UserControl</SubType>
+    <Compile Include="LeaveManagementForm.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LoanUserControl.Designer.cs">
-      <DependentUpon>LoanUserControl.cs</DependentUpon>
+    <Compile Include="LeaveManagementForm.Designer.cs">
+      <DependentUpon>LeaveManagementForm.cs</DependentUpon>
     </Compile>
     <Compile Include="MainProjectTask.cs">
       <SubType>Form</SubType>
@@ -130,6 +166,12 @@
     <Compile Include="PayrollManagment.designer.cs">
       <DependentUpon>PayrollManagment.cs</DependentUpon>
     </Compile>
+    <Compile Include="ProcessLoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProcessLoan.Designer.cs">
+      <DependentUpon>ProcessLoan.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="ProjectAndTaskClasses\ProjectAndTaskClass.cs" />
     <Compile Include="projectAndTaskControler.cs">
@@ -146,6 +188,12 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReportRelatedClasses\ProjectReports.cs" />
+    <Compile Include="ShowAttendance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowAttendance.designer.cs">
+      <DependentUpon>ShowAttendance.cs</DependentUpon>
+    </Compile>
     <Compile Include="Stock.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -158,6 +206,15 @@
     <Compile Include="ViewEmployee.Designer.cs">
       <DependentUpon>ViewEmployee.cs</DependentUpon>
     </Compile>
+    <Compile Include="ViewLoans.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewLoans.Designer.cs">
+      <DependentUpon>ViewLoans.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Attendance.resx">
+      <DependentUpon>Attendance.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CustomerRegistration.resx">
       <DependentUpon>CustomerRegistration.cs</DependentUpon>
     </EmbeddedResource>
@@ -176,8 +233,8 @@
     <EmbeddedResource Include="FormLoanConfirm.resx">
       <DependentUpon>FormLoanConfirm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LoanUserControl.resx">
-      <DependentUpon>LoanUserControl.cs</DependentUpon>
+    <EmbeddedResource Include="LeaveManagementForm.resx">
+      <DependentUpon>LeaveManagementForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainProjectTask.resx">
       <DependentUpon>MainProjectTask.cs</DependentUpon>
@@ -194,6 +251,9 @@
     <EmbeddedResource Include="PayrollManagment.resx">
       <DependentUpon>PayrollManagment.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ProcessLoan.resx">
+      <DependentUpon>ProcessLoan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="projectAndTaskControler.resx">
       <DependentUpon>projectAndTaskControler.cs</DependentUpon>
     </EmbeddedResource>
@@ -209,11 +269,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ShowAttendance.resx">
+      <DependentUpon>ShowAttendance.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Stock.resx">
       <DependentUpon>Stock.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ViewEmployee.resx">
       <DependentUpon>ViewEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewLoans.resx">
+      <DependentUpon>ViewLoans.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="itprojectDataSet.xsc">
       <DependentUpon>itprojectDataSet.xsd</DependentUpon>
@@ -226,6 +292,7 @@
     <None Include="itprojectDataSet.xss">
       <DependentUpon>itprojectDataSet.xsd</DependentUpon>
     </None>
+    <None Include="itproject_TemporaryKey.pfx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -239,6 +306,17 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

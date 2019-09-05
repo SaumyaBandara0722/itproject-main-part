@@ -30,9 +30,9 @@ namespace itproject
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Stock));
             this.labelstockaddeddate = new System.Windows.Forms.Label();
             this.textstockpatternid = new System.Windows.Forms.TextBox();
@@ -64,9 +64,9 @@ namespace itproject
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnmaximize = new System.Windows.Forms.PictureBox();
             this.btnminimize = new System.Windows.Forms.PictureBox();
             this.pictureboxstockclose = new System.Windows.Forms.PictureBox();
+            this.btnmaximize = new System.Windows.Forms.PictureBox();
             this.dateTimestockaddeddate = new System.Windows.Forms.DateTimePicker();
             this.txtsnumber = new System.Windows.Forms.TextBox();
             this.labelSNo = new System.Windows.Forms.Label();
@@ -90,9 +90,9 @@ namespace itproject
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnmaximize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnminimize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureboxstockclose)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnmaximize)).BeginInit();
             this.panel8.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -188,6 +188,7 @@ namespace itproject
             // 
             // textstocksearch
             // 
+            this.textstocksearch.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.textstocksearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textstocksearch.Location = new System.Drawing.Point(1170, 200);
             this.textstocksearch.Name = "textstocksearch";
@@ -197,43 +198,46 @@ namespace itproject
             // 
             // datagridviewstock
             // 
+            this.datagridviewstock.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.datagridviewstock.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.datagridviewstock.BackgroundColor = System.Drawing.Color.White;
             this.datagridviewstock.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Sitka Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.datagridviewstock.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Sitka Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.datagridviewstock.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.datagridviewstock.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.datagridviewstock.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle5.Padding = new System.Windows.Forms.Padding(0, 4, 0, 4);
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.datagridviewstock.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(0, 4, 0, 4);
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.datagridviewstock.DefaultCellStyle = dataGridViewCellStyle2;
             this.datagridviewstock.GridColor = System.Drawing.Color.White;
-            this.datagridviewstock.Location = new System.Drawing.Point(855, 283);
+            this.datagridviewstock.Location = new System.Drawing.Point(878, 284);
             this.datagridviewstock.Name = "datagridviewstock";
             this.datagridviewstock.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Sitka Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.datagridviewstock.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Sitka Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.datagridviewstock.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.datagridviewstock.RowHeadersWidth = 21;
             this.datagridviewstock.RowTemplate.Height = 24;
-            this.datagridviewstock.Size = new System.Drawing.Size(857, 427);
+            this.datagridviewstock.Size = new System.Drawing.Size(786, 522);
             this.datagridviewstock.TabIndex = 102;
             this.datagridviewstock.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Datagridviewstock_CellContentClick);
             this.datagridviewstock.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.Datagridviewstock_RowHeaderMouseClick);
@@ -310,11 +314,13 @@ namespace itproject
             // 
             // panel5
             // 
+            this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.panel5.BackColor = System.Drawing.Color.White;
             this.panel5.Controls.Add(this.pictureBox4);
             this.panel5.Controls.Add(this.buttonstockdelete);
             this.panel5.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel5.Location = new System.Drawing.Point(390, 781);
+            this.panel5.Location = new System.Drawing.Point(488, 775);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(266, 71);
             this.panel5.TabIndex = 173;
@@ -331,11 +337,13 @@ namespace itproject
             // 
             // panel4
             // 
+            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.panel4.BackColor = System.Drawing.Color.White;
             this.panel4.Controls.Add(this.pictureBox1);
             this.panel4.Controls.Add(this.buttonstockclear);
             this.panel4.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel4.Location = new System.Drawing.Point(390, 700);
+            this.panel4.Location = new System.Drawing.Point(488, 666);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(266, 75);
             this.panel4.TabIndex = 176;
@@ -352,11 +360,13 @@ namespace itproject
             // 
             // panel3
             // 
+            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.Controls.Add(this.pictureBox3);
             this.panel3.Controls.Add(this.buttonstockupdate);
             this.panel3.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel3.Location = new System.Drawing.Point(70, 781);
+            this.panel3.Location = new System.Drawing.Point(168, 775);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(266, 71);
             this.panel3.TabIndex = 175;
@@ -373,11 +383,13 @@ namespace itproject
             // 
             // panel6
             // 
+            this.panel6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.panel6.BackColor = System.Drawing.Color.White;
             this.panel6.Controls.Add(this.pictureBox5);
             this.panel6.Controls.Add(this.buttonstockadd1);
             this.panel6.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel6.Location = new System.Drawing.Point(70, 700);
+            this.panel6.Location = new System.Drawing.Point(168, 666);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(266, 75);
             this.panel6.TabIndex = 174;
@@ -394,6 +406,7 @@ namespace itproject
             // 
             // panel7
             // 
+            this.panel7.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel7.BackColor = System.Drawing.Color.White;
             this.panel7.Controls.Add(this.pictureBox6);
             this.panel7.Controls.Add(this.labelstocksearch);
@@ -414,6 +427,7 @@ namespace itproject
             // 
             // labelstocksearch
             // 
+            this.labelstocksearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelstocksearch.AutoSize = true;
             this.labelstocksearch.BackColor = System.Drawing.Color.White;
             this.labelstocksearch.Font = new System.Drawing.Font("Myanmar Text", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -427,6 +441,7 @@ namespace itproject
             // 
             // panel2
             // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Controls.Add(this.buttonpattern2);
@@ -447,6 +462,7 @@ namespace itproject
             // 
             // panel1
             // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.panel1.Controls.Add(this.btnminimize);
             this.panel1.Controls.Add(this.pictureboxstockclose);
@@ -455,17 +471,6 @@ namespace itproject
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(183, 75);
             this.panel1.TabIndex = 179;
-            // 
-            // btnmaximize
-            // 
-            this.btnmaximize.Image = ((System.Drawing.Image)(resources.GetObject("btnmaximize.Image")));
-            this.btnmaximize.Location = new System.Drawing.Point(79, 27);
-            this.btnmaximize.Name = "btnmaximize";
-            this.btnmaximize.Size = new System.Drawing.Size(41, 35);
-            this.btnmaximize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btnmaximize.TabIndex = 129;
-            this.btnmaximize.TabStop = false;
-            this.btnmaximize.Click += new System.EventHandler(this.Btnmaximize_Click);
             // 
             // btnminimize
             // 
@@ -488,6 +493,17 @@ namespace itproject
             this.pictureboxstockclose.TabIndex = 115;
             this.pictureboxstockclose.TabStop = false;
             this.pictureboxstockclose.Click += new System.EventHandler(this.Pictureboxstockclose_Click_1);
+            // 
+            // btnmaximize
+            // 
+            this.btnmaximize.Image = ((System.Drawing.Image)(resources.GetObject("btnmaximize.Image")));
+            this.btnmaximize.Location = new System.Drawing.Point(79, 27);
+            this.btnmaximize.Name = "btnmaximize";
+            this.btnmaximize.Size = new System.Drawing.Size(41, 35);
+            this.btnmaximize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnmaximize.TabIndex = 129;
+            this.btnmaximize.TabStop = false;
+            this.btnmaximize.Click += new System.EventHandler(this.Btnmaximize_Click);
             // 
             // dateTimestockaddeddate
             // 
@@ -577,7 +593,7 @@ namespace itproject
             // 
             // panel8
             // 
-            this.panel8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel8.BackgroundImage")));
+            this.panel8.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel8.Controls.Add(this.txtsnumber);
             this.panel8.Controls.Add(this.label4);
             this.panel8.Controls.Add(this.labelstockpatternname);
@@ -594,9 +610,9 @@ namespace itproject
             this.panel8.Controls.Add(this.textstockpatternname);
             this.panel8.Controls.Add(this.textstockpatternid);
             this.panel8.Controls.Add(this.labelstockaddeddate);
-            this.panel8.Location = new System.Drawing.Point(33, 196);
+            this.panel8.Location = new System.Drawing.Point(93, 222);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(705, 414);
+            this.panel8.Size = new System.Drawing.Size(732, 427);
             this.panel8.TabIndex = 195;
             // 
             // Stock
@@ -618,9 +634,10 @@ namespace itproject
             this.Controls.Add(this.textstocksearch);
             this.Controls.Add(this.datagridviewstock);
             this.Controls.Add(this.labelstock);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Stock";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Stock_Load);
             ((System.ComponentModel.ISupportInitialize)(this.datagridviewstock)).EndInit();
             this.panel5.ResumeLayout(false);
@@ -637,9 +654,9 @@ namespace itproject
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.btnmaximize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnminimize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureboxstockclose)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnmaximize)).EndInit();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
             this.ResumeLayout(false);

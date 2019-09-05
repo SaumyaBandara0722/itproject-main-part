@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EmployeeRegistration));
-            this.txtJoinedDate = new System.Windows.Forms.TextBox();
             this.lblJoinedDate = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -43,7 +42,6 @@
             this.lblNum = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.lblEmail = new System.Windows.Forms.Label();
-            this.txtBdy = new System.Windows.Forms.TextBox();
             this.lblBdy = new System.Windows.Forms.Label();
             this.lblDept = new System.Windows.Forms.Label();
             this.txtempName = new System.Windows.Forms.TextBox();
@@ -53,15 +51,10 @@
             this.lblSal = new System.Windows.Forms.Label();
             this.txtSal = new System.Windows.Forms.TextBox();
             this.dataGridViewDetails = new System.Windows.Forms.DataGridView();
+            this.txtBdy = new System.Windows.Forms.DateTimePicker();
+            this.txtJoinedDate = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDetails)).BeginInit();
             this.SuspendLayout();
-            // 
-            // txtJoinedDate
-            // 
-            this.txtJoinedDate.Location = new System.Drawing.Point(183, 392);
-            this.txtJoinedDate.Name = "txtJoinedDate";
-            this.txtJoinedDate.Size = new System.Drawing.Size(288, 20);
-            this.txtJoinedDate.TabIndex = 42;
             // 
             // lblJoinedDate
             // 
@@ -193,6 +186,7 @@
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(288, 20);
             this.txtEmail.TabIndex = 30;
+            this.txtEmail.Validating += new System.ComponentModel.CancelEventHandler(this.TxtEmail_Validating);
             // 
             // lblEmail
             // 
@@ -204,14 +198,6 @@
             this.lblEmail.Size = new System.Drawing.Size(115, 23);
             this.lblEmail.TabIndex = 29;
             this.lblEmail.Text = "Email Address";
-            // 
-            // txtBdy
-            // 
-            this.txtBdy.BackColor = System.Drawing.SystemColors.Window;
-            this.txtBdy.Location = new System.Drawing.Point(183, 103);
-            this.txtBdy.Name = "txtBdy";
-            this.txtBdy.Size = new System.Drawing.Size(288, 20);
-            this.txtBdy.TabIndex = 28;
             // 
             // lblBdy
             // 
@@ -304,6 +290,20 @@
             this.dataGridViewDetails.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridViewDetails_CellContentClick);
             this.dataGridViewDetails.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DataGridViewDetails_RowHeaderMouseClick);
             // 
+            // txtBdy
+            // 
+            this.txtBdy.Location = new System.Drawing.Point(183, 103);
+            this.txtBdy.Name = "txtBdy";
+            this.txtBdy.Size = new System.Drawing.Size(288, 20);
+            this.txtBdy.TabIndex = 46;
+            // 
+            // txtJoinedDate
+            // 
+            this.txtJoinedDate.Location = new System.Drawing.Point(183, 392);
+            this.txtJoinedDate.Name = "txtJoinedDate";
+            this.txtJoinedDate.Size = new System.Drawing.Size(288, 20);
+            this.txtJoinedDate.TabIndex = 47;
+            // 
             // EmployeeRegistration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -311,10 +311,11 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(894, 501);
+            this.Controls.Add(this.txtJoinedDate);
+            this.Controls.Add(this.txtBdy);
             this.Controls.Add(this.dataGridViewDetails);
             this.Controls.Add(this.txtSal);
             this.Controls.Add(this.lblSal);
-            this.Controls.Add(this.txtJoinedDate);
             this.Controls.Add(this.lblJoinedDate);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -328,7 +329,6 @@
             this.Controls.Add(this.lblNum);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.lblEmail);
-            this.Controls.Add(this.txtBdy);
             this.Controls.Add(this.lblBdy);
             this.Controls.Add(this.lblDept);
             this.Controls.Add(this.txtempName);
@@ -360,14 +360,14 @@
         private System.Windows.Forms.Label lblSal;
         public System.Windows.Forms.DataGridView dataGridViewDetails;
         public System.Windows.Forms.TextBox txtempId;
-        public System.Windows.Forms.TextBox txtJoinedDate;
         public System.Windows.Forms.ComboBox comboBox2;
         public System.Windows.Forms.ComboBox comboBox1;
         public System.Windows.Forms.TextBox txtAdd;
         public System.Windows.Forms.TextBox txtNum;
         public System.Windows.Forms.TextBox txtEmail;
-        public System.Windows.Forms.TextBox txtBdy;
         public System.Windows.Forms.TextBox txtempName;
         public System.Windows.Forms.TextBox txtSal;
+        public System.Windows.Forms.DateTimePicker txtBdy;
+        public System.Windows.Forms.DateTimePicker txtJoinedDate;
     }
 }

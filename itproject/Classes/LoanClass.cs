@@ -31,7 +31,7 @@ namespace itproject.Classes
             try
             {
                 string sql = "SELECT * FROM Loans";
-                SqlCommand sqlCommand = new SqlCommand(sql);
+                SqlCommand sqlCommand = new SqlCommand(sql, conn);
                 SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(sqlCommand);
                 conn.Open();
                 sqlDataAdapter.Fill(dataTable);
@@ -107,6 +107,7 @@ namespace itproject.Classes
                 sqlCommand.Parameters.AddWithValue("@LoanAmount", loan.LoanAmount);
                 sqlCommand.Parameters.AddWithValue("@Installment", loan.Installment);
                 sqlCommand.Parameters.AddWithValue("@EndDate", loan.EndDate);
+                sqlCommand.Parameters.AddWithValue("@LoanID", loan.LoanID);
 
                 conn.Open();
 

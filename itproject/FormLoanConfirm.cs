@@ -39,28 +39,41 @@ namespace itproject
         {
             SqlConnection conn = new SqlConnection(myconnstrng);
             conn.Open();
-            string sql = "SELECT EmpName, EmpDepartment, BasicSalary FROM Employees WHERE EmpID=@EmpID";
+            string sql = "SELECT EmpName, Department, BasicSal FROM Employees WHERE EmpID=@EmpID";
 
             SqlCommand sqlCommand = new SqlCommand(sql, conn);
 
-            sqlCommand.Parameters.AddWithValue("@EmpID", Int32.Parse(LoanUserControl.empID));
+            sqlCommand.Parameters.AddWithValue("@EmpID", Int32.Parse(ProcessLoan.empID));
             SqlDataReader dataReader = null;
 
             dataReader = sqlCommand.ExecuteReader();
 
-            textBox1.Text = LoanUserControl.empID;
+            textBox1.Text = ProcessLoan.empID;
 
             while (dataReader.Read())
             {
                 textBox3.Text = dataReader["EmpName"].ToString();
-                textBox4.Text = dataReader["EmpDepartment"].ToString();
-                textBox5.Text = dataReader["BasicSalary"].ToString();
+                textBox4.Text = dataReader["Department"].ToString();
+                textBox5.Text = dataReader["BasicSal"].ToString();
             }
 
-            textBox6.Text = LoanUserControl.loanAmount;
-            textBox7.Text = LoanUserControl.installment;
-            dateTimePicker1.Value = LoanUserControl.startDate;
-            dateTimePicker2.Value = LoanUserControl.endDate;
+
+
+            textBox6.Text = ProcessLoan.loanAmount;
+            textBox7.Text = ProcessLoan.installment;
+            dateTimePicker1.Value = ProcessLoan.startDate;
+            dateTimePicker2.Value = ProcessLoan.endDate;
+
+            if (textBox3.Text == "")
+            {
+                MessageBox.Show("Invalid Employee");
+                this.Close();
+            }
+            else if (Double.Parse(textBox5.Text) < Double.Parse(textBox7.Text))
+            {
+                MessageBox.Show("Installment should be less than Basic Salary");
+                this.Close();
+            }
         }
 
         private void Button1_Click(object sender, EventArgs e)

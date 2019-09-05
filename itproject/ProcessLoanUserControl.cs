@@ -11,9 +11,9 @@ using itproject.Classes;
 
 namespace itproject
 {
-    public partial class LoanUserControl : UserControl
+    public partial class ProcessLoanUserControl : UserControl
     {
-        public LoanUserControl()
+        public ProcessLoanUserControl()
         {
             InitializeComponent();
         }
@@ -26,11 +26,11 @@ namespace itproject
 
         LoanClass loan = new LoanClass();
 
-        private void Button1_Click(object sender, EventArgs e)
+        private void ButtonProcess_Click(object sender, EventArgs e)
         {
-            loan.EmpID = Int32.Parse(textBoxEmployeeID.Text);
+            loan.EmpID = Int32.Parse(textBoxEmpID.Text);
 
-            empID = textBoxEmployeeID.Text;
+            empID = textBoxEmpID.Text;
             loanAmount = textBoxAmount.Text;
             installment = textBoxInstallment.Text;
             startDate = dateTimePicker1.Value;
@@ -38,6 +38,17 @@ namespace itproject
 
             FormLoanConfirm formLoanConfirm = new FormLoanConfirm();
             formLoanConfirm.Show();
+        }
+
+        private void ButtonView_Click(object sender, EventArgs e)
+        {
+            ViewLoans viewLoans = new ViewLoans();
+            viewLoans.Show();
+        }
+
+        private void ProcessLoanUserControl_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -34,24 +34,37 @@ namespace itproject
                 dataGridViewDetails.EnableHeadersVisualStyles = false;
             }
         }
-
+        int num = 0;
+        double sal = 0.0;
         private void Button1_Click(object sender, EventArgs e)
         {
             if (txtempName.Text == "" || txtBdy.Text == "" || comboBox1.Text == "" || txtAdd.Text == "" || txtNum.Text == "" || txtEmail.Text == "" || comboBox2.Text == "" || txtJoinedDate.Text == "" || txtSal.Text == "")
             {
                 MessageBox.Show("Cannot keep empty fields");
+            }           
+            else if (txtNum.TextLength != 10)
+            {
+                MessageBox.Show("Invalid phone number");
+            }
+            else if  (!int.TryParse(txtNum.Text,out num))
+            {
+                MessageBox.Show("Phone number requires integers only");
+            }
+            else if(!double.TryParse(txtSal.Text,out sal))
+            {
+                MessageBox.Show("Invalid Salary Type");
             }
             else
             { 
                 //get the value from input field
                 c.EmpName = txtempName.Text;
-                c.Bdy = txtBdy.Text;
+                c.Bdy = txtBdy.Value.ToString();
                 c.Gender = comboBox1.Text;
                 c.Address = txtAdd.Text;
                 c.Phone = txtNum.Text;
                 c.Email = txtEmail.Text;
                 c.Dept = comboBox2.Text;
-                c.Date = txtJoinedDate.Text;
+                c.Date = txtJoinedDate.Text.ToString();
                 c.Salary = double.Parse(txtSal.Text);
       
                 //insert data into database using the method created
@@ -80,18 +93,30 @@ namespace itproject
             {
                 MessageBox.Show("Cannot keep empty fields");
             }
+            else if (txtNum.TextLength != 10)
+            {
+                MessageBox.Show("Invalid phone number");
+            }
+            else if (!int.TryParse(txtNum.Text, out num))
+            {
+                MessageBox.Show("Phone number requires integers only");
+            }
+            else if (!double.TryParse(txtSal.Text, out sal))
+            {
+                MessageBox.Show("Invalid Salary Type");
+            }
             else
             {
                 //get data from textboxes
                 c.EmpId = int.Parse(txtempId.Text);
                 c.EmpName = txtempName.Text;
-                c.Bdy = txtBdy.Text;
+                c.Bdy = txtBdy.Value.ToString();
                 c.Gender = comboBox1.Text;
                 c.Address = txtAdd.Text;
                 c.Phone = txtNum.Text;
                 c.Email = txtEmail.Text;
                 c.Dept = comboBox2.Text;
-                c.Date = txtJoinedDate.Text;                 
+                c.Date = txtJoinedDate.Value.ToString();                 
                 c.Salary = double.Parse(txtSal.Text);
 
                 bool success = c.Update(c);
@@ -161,7 +186,7 @@ namespace itproject
 
         private void TxtNum_TextChanged(object sender, EventArgs e)
         {
-
+           
         }
 
         private void b(object sender, EventArgs e)
@@ -172,6 +197,17 @@ namespace itproject
         private void TxtAdd_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void TxtEmail_Validating(object sender, CancelEventArgs e)
+        {
+            System.Text.RegularExpressions.Regex rEmail = new System.Text.RegularExpressions.Regex(@"^[a-zA-Z][\w\.-]{2,28}[a-zA-Z0-9]@[a-zA-Z0-9][\w\.-]*[a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z]$");
+            if (!rEmail.IsMatch(txtEmail.Text))
+            {
+                MessageBox.Show("Invalid Email Address", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtEmail.SelectAll();
+                e.Cancel = true;
+            }
         }
     }
 }

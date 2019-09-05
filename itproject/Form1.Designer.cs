@@ -30,14 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.sidePanel = new System.Windows.Forms.Panel();
+            this.buttonViewAttendance = new System.Windows.Forms.Button();
             this.buttonLoan = new System.Windows.Forms.Button();
             this.buttonStocks = new System.Windows.Forms.Button();
             this.buttonProjectsAndTasks = new System.Windows.Forms.Button();
             this.buttonCustomers = new System.Windows.Forms.Button();
             this.buttonPayroll = new System.Windows.Forms.Button();
             this.buttonLeaveManagement = new System.Windows.Forms.Button();
-            this.buttonLeaveRequestPortal = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.buttonEmployees = new System.Windows.Forms.Button();
             this.topPanel = new System.Windows.Forms.Panel();
             this.logoPanel = new System.Windows.Forms.Panel();
@@ -53,14 +52,13 @@
             // sidePanel
             // 
             this.sidePanel.BackColor = System.Drawing.Color.DimGray;
+            this.sidePanel.Controls.Add(this.buttonViewAttendance);
             this.sidePanel.Controls.Add(this.buttonLoan);
             this.sidePanel.Controls.Add(this.buttonStocks);
             this.sidePanel.Controls.Add(this.buttonProjectsAndTasks);
             this.sidePanel.Controls.Add(this.buttonCustomers);
             this.sidePanel.Controls.Add(this.buttonPayroll);
             this.sidePanel.Controls.Add(this.buttonLeaveManagement);
-            this.sidePanel.Controls.Add(this.buttonLeaveRequestPortal);
-            this.sidePanel.Controls.Add(this.button2);
             this.sidePanel.Controls.Add(this.buttonEmployees);
             this.sidePanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.sidePanel.Location = new System.Drawing.Point(0, 0);
@@ -69,14 +67,27 @@
             this.sidePanel.Size = new System.Drawing.Size(335, 878);
             this.sidePanel.TabIndex = 0;
             // 
+            // buttonViewAttendance
+            // 
+            this.buttonViewAttendance.Image = ((System.Drawing.Image)(resources.GetObject("buttonViewAttendance.Image")));
+            this.buttonViewAttendance.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonViewAttendance.Location = new System.Drawing.Point(23, 768);
+            this.buttonViewAttendance.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonViewAttendance.Name = "buttonViewAttendance";
+            this.buttonViewAttendance.Size = new System.Drawing.Size(285, 83);
+            this.buttonViewAttendance.TabIndex = 11;
+            this.buttonViewAttendance.Text = "Attendance";
+            this.buttonViewAttendance.UseVisualStyleBackColor = true;
+            this.buttonViewAttendance.Click += new System.EventHandler(this.ButtonViewAttendance_Click);
+            // 
             // buttonLoan
             // 
             this.buttonLoan.Image = ((System.Drawing.Image)(resources.GetObject("buttonLoan.Image")));
             this.buttonLoan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonLoan.Location = new System.Drawing.Point(21, 802);
+            this.buttonLoan.Location = new System.Drawing.Point(23, 343);
             this.buttonLoan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonLoan.Name = "buttonLoan";
-            this.buttonLoan.Size = new System.Drawing.Size(285, 74);
+            this.buttonLoan.Size = new System.Drawing.Size(285, 85);
             this.buttonLoan.TabIndex = 10;
             this.buttonLoan.Text = "Loan";
             this.buttonLoan.UseVisualStyleBackColor = true;
@@ -86,10 +97,10 @@
             // 
             this.buttonStocks.Image = ((System.Drawing.Image)(resources.GetObject("buttonStocks.Image")));
             this.buttonStocks.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonStocks.Location = new System.Drawing.Point(21, 718);
+            this.buttonStocks.Location = new System.Drawing.Point(23, 664);
             this.buttonStocks.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonStocks.Name = "buttonStocks";
-            this.buttonStocks.Size = new System.Drawing.Size(285, 74);
+            this.buttonStocks.Size = new System.Drawing.Size(285, 83);
             this.buttonStocks.TabIndex = 9;
             this.buttonStocks.Text = "Stocks";
             this.buttonStocks.UseVisualStyleBackColor = true;
@@ -99,10 +110,10 @@
             // 
             this.buttonProjectsAndTasks.Image = ((System.Drawing.Image)(resources.GetObject("buttonProjectsAndTasks.Image")));
             this.buttonProjectsAndTasks.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonProjectsAndTasks.Location = new System.Drawing.Point(23, 626);
+            this.buttonProjectsAndTasks.Location = new System.Drawing.Point(23, 550);
             this.buttonProjectsAndTasks.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonProjectsAndTasks.Name = "buttonProjectsAndTasks";
-            this.buttonProjectsAndTasks.Size = new System.Drawing.Size(285, 74);
+            this.buttonProjectsAndTasks.Size = new System.Drawing.Size(285, 83);
             this.buttonProjectsAndTasks.TabIndex = 4;
             this.buttonProjectsAndTasks.Text = "Projects and Tasks";
             this.buttonProjectsAndTasks.UseVisualStyleBackColor = true;
@@ -112,10 +123,10 @@
             // 
             this.buttonCustomers.Image = ((System.Drawing.Image)(resources.GetObject("buttonCustomers.Image")));
             this.buttonCustomers.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonCustomers.Location = new System.Drawing.Point(23, 526);
+            this.buttonCustomers.Location = new System.Drawing.Point(23, 444);
             this.buttonCustomers.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonCustomers.Name = "buttonCustomers";
-            this.buttonCustomers.Size = new System.Drawing.Size(285, 74);
+            this.buttonCustomers.Size = new System.Drawing.Size(285, 83);
             this.buttonCustomers.TabIndex = 8;
             this.buttonCustomers.Text = "Customers";
             this.buttonCustomers.UseVisualStyleBackColor = true;
@@ -125,10 +136,10 @@
             // 
             this.buttonPayroll.Image = ((System.Drawing.Image)(resources.GetObject("buttonPayroll.Image")));
             this.buttonPayroll.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonPayroll.Location = new System.Drawing.Point(23, 423);
+            this.buttonPayroll.Location = new System.Drawing.Point(23, 239);
             this.buttonPayroll.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonPayroll.Name = "buttonPayroll";
-            this.buttonPayroll.Size = new System.Drawing.Size(285, 74);
+            this.buttonPayroll.Size = new System.Drawing.Size(285, 85);
             this.buttonPayroll.TabIndex = 7;
             this.buttonPayroll.Text = "Payroll";
             this.buttonPayroll.UseVisualStyleBackColor = true;
@@ -136,49 +147,27 @@
             // 
             // buttonLeaveManagement
             // 
+            this.buttonLeaveManagement.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonLeaveManagement.Image = ((System.Drawing.Image)(resources.GetObject("buttonLeaveManagement.Image")));
             this.buttonLeaveManagement.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonLeaveManagement.Location = new System.Drawing.Point(21, 320);
+            this.buttonLeaveManagement.Location = new System.Drawing.Point(23, 132);
             this.buttonLeaveManagement.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonLeaveManagement.Name = "buttonLeaveManagement";
-            this.buttonLeaveManagement.Size = new System.Drawing.Size(285, 74);
+            this.buttonLeaveManagement.Size = new System.Drawing.Size(285, 85);
             this.buttonLeaveManagement.TabIndex = 6;
             this.buttonLeaveManagement.Text = "Leave Management";
             this.buttonLeaveManagement.UseVisualStyleBackColor = true;
-            // 
-            // buttonLeaveRequestPortal
-            // 
-            this.buttonLeaveRequestPortal.Image = ((System.Drawing.Image)(resources.GetObject("buttonLeaveRequestPortal.Image")));
-            this.buttonLeaveRequestPortal.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonLeaveRequestPortal.Location = new System.Drawing.Point(23, 234);
-            this.buttonLeaveRequestPortal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.buttonLeaveRequestPortal.Name = "buttonLeaveRequestPortal";
-            this.buttonLeaveRequestPortal.Size = new System.Drawing.Size(285, 74);
-            this.buttonLeaveRequestPortal.TabIndex = 5;
-            this.buttonLeaveRequestPortal.Text = "Leave Request Portal";
-            this.buttonLeaveRequestPortal.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(23, 129);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(285, 74);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "Time and Attendance";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.Button2_Click);
+            this.buttonLeaveManagement.Click += new System.EventHandler(this.ButtonLeaveManagement_Click);
             // 
             // buttonEmployees
             // 
+            this.buttonEmployees.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonEmployees.Image = ((System.Drawing.Image)(resources.GetObject("buttonEmployees.Image")));
             this.buttonEmployees.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonEmployees.Location = new System.Drawing.Point(23, 26);
+            this.buttonEmployees.Location = new System.Drawing.Point(23, 29);
             this.buttonEmployees.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonEmployees.Name = "buttonEmployees";
-            this.buttonEmployees.Size = new System.Drawing.Size(285, 74);
+            this.buttonEmployees.Size = new System.Drawing.Size(285, 85);
             this.buttonEmployees.TabIndex = 3;
             this.buttonEmployees.Text = "Employees";
             this.buttonEmployees.UseVisualStyleBackColor = true;
@@ -191,7 +180,7 @@
             this.topPanel.Location = new System.Drawing.Point(335, 0);
             this.topPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.topPanel.Name = "topPanel";
-            this.topPanel.Size = new System.Drawing.Size(1337, 10);
+            this.topPanel.Size = new System.Drawing.Size(1168, 10);
             this.topPanel.TabIndex = 1;
             // 
             // logoPanel
@@ -221,15 +210,15 @@
             this.employeeDetailsUserControl1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("employeeDetailsUserControl1.BackgroundImage")));
             this.employeeDetailsUserControl1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.employeeDetailsUserControl1.ForeColor = System.Drawing.Color.White;
-            this.employeeDetailsUserControl1.Location = new System.Drawing.Point(553, 286);
+            this.employeeDetailsUserControl1.Location = new System.Drawing.Point(351, 224);
             this.employeeDetailsUserControl1.Margin = new System.Windows.Forms.Padding(5);
             this.employeeDetailsUserControl1.Name = "employeeDetailsUserControl1";
-            this.employeeDetailsUserControl1.Size = new System.Drawing.Size(896, 415);
+            this.employeeDetailsUserControl1.Size = new System.Drawing.Size(1043, 565);
             this.employeeDetailsUserControl1.TabIndex = 3;
             // 
             // patternAndStockManagement1
             // 
-            this.patternAndStockManagement1.Location = new System.Drawing.Point(388, 180);
+            this.patternAndStockManagement1.Location = new System.Drawing.Point(351, 222);
             this.patternAndStockManagement1.Name = "patternAndStockManagement1";
             this.patternAndStockManagement1.Size = new System.Drawing.Size(1043, 567);
             this.patternAndStockManagement1.TabIndex = 5;
@@ -237,17 +226,17 @@
             // 
             // customers1
             // 
-            this.customers1.Location = new System.Drawing.Point(436, 197);
+            this.customers1.Location = new System.Drawing.Point(335, 222);
             this.customers1.MinimumSize = new System.Drawing.Size(1099, 569);
             this.customers1.Name = "customers1";
-            this.customers1.Size = new System.Drawing.Size(1099, 569);
+            this.customers1.Size = new System.Drawing.Size(1156, 656);
             this.customers1.TabIndex = 6;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1672, 878);
+            this.ClientSize = new System.Drawing.Size(1503, 878);
             this.Controls.Add(this.logoPanel);
             this.Controls.Add(this.topPanel);
             this.Controls.Add(this.sidePanel);
@@ -257,7 +246,6 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.sidePanel.ResumeLayout(false);
             this.logoPanel.ResumeLayout(false);
@@ -278,14 +266,11 @@
         private System.Windows.Forms.Button buttonCustomers;
         private System.Windows.Forms.Button buttonPayroll;
         private System.Windows.Forms.Button buttonLeaveManagement;
-        private System.Windows.Forms.Button buttonLeaveRequestPortal;
-        private System.Windows.Forms.Button button2;
         private EmployeeDetailsUserControl employeeDetailsUserControl1;
         private System.Windows.Forms.Button buttonLoan;
-       // private LoanUserControl loanUserControl1;
         private PatternAndStockManagement patternAndStockManagement1;
         private Customers customers1;
-        //  private LoanUserControl1 loanUserControl11;
+        private System.Windows.Forms.Button buttonViewAttendance;
     }
 }
 

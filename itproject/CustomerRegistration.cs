@@ -74,9 +74,22 @@ namespace itproject
                     c.CustomerName = cname.Text;
                     c.PhoneNumber = cno.Text;
                     c.CustomerAddress = cadd.Text;
-
-
-                    bool success = c.Insert(c);
+                   
+                    int num =0;
+                    bool success = false;
+                    if (cno.TextLength != 10)
+                    {
+                        MessageBox.Show("Invalid phone number");
+                    }
+                    else if (!int.TryParse(cno.Text, out num))
+                    {
+                        MessageBox.Show("Phone number requires integers only");
+                    } else
+                    {
+                        success = c.Insert(c);
+                    }
+                   
+  
                     if (success == true)
                     {
                         MessageBox.Show("New Customer Successully Added","Insert", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
@@ -86,6 +99,7 @@ namespace itproject
                     {
                         MessageBox.Show("New Customer adding failed", "Try Again! ", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
+                   
 
                     DataTable dt = c.Select();
                     cgride.DataSource = dt;
@@ -115,7 +129,20 @@ namespace itproject
             c.CustomerAddress = cadd.Text;
 
 
-            bool success = c.Update(c);
+            bool success = false;
+            int num = 0;
+            if (cno.TextLength != 10)
+            {
+                MessageBox.Show("Invalid phone number");
+            }
+            else if (!int.TryParse(cno.Text, out num))
+            {
+                MessageBox.Show("Phone number requires integers only");
+            }
+            else
+            {
+                success = c.Update(c);
+            }
             if (success == true)
             {
                 MessageBox.Show("Successfully Updated");

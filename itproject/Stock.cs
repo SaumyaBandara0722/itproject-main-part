@@ -62,6 +62,7 @@ namespace itproject
             catch (Exception ex)
             {
                 MessageBox.Show("Exception" + ex);
+                MessageBox.Show("Error", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
 
         }
@@ -135,6 +136,7 @@ namespace itproject
             catch (Exception ex)
             {
                 MessageBox.Show("Exception" + ex);
+                MessageBox.Show("Error", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -206,7 +208,7 @@ namespace itproject
           
             SqlConnection conn2 = new SqlConnection(myconnstr2);
 
-            SqlDataAdapter sda2 = new SqlDataAdapter("SELECT * FROM Stocks1 WHERE PatternID LIKE '%"+keyword+"%' OR PatternName LIKE '%"+keyword+"%' OR AvailableQty LIKE '%"+keyword+"%' OR AddedQty LIKE '%"+keyword+"%' OR  AddedDate LIKE '%"+keyword+"%'", conn2);
+            SqlDataAdapter sda2 = new SqlDataAdapter("SELECT * FROM Stocks WHERE PatternID LIKE '%"+keyword+"%' OR PatternName LIKE '%"+keyword+"%' OR AvailableQty LIKE '%"+keyword+"%' OR AddedQty LIKE '%"+keyword+"%' OR  AddedDate LIKE '%"+keyword+"%'", conn2);
           
             DataTable dt2 = new DataTable();
 

@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using mainAdminAttendance;
+using System;
 using System.Windows.Forms;
 
 namespace itproject
@@ -35,8 +29,8 @@ namespace itproject
 
         private void ButtonLoan_Click(object sender, EventArgs e)
         {
-            //  loanUserControl11.BringToFront();
-            //loanUserControl1.BringToFront();
+            ProcessLoan processLoan = new ProcessLoan();
+            processLoan.Show();
         }
 
         private void PictureBox1_Click(object sender, EventArgs e)
@@ -84,6 +78,26 @@ namespace itproject
         private void LoanUserControl1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void ProcessLoanUserControl1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ButtonViewAttendance_Click(object sender, EventArgs e)
+        {
+            //   Attendance attendance = new Attendance();
+            //  attendance.Show();
+
+            ShowAttendance showAttendance = new ShowAttendance();
+            showAttendance.Show();
+        }
+
+        private void ButtonLeaveManagement_Click(object sender, EventArgs e)
+        {
+            LeaveManagementForm leaveManagementForm = new LeaveManagementForm();
+            leaveManagementForm.Show();
         }
     }
 }

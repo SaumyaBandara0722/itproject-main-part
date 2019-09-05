@@ -40,30 +40,38 @@ namespace itproject
         }
 
         static string myConnString = ConfigurationManager.ConnectionStrings["connstrng"].ConnectionString;
+        int id;
         private void BtnAdd_Click(object sender, EventArgs e)
         {
             SqlConnection sqlConnection = new SqlConnection(myConnString);
             sqlConnection.Open();
             string sql = "SELECT PatternID, NeededQty FROM Orders WHERE OrderID=@OrderID";
-
-            SqlCommand sqlCommand = new SqlCommand(sql, sqlConnection);
-
-            sqlCommand.Parameters.AddWithValue("@OrderID", Int32.Parse(txtBoxOrderID.Text));
-            SqlDataReader dataReader = null;
-            dataReader = sqlCommand.ExecuteReader();
-
-            while(dataReader.Read())
+            if (!int.TryParse(txtBoxOrderID.Text, out id))
             {
-                ptc.PatternID = (dataReader["PatternID"].ToString());
-                ptc.NeededQty = Int32.Parse(dataReader["NeededQty"].ToString());
-
+                MessageBox.Show("Invalid order id");
             }
-            ptc.OrderID = int.Parse(txtBoxOrderID.Text);
-            ptc.AddedDate = DateTime.Parse(datePickerAddedDate.Text);
-            ptc.DeadlineDate = DateTime.Parse(datePickerDeadlineDate.Text);
-            ptc.Description = txtBoxDescription.Text;
-            ptc.Status = cmbBoxStatus.Text;
+            else
+            {
 
+
+                SqlCommand sqlCommand = new SqlCommand(sql, sqlConnection);
+
+                sqlCommand.Parameters.AddWithValue("@OrderID", Int32.Parse(txtBoxOrderID.Text));
+                SqlDataReader dataReader = null;
+                dataReader = sqlCommand.ExecuteReader();
+
+                while (dataReader.Read())
+                {
+                    ptc.PatternID = (dataReader["PatternID"].ToString());
+                    ptc.NeededQty = Int32.Parse(dataReader["NeededQty"].ToString());
+
+                }
+                ptc.OrderID = int.Parse(txtBoxOrderID.Text);
+                ptc.AddedDate = DateTime.Parse(datePickerAddedDate.Text);
+                ptc.DeadlineDate = DateTime.Parse(datePickerDeadlineDate.Text);
+                ptc.Description = txtBoxDescription.Text;
+                ptc.Status = cmbBoxStatus.Text;
+            }
             //validations
             if (txtBoxDescription.Text == "" || cmbBoxStatus.Text == "")
             {

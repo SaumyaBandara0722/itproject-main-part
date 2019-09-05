@@ -65,6 +65,7 @@ namespace itproject
             catch (Exception ex)
             {
                 MessageBox.Show("Exception" + ex);
+                MessageBox.Show("Error", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
 
 
@@ -160,6 +161,7 @@ namespace itproject
             catch (Exception ex)
             {
                 MessageBox.Show("Exception" + ex);
+                MessageBox.Show("Error", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
 
         }
@@ -201,7 +203,7 @@ namespace itproject
 
             SqlConnection conn = new SqlConnection(myconnstr);
 
-             SqlDataAdapter sda3 = new SqlDataAdapter("SELECT * FROM Patterns1 WHERE PatternName LIKE '%"+keyword+"%' OR unitPrice LIKE '%"+keyword+"%' OR Description LIKE '%"+keyword+"%' OR PatternID LIKE'%"+keyword+"%'", conn);
+             SqlDataAdapter sda3 = new SqlDataAdapter("SELECT * FROM Patterns WHERE PatternName LIKE '%"+keyword+"%' OR unitPrice LIKE '%"+keyword+"%' OR Description LIKE '%"+keyword+"%' OR PatternID LIKE'%"+keyword+"%'", conn);
 
             DataTable dt1 = new DataTable();
 
@@ -294,20 +296,14 @@ namespace itproject
         }
         private void Textpatternpatternname_KeyPress(object sender, KeyPressEventArgs e)
         {
-                if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar)) 
-                e.Handled = true;
-            else
-                e.Handled = false;
+            
         }
 
       
 
         private void Textpatternunitprice_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar) && char.IsSymbol(e.KeyChar))
-                e.Handled = true;
-            else
-                e.Handled = false;
+           
         }
 
         private void Textpatterndescription_KeyPress(object sender, KeyPressEventArgs e)
@@ -322,6 +318,28 @@ namespace itproject
         private void TextPNumber_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void Textpatternpatternname_KeyPress_1(object sender, KeyPressEventArgs e)
+        {
+
+        }
+
+        private void Textpatternpatternname_KeyPress_2(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar))
+                e.Handled = true;
+            else
+                e.Handled = false;
+        }
+
+        private void Textpatternunitprice_KeyPress_1(object sender, KeyPressEventArgs e)
+        {
+            //(y.unitPrice=='.'
+            if (!char.IsPunctuation(e.KeyChar) && !char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+                e.Handled = true;
+            else
+                e.Handled = false;
         }
     }
 }

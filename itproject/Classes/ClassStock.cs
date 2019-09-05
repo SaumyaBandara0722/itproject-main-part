@@ -24,7 +24,7 @@ namespace itproject.Classes
 
             try
             {
-                string sql2 = "SELECT * FROM Stocks1";
+                string sql2 = "SELECT * FROM Stocks";
                 SqlCommand cmd2 = new SqlCommand(sql2, conn2);
                 SqlDataAdapter adapter2 = new SqlDataAdapter(cmd2);
 
@@ -54,7 +54,7 @@ namespace itproject.Classes
 
             try
             {
-                string sql2 = "INSERT INTO Stocks1(PatternID, PatternName, AvailableQty, AddedQty, AddedDate) VALUES(@PatternID, @PatternName, @AvailableQty, @AddedQty, @AddedDate)";
+                string sql2 = "INSERT INTO Stocks(PatternID, PatternName, AvailableQty, AddedQty, AddedDate) VALUES(@PatternID, @PatternName, @AvailableQty, @AddedQty, @AddedDate)";
 
                 SqlCommand cmd2 = new SqlCommand(sql2, conn2);
 
@@ -95,7 +95,7 @@ namespace itproject.Classes
 
             try
             {
-                string sql2 = "UPDATE Stocks1 SET PatternID=@PatternID, PatternName=@PatternName, AvailableQty=@AvailableQty, AddedQty=@AddedQty, AddedDate=@AddedDate WHERE Sid=@Sid";
+                string sql2 = "UPDATE Stocks SET PatternID=@PatternID, PatternName=@PatternName, AvailableQty=@AvailableQty, AddedQty=@AddedQty, AddedDate=@AddedDate WHERE Sid=@Sid";
 
                 SqlCommand cmd2 = new SqlCommand(sql2, conn2);
 
@@ -139,7 +139,7 @@ namespace itproject.Classes
 
             try
             {
-                string sql2 = "DELETE FROM Stocks1 WHERE Sid=@Sid";
+                string sql2 = "DELETE FROM Stocks WHERE Sid=@Sid";
 
                 SqlCommand cmd2 = new SqlCommand(sql2, conn2);
 
