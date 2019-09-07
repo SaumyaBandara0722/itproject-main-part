@@ -27,7 +27,8 @@ namespace itproject
         LoanClass loan = new LoanClass();
         private void ProcessLoan_Load(object sender, EventArgs e)
         {
-
+            dateTimePicker1.MinDate = DateTime.Today;
+            dateTimePicker2.MinDate = DateTime.Today;
         }
 
         private void ButtonProcess_Click(object sender, EventArgs e)
@@ -37,8 +38,21 @@ namespace itproject
                 MessageBox.Show("Fields cannot be empty");
                 
             }
+            else if (dateTimePicker1.Value.ToShortDateString() == dateTimePicker2.Value.ToShortDateString())
+            {
+                MessageBox.Show("Start Date and End Date Cannot be the same");
+            } 
+            else if (dateTimePicker2.Value.Month < dateTimePicker1.Value.Month)
+            {
+                MessageBox.Show("End Date Cannot be a Back month than Start Date");
+            }
+            else if (dateTimePicker2.Value.Day < dateTimePicker1.Value.Day)
+            {
+                MessageBox.Show("End Date Cannot be a Back date than Start Date");
+            }
             else
             {
+
                 loan.EmpID = Int32.Parse(textBoxEmpID.Text);
 
                 empID = textBoxEmpID.Text;

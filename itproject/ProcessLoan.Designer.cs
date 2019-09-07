@@ -72,7 +72,7 @@
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(22, 46);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(668, 476);
+            this.groupBox1.Size = new System.Drawing.Size(721, 508);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Apply Loan";
@@ -93,7 +93,7 @@
             this.textBoxInstallment.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxInstallment.Location = new System.Drawing.Point(303, 275);
             this.textBoxInstallment.Name = "textBoxInstallment";
-            this.textBoxInstallment.Size = new System.Drawing.Size(290, 27);
+            this.textBoxInstallment.Size = new System.Drawing.Size(334, 27);
             this.textBoxInstallment.TabIndex = 10;
             // 
             // label6
@@ -111,7 +111,7 @@
             this.dateTimePicker2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker2.Location = new System.Drawing.Point(303, 219);
             this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(290, 27);
+            this.dateTimePicker2.Size = new System.Drawing.Size(334, 27);
             this.dateTimePicker2.TabIndex = 8;
             // 
             // dateTimePicker1
@@ -119,7 +119,7 @@
             this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker1.Location = new System.Drawing.Point(303, 164);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(290, 27);
+            this.dateTimePicker1.Size = new System.Drawing.Size(334, 27);
             this.dateTimePicker1.TabIndex = 7;
             this.dateTimePicker1.ValueChanged += new System.EventHandler(this.DateTimePicker1_ValueChanged);
             // 
@@ -148,7 +148,7 @@
             this.textBoxAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxAmount.Location = new System.Drawing.Point(303, 112);
             this.textBoxAmount.Name = "textBoxAmount";
-            this.textBoxAmount.Size = new System.Drawing.Size(290, 27);
+            this.textBoxAmount.Size = new System.Drawing.Size(334, 27);
             this.textBoxAmount.TabIndex = 3;
             // 
             // label3
@@ -166,7 +166,7 @@
             this.textBoxEmpID.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxEmpID.Location = new System.Drawing.Point(303, 55);
             this.textBoxEmpID.Name = "textBoxEmpID";
-            this.textBoxEmpID.Size = new System.Drawing.Size(290, 27);
+            this.textBoxEmpID.Size = new System.Drawing.Size(334, 27);
             this.textBoxEmpID.TabIndex = 1;
             // 
             // label2
