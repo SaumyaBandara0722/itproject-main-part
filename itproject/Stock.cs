@@ -318,5 +318,11 @@ namespace itproject
         {
 
         }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            Stock sreport = new Stock();
+            sreport.ShowDialog();
+        }
     }
 }

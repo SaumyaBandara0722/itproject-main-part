@@ -58,7 +58,7 @@
     <GenerateManifests>true</GenerateManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <SignManifests>true</SignManifests>
+    <SignManifests>false</SignManifests>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -135,6 +135,12 @@
     <Compile Include="LeaveManagementForm.Designer.cs">
       <DependentUpon>LeaveManagementForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Mail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mail.designer.cs">
+      <DependentUpon>Mail.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainProjectTask.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -154,11 +160,11 @@
     <Compile Include="Pattern.designer.cs">
       <DependentUpon>Pattern.cs</DependentUpon>
     </Compile>
-    <Compile Include="PatternAndStockManagement.cs">
-      <SubType>UserControl</SubType>
+    <Compile Include="PatternAndStockMangementSystem.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PatternAndStockManagement.designer.cs">
-      <DependentUpon>PatternAndStockManagement.cs</DependentUpon>
+    <Compile Include="PatternAndStockMangementSystem.Designer.cs">
+      <DependentUpon>PatternAndStockMangementSystem.cs</DependentUpon>
     </Compile>
     <Compile Include="PayrollManagment.cs">
       <SubType>Form</SubType>
@@ -200,6 +206,12 @@
     <Compile Include="Stock.designer.cs">
       <DependentUpon>Stock.cs</DependentUpon>
     </Compile>
+    <Compile Include="StockReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockReport.Designer.cs">
+      <DependentUpon>StockReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="ViewEmployee.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -236,6 +248,9 @@
     <EmbeddedResource Include="LeaveManagementForm.resx">
       <DependentUpon>LeaveManagementForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Mail.resx">
+      <DependentUpon>Mail.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainProjectTask.resx">
       <DependentUpon>MainProjectTask.cs</DependentUpon>
     </EmbeddedResource>
@@ -245,8 +260,8 @@
     <EmbeddedResource Include="Pattern.resx">
       <DependentUpon>Pattern.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PatternAndStockManagement.resx">
-      <DependentUpon>PatternAndStockManagement.cs</DependentUpon>
+    <EmbeddedResource Include="PatternAndStockMangementSystem.resx">
+      <DependentUpon>PatternAndStockMangementSystem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PayrollManagment.resx">
       <DependentUpon>PayrollManagment.cs</DependentUpon>
@@ -274,6 +289,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Stock.resx">
       <DependentUpon>Stock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockReport.resx">
+      <DependentUpon>StockReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ViewEmployee.resx">
       <DependentUpon>ViewEmployee.cs</DependentUpon>
