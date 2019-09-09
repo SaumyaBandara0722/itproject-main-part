@@ -57,7 +57,7 @@ namespace itproject
             textBoxLoanID.Text = dataGridView1.Rows[rowIndex].Cells[1].Value.ToString();
             textBoxAmount.Text = dataGridView1.Rows[rowIndex].Cells[5].Value.ToString();
             textBoxInstallment.Text = dataGridView1.Rows[rowIndex].Cells[6].Value.ToString();
-            dateTimePicker1.Value =  DateTime.Parse(dataGridView1.Rows[rowIndex].Cells[8].Value.ToString());
+            //dateTimePicker1.Value =  DateTime.Parse(dataGridView1.Rows[rowIndex].Cells[8].Value.ToString());
         }
 
         private void ButtonUpdate_Click(object sender, EventArgs e)
