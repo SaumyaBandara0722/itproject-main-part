@@ -217,5 +217,10 @@ namespace itproject
         {
 
         }
+
+        private void Label15_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
