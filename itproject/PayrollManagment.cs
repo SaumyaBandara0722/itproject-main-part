@@ -18,7 +18,7 @@ namespace itproject
         {
             InitializeComponent();
         }
-        SqlConnection con = new SqlConnection(@"Data Source=AMITH-PC;Initial Catalog=itproject;Integrated Security=True;");
+        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-COF6S90;Initial Catalog=itproject_new;Integrated Security=True;");
 
 
 
@@ -34,7 +34,7 @@ namespace itproject
 
 
                 con.Open();
-                String query = "INSERT INTO Payroll(EmployeeName,Section,OTHours,BasicSalary,PaySlipNo,EmployeeID,OTRate,Transport,Special,Holiday,Attendence,SalaryMonthFrom,SalaryMonthTo,GrossPay) VALUES('" + txtEmpName.Text + "','" + cmbSection.Text + "','" + Double.Parse(cmbOThours.Text) + "','" + Double.Parse(Basic_txt.Text) + "','" + txtPayslipNo.Text + "','" + cmbEmpID.Text + "','" + Double.Parse(OTRate_txt.Text) + "','" + Double.Parse(txtTransport.Text) + "','" + Double.Parse(txtSpecial.Text) + "','" + Double.Parse(txtHoliday.Text) + "','" + Double.Parse(txtAttendence.Text) + "','" + dateTimePicker1.Value + "','" + dateTimePicker2.Value + "','" + Double.Parse(txtGross.Text) + "')";
+                String query = "INSERT INTO Payroll(EmployeeName,Section,OTHours,BasicSalary,PaySlipNo,EmployeeID,OTRate,Transport,Special,Holiday,Attendance,SalaryMonthFrom,SalaryMonthTo,GrossPay) VALUES('" + txtEmpName.Text + "','" + cmbSection.Text + "','" + Double.Parse(cmbOThours.Text) + "','" + Double.Parse(Basic_txt.Text) + "','" + txtPayslipNo.Text + "','" + cmbEmpID.Text + "','" + Double.Parse(OTRate_txt.Text) + "','" + Double.Parse(txtTransport.Text) + "','" + Double.Parse(txtSpecial.Text) + "','" + Double.Parse(txtHoliday.Text) + "','" + Double.Parse(txtAttendence.Text) + "','" + dateTimePicker1.Value + "','" + dateTimePicker2.Value + "','" + Double.Parse(txtGross.Text) + "')";
                 // String query = "INSERT INTO tbl_Payroll(EmployeeName,Section,OTHours,BasicSalary,PaySlipNo,EmployeeID,OTRate,Transport,Special,Holiday,Attendence,SalaryMonthFrom,SalaryMonthTo,GrossPay) VALUES(@EmployeeName,@Section,@OTHours,@BasicSalary,@PaySlipNo,@EmployeeID,@OTRate,@Transport,@Special,@Holiday,@Attendence,@SalaryMonthFrom,@SalaryMonthTo,@GrossPay)";
                 //SqlCommand sqlCommand = new SqlCommand(query, con);
 
@@ -78,7 +78,7 @@ namespace itproject
         private void Btn_Update_Click(object sender, EventArgs e)
         {
             con.Open();
-            string query = "UPDATE Payroll SET Section = '" + cmbSection.Text + "',OTHours = '" + cmbOThours.Text + "',BasicSalary ='" + Basic_txt.Text+ "', PaySlipNo = '" + txtPayslipNo.Text + "',EmployeeID ='"+ cmbEmpID.Text+"', OTRate = '"+ OTRate_txt.Text+"', Transport = '"+txtTransport.Text+"', Special = '"+txtSpecial.Text+"', Holiday = '"+ txtHoliday.Text+"', Attendence = '"+ txtAttendence.Text+"', SalaryMonthFrom = '"+ dateTimePicker1.Value+"',SalaryMonthTo = '"+ dateTimePicker2.Value+"' WHERE EmployeeName = '"+ txtEmpName.Text +"'";
+            string query = "UPDATE Payroll SET Section = '" + cmbSection.Text + "',OTHours = '" + cmbOThours.Text + "',BasicSalary ='" + Basic_txt.Text+ "', PaySlipNo = '" + txtPayslipNo.Text + "',EmployeeID ='"+ cmbEmpID.Text+"', OTRate = '"+ OTRate_txt.Text+"', Transport = '"+txtTransport.Text+"', Special = '"+txtSpecial.Text+"', Holiday = '"+ txtHoliday.Text+"', Attendance = '"+ txtAttendence.Text+"', SalaryMonthFrom = '"+ dateTimePicker1.Value+"',SalaryMonthTo = '"+ dateTimePicker2.Value+"' WHERE EmployeeName = '"+ txtEmpName.Text +"'";
             SqlDataAdapter sd = new SqlDataAdapter(query, con);
             sd.SelectCommand.ExecuteNonQuery();
             con.Close();
@@ -209,6 +209,11 @@ namespace itproject
         }
 
         private void Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void CmbEmpID_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

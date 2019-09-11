@@ -35,7 +35,6 @@
             this.label19 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.txtGross = new System.Windows.Forms.TextBox();
             this.labelGross = new System.Windows.Forms.Label();
@@ -53,7 +52,6 @@
             this.label15 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lblDescription = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
             this.lblUnits = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.lblAmount = new System.Windows.Forms.Label();
@@ -62,7 +60,6 @@
             this.cmbOThours = new System.Windows.Forms.ComboBox();
             this.OTRate_txt = new System.Windows.Forms.TextBox();
             this.Basic_txt = new System.Windows.Forms.TextBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.Save_btn = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
@@ -120,7 +117,7 @@
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1370, 707);
+            this.tabControl1.Size = new System.Drawing.Size(1419, 707);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
@@ -133,14 +130,14 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 31);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1362, 672);
+            this.tabPage1.Size = new System.Drawing.Size(1411, 672);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Salary Details";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Navy;
+            this.panel1.BackColor = System.Drawing.Color.LightSeaGreen;
             this.panel1.Controls.Add(this.label19);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(6, 6);
@@ -173,12 +170,10 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.Gainsboro;
-            this.groupBox1.Controls.Add(this.textBox8);
+            this.groupBox1.BackColor = System.Drawing.Color.LightSeaGreen;
             this.groupBox1.Controls.Add(this.groupBox3);
             this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Controls.Add(this.lblDescription);
-            this.groupBox1.Controls.Add(this.label13);
             this.groupBox1.Controls.Add(this.lblUnits);
             this.groupBox1.Controls.Add(this.label14);
             this.groupBox1.Controls.Add(this.lblAmount);
@@ -187,7 +182,6 @@
             this.groupBox1.Controls.Add(this.cmbOThours);
             this.groupBox1.Controls.Add(this.OTRate_txt);
             this.groupBox1.Controls.Add(this.Basic_txt);
-            this.groupBox1.Controls.Add(this.comboBox2);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.MidnightBlue;
             this.groupBox1.Location = new System.Drawing.Point(6, 84);
@@ -195,14 +189,6 @@
             this.groupBox1.Size = new System.Drawing.Size(819, 588);
             this.groupBox1.TabIndex = 43;
             this.groupBox1.TabStop = false;
-            // 
-            // textBox8
-            // 
-            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(570, 255);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(130, 22);
-            this.textBox8.TabIndex = 26;
             // 
             // groupBox3
             // 
@@ -214,7 +200,7 @@
             this.groupBox3.Controls.Add(this.button1);
             this.groupBox3.Location = new System.Drawing.Point(341, 363);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(436, 200);
+            this.groupBox3.Size = new System.Drawing.Size(456, 213);
             this.groupBox3.TabIndex = 25;
             this.groupBox3.TabStop = false;
             // 
@@ -262,13 +248,13 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Teal;
+            this.button1.BackColor = System.Drawing.Color.DarkSlateGray;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button1.Location = new System.Drawing.Point(248, 152);
+            this.button1.Location = new System.Drawing.Point(202, 132);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(182, 40);
+            this.button1.Size = new System.Drawing.Size(228, 48);
             this.button1.TabIndex = 17;
             this.button1.Text = "Calculate Salary";
             this.button1.UseVisualStyleBackColor = false;
@@ -379,17 +365,6 @@
             this.lblDescription.TabIndex = 11;
             this.lblDescription.Text = "Description";
             // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label13.Location = new System.Drawing.Point(31, 259);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(56, 18);
-            this.label13.TabIndex = 22;
-            this.label13.Text = "NoPAY";
-            // 
             // lblUnits
             // 
             this.lblUnits.AutoSize = true;
@@ -481,19 +456,9 @@
             this.Basic_txt.TabIndex = 15;
             this.Basic_txt.TextChanged += new System.EventHandler(this.Basic_txt_TextChanged);
             // 
-            // comboBox2
-            // 
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.ItemHeight = 16;
-            this.comboBox2.Location = new System.Drawing.Point(266, 253);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 24);
-            this.comboBox2.TabIndex = 10;
-            // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.Gainsboro;
+            this.panel2.BackColor = System.Drawing.Color.LightSeaGreen;
             this.panel2.Controls.Add(this.Save_btn);
             this.panel2.Controls.Add(this.button5);
             this.panel2.Controls.Add(this.txtPayslipNo);
@@ -517,25 +482,25 @@
             // 
             // Save_btn
             // 
-            this.Save_btn.BackColor = System.Drawing.Color.PapayaWhip;
+            this.Save_btn.BackColor = System.Drawing.Color.DodgerBlue;
             this.Save_btn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Save_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Save_btn.Location = new System.Drawing.Point(131, 515);
+            this.Save_btn.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Save_btn.Location = new System.Drawing.Point(122, 495);
             this.Save_btn.Name = "Save_btn";
-            this.Save_btn.Size = new System.Drawing.Size(166, 40);
+            this.Save_btn.Size = new System.Drawing.Size(166, 48);
             this.Save_btn.TabIndex = 44;
-            this.Save_btn.Text = "Save";
+            this.Save_btn.Text = "Add";
             this.Save_btn.UseVisualStyleBackColor = false;
             this.Save_btn.Click += new System.EventHandler(this.Save_btn_Click);
             // 
             // button5
             // 
-            this.button5.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.button5.BackColor = System.Drawing.Color.Yellow;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(332, 515);
+            this.button5.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Location = new System.Drawing.Point(323, 495);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(162, 40);
+            this.button5.Size = new System.Drawing.Size(162, 48);
             this.button5.TabIndex = 45;
             this.button5.Text = "Clear";
             this.button5.UseVisualStyleBackColor = false;
@@ -671,6 +636,7 @@
             this.cmbEmpID.Name = "cmbEmpID";
             this.cmbEmpID.Size = new System.Drawing.Size(238, 30);
             this.cmbEmpID.TabIndex = 10;
+            this.cmbEmpID.SelectedIndexChanged += new System.EventHandler(this.CmbEmpID_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -686,12 +652,13 @@
             // tabPage2
             // 
             this.tabPage2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage2.BackgroundImage")));
+            this.tabPage2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tabPage2.Controls.Add(this.groupBox4);
             this.tabPage2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPage2.Location = new System.Drawing.Point(4, 31);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1362, 672);
+            this.tabPage2.Size = new System.Drawing.Size(1411, 672);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "View Details";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -699,6 +666,7 @@
             // groupBox4
             // 
             this.groupBox4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("groupBox4.BackgroundImage")));
+            this.groupBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.groupBox4.Controls.Add(this.btnSearch);
             this.groupBox4.Controls.Add(this.txtId);
             this.groupBox4.Controls.Add(this.pictureBox2);
@@ -707,10 +675,10 @@
             this.groupBox4.Controls.Add(this.button3);
             this.groupBox4.Controls.Add(this.button6);
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.groupBox4.ForeColor = System.Drawing.SystemColors.ControlText;
             this.groupBox4.Location = new System.Drawing.Point(18, 6);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(1332, 666);
+            this.groupBox4.Size = new System.Drawing.Size(1364, 666);
             this.groupBox4.TabIndex = 57;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "View Salary Details";
@@ -748,9 +716,9 @@
             // 
             // btn_Update
             // 
-            this.btn_Update.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btn_Update.BackColor = System.Drawing.Color.SpringGreen;
             this.btn_Update.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_Update.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Update.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Update.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btn_Update.Location = new System.Drawing.Point(843, 94);
             this.btn_Update.Name = "btn_Update";
@@ -763,22 +731,22 @@
             // dataGridView1
             // 
             this.dataGridView1.AccessibleRole = System.Windows.Forms.AccessibleRole.Row;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.LightSeaGreen;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(12, 209);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(1326, 451);
+            this.dataGridView1.Size = new System.Drawing.Size(1361, 451);
             this.dataGridView1.TabIndex = 49;
             this.dataGridView1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.DataGridView1_MouseDoubleClick);
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.SkyBlue;
+            this.button3.BackColor = System.Drawing.Color.LightSalmon;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.SystemColors.ControlText;
             this.button3.Location = new System.Drawing.Point(1188, 92);
             this.button3.Name = "button3";
@@ -790,10 +758,10 @@
             // 
             // button6
             // 
-            this.button6.BackColor = System.Drawing.Color.Tomato;
+            this.button6.BackColor = System.Drawing.Color.Brown;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.button6.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.Color.Transparent;
             this.button6.Location = new System.Drawing.Point(1028, 94);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(118, 48);
@@ -805,19 +773,20 @@
             // tabPage3
             // 
             this.tabPage3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage3.BackgroundImage")));
+            this.tabPage3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tabPage3.Controls.Add(this.panel3);
             this.tabPage3.Controls.Add(this.button2);
             this.tabPage3.Location = new System.Drawing.Point(4, 31);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1362, 672);
+            this.tabPage3.Size = new System.Drawing.Size(1411, 672);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Report";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.Navy;
+            this.panel3.BackColor = System.Drawing.Color.LightSeaGreen;
             this.panel3.Controls.Add(this.label20);
             this.panel3.Controls.Add(this.pictureBox4);
             this.panel3.Location = new System.Drawing.Point(6, 6);
@@ -863,8 +832,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1465, 731);
             this.Controls.Add(this.tabControl1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "View";
             this.Text = "View";
             this.tabControl1.ResumeLayout(false);
@@ -900,7 +871,6 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button Save_btn;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.GroupBox groupBox2;
@@ -913,7 +883,6 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblDescription;
-        private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label lblUnits;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label lblAmount;
@@ -922,7 +891,6 @@
         private System.Windows.Forms.ComboBox cmbOThours;
         private System.Windows.Forms.TextBox OTRate_txt;
         private System.Windows.Forms.TextBox Basic_txt;
-        private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TextBox txtPayslipNo;
         private System.Windows.Forms.TextBox txtEmpName;
