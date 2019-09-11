@@ -30,9 +30,9 @@ namespace itproject
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Stock));
             this.labelstockaddeddate = new System.Windows.Forms.Label();
             this.textstockpatternid = new System.Windows.Forms.TextBox();
@@ -76,7 +76,6 @@ namespace itproject
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.datagridviewstock)).BeginInit();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -100,90 +99,90 @@ namespace itproject
             // labelstockaddeddate
             // 
             this.labelstockaddeddate.AutoSize = true;
-            this.labelstockaddeddate.Font = new System.Drawing.Font("Myanmar Text", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelstockaddeddate.Location = new System.Drawing.Point(97, 342);
+            this.labelstockaddeddate.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelstockaddeddate.Location = new System.Drawing.Point(29, 335);
             this.labelstockaddeddate.Name = "labelstockaddeddate";
-            this.labelstockaddeddate.Size = new System.Drawing.Size(154, 43);
+            this.labelstockaddeddate.Size = new System.Drawing.Size(140, 29);
             this.labelstockaddeddate.TabIndex = 114;
             this.labelstockaddeddate.Text = "Added Date";
             // 
             // textstockpatternid
             // 
             this.textstockpatternid.BackColor = System.Drawing.Color.Silver;
-            this.textstockpatternid.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textstockpatternid.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textstockpatternid.Location = new System.Drawing.Point(296, 89);
             this.textstockpatternid.Name = "textstockpatternid";
-            this.textstockpatternid.Size = new System.Drawing.Size(299, 39);
+            this.textstockpatternid.Size = new System.Drawing.Size(299, 32);
             this.textstockpatternid.TabIndex = 111;
             this.textstockpatternid.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Textstockpatternid_KeyPress);
             // 
             // textstockpatternname
             // 
             this.textstockpatternname.BackColor = System.Drawing.Color.Silver;
-            this.textstockpatternname.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textstockpatternname.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textstockpatternname.Location = new System.Drawing.Point(296, 148);
             this.textstockpatternname.Name = "textstockpatternname";
-            this.textstockpatternname.Size = new System.Drawing.Size(299, 39);
+            this.textstockpatternname.Size = new System.Drawing.Size(299, 32);
             this.textstockpatternname.TabIndex = 110;
             this.textstockpatternname.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Textstockpatternname_KeyPress);
             // 
             // labelstockavailablequantity
             // 
             this.labelstockavailablequantity.AutoSize = true;
-            this.labelstockavailablequantity.Font = new System.Drawing.Font("Myanmar Text", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelstockavailablequantity.Location = new System.Drawing.Point(29, 269);
+            this.labelstockavailablequantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelstockavailablequantity.Location = new System.Drawing.Point(29, 273);
             this.labelstockavailablequantity.Name = "labelstockavailablequantity";
-            this.labelstockavailablequantity.Size = new System.Drawing.Size(230, 43);
+            this.labelstockavailablequantity.Size = new System.Drawing.Size(204, 29);
             this.labelstockavailablequantity.TabIndex = 109;
             this.labelstockavailablequantity.Text = "Available Quantity";
             // 
             // textstockaddedquantity
             // 
             this.textstockaddedquantity.BackColor = System.Drawing.Color.Silver;
-            this.textstockaddedquantity.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textstockaddedquantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textstockaddedquantity.Location = new System.Drawing.Point(296, 211);
             this.textstockaddedquantity.Name = "textstockaddedquantity";
-            this.textstockaddedquantity.Size = new System.Drawing.Size(299, 39);
+            this.textstockaddedquantity.Size = new System.Drawing.Size(299, 32);
             this.textstockaddedquantity.TabIndex = 108;
             this.textstockaddedquantity.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Textstockaddedquantity_KeyPress);
             // 
             // labelstockid
             // 
             this.labelstockid.AutoSize = true;
-            this.labelstockid.Font = new System.Drawing.Font("Myanmar Text", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelstockid.Location = new System.Drawing.Point(118, 91);
+            this.labelstockid.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelstockid.Location = new System.Drawing.Point(29, 85);
             this.labelstockid.Name = "labelstockid";
-            this.labelstockid.Size = new System.Drawing.Size(136, 43);
+            this.labelstockid.Size = new System.Drawing.Size(118, 29);
             this.labelstockid.TabIndex = 107;
             this.labelstockid.Text = "Pattern ID";
             // 
             // labelstockaddedquantity
             // 
             this.labelstockaddedquantity.AutoSize = true;
-            this.labelstockaddedquantity.Font = new System.Drawing.Font("Myanmar Text", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelstockaddedquantity.Location = new System.Drawing.Point(55, 214);
+            this.labelstockaddedquantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelstockaddedquantity.Location = new System.Drawing.Point(29, 214);
             this.labelstockaddedquantity.Name = "labelstockaddedquantity";
-            this.labelstockaddedquantity.Size = new System.Drawing.Size(200, 43);
+            this.labelstockaddedquantity.Size = new System.Drawing.Size(177, 29);
             this.labelstockaddedquantity.TabIndex = 106;
             this.labelstockaddedquantity.Text = "Added Quantity";
             // 
             // textstockavailablequantity
             // 
             this.textstockavailablequantity.BackColor = System.Drawing.Color.Silver;
-            this.textstockavailablequantity.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textstockavailablequantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textstockavailablequantity.Location = new System.Drawing.Point(296, 269);
             this.textstockavailablequantity.Name = "textstockavailablequantity";
-            this.textstockavailablequantity.Size = new System.Drawing.Size(299, 39);
+            this.textstockavailablequantity.Size = new System.Drawing.Size(299, 32);
             this.textstockavailablequantity.TabIndex = 105;
             this.textstockavailablequantity.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Textstockavailablequantity_KeyPress);
             // 
             // labelstockpatternname
             // 
             this.labelstockpatternname.AutoSize = true;
-            this.labelstockpatternname.Font = new System.Drawing.Font("Myanmar Text", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelstockpatternname.Location = new System.Drawing.Point(77, 150);
+            this.labelstockpatternname.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelstockpatternname.Location = new System.Drawing.Point(29, 151);
             this.labelstockpatternname.Name = "labelstockpatternname";
-            this.labelstockpatternname.Size = new System.Drawing.Size(177, 43);
+            this.labelstockpatternname.Size = new System.Drawing.Size(160, 29);
             this.labelstockpatternname.TabIndex = 104;
             this.labelstockpatternname.Text = "Pattern Name";
             // 
@@ -205,37 +204,37 @@ namespace itproject
             this.datagridviewstock.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.datagridviewstock.BackgroundColor = System.Drawing.Color.White;
             this.datagridviewstock.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Sitka Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.datagridviewstock.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Sitka Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.datagridviewstock.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
             this.datagridviewstock.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.datagridviewstock.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(0, 4, 0, 4);
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.datagridviewstock.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle14.Padding = new System.Windows.Forms.Padding(0, 4, 0, 4);
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.datagridviewstock.DefaultCellStyle = dataGridViewCellStyle14;
             this.datagridviewstock.GridColor = System.Drawing.Color.White;
             this.datagridviewstock.Location = new System.Drawing.Point(878, 284);
             this.datagridviewstock.Name = "datagridviewstock";
             this.datagridviewstock.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Sitka Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.datagridviewstock.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle15.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Sitka Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.datagridviewstock.RowHeadersDefaultCellStyle = dataGridViewCellStyle15;
             this.datagridviewstock.RowHeadersWidth = 21;
             this.datagridviewstock.RowTemplate.Height = 24;
             this.datagridviewstock.Size = new System.Drawing.Size(786, 522);
@@ -245,8 +244,8 @@ namespace itproject
             // 
             // buttonstockclear
             // 
-            this.buttonstockclear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.buttonstockclear.Font = new System.Drawing.Font("Consolas", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonstockclear.BackColor = System.Drawing.Color.RoyalBlue;
+            this.buttonstockclear.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonstockclear.ForeColor = System.Drawing.Color.White;
             this.buttonstockclear.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonstockclear.Location = new System.Drawing.Point(126, 15);
@@ -259,8 +258,8 @@ namespace itproject
             // 
             // buttonstockupdate
             // 
-            this.buttonstockupdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.buttonstockupdate.Font = new System.Drawing.Font("Consolas", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonstockupdate.BackColor = System.Drawing.Color.RoyalBlue;
+            this.buttonstockupdate.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonstockupdate.ForeColor = System.Drawing.Color.White;
             this.buttonstockupdate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonstockupdate.Location = new System.Drawing.Point(106, 8);
@@ -273,8 +272,8 @@ namespace itproject
             // 
             // buttonstockdelete
             // 
-            this.buttonstockdelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.buttonstockdelete.Font = new System.Drawing.Font("Comic Sans MS", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonstockdelete.BackColor = System.Drawing.Color.Red;
+            this.buttonstockdelete.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonstockdelete.ForeColor = System.Drawing.Color.White;
             this.buttonstockdelete.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonstockdelete.Location = new System.Drawing.Point(126, 13);
@@ -287,8 +286,8 @@ namespace itproject
             // 
             // buttonstockadd1
             // 
-            this.buttonstockadd1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.buttonstockadd1.Font = new System.Drawing.Font("Consolas", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonstockadd1.BackColor = System.Drawing.Color.RoyalBlue;
+            this.buttonstockadd1.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonstockadd1.ForeColor = System.Drawing.Color.White;
             this.buttonstockadd1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonstockadd1.Location = new System.Drawing.Point(106, 15);
@@ -301,8 +300,8 @@ namespace itproject
             // 
             // buttonpattern2
             // 
-            this.buttonpattern2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.buttonpattern2.Font = new System.Drawing.Font("Myanmar Text", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonpattern2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.buttonpattern2.Font = new System.Drawing.Font("Calibri", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonpattern2.ForeColor = System.Drawing.Color.White;
             this.buttonpattern2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonpattern2.Location = new System.Drawing.Point(100, 18);
@@ -320,7 +319,7 @@ namespace itproject
             this.panel5.BackColor = System.Drawing.Color.White;
             this.panel5.Controls.Add(this.pictureBox4);
             this.panel5.Controls.Add(this.buttonstockdelete);
-            this.panel5.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel5.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel5.Location = new System.Drawing.Point(488, 775);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(266, 71);
@@ -343,7 +342,7 @@ namespace itproject
             this.panel4.BackColor = System.Drawing.Color.White;
             this.panel4.Controls.Add(this.pictureBox1);
             this.panel4.Controls.Add(this.buttonstockclear);
-            this.panel4.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel4.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel4.Location = new System.Drawing.Point(488, 666);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(266, 75);
@@ -366,7 +365,7 @@ namespace itproject
             this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.Controls.Add(this.pictureBox3);
             this.panel3.Controls.Add(this.buttonstockupdate);
-            this.panel3.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel3.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel3.Location = new System.Drawing.Point(168, 775);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(266, 71);
@@ -389,7 +388,7 @@ namespace itproject
             this.panel6.BackColor = System.Drawing.Color.White;
             this.panel6.Controls.Add(this.pictureBox5);
             this.panel6.Controls.Add(this.buttonstockadd1);
-            this.panel6.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel6.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel6.Location = new System.Drawing.Point(168, 666);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(266, 75);
@@ -464,7 +463,7 @@ namespace itproject
             // panel1
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.btnminimize);
             this.panel1.Controls.Add(this.pictureboxstockclose);
             this.panel1.Controls.Add(this.btnmaximize);
@@ -510,30 +509,30 @@ namespace itproject
             // 
             this.dateTimestockaddeddate.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimestockaddeddate.CustomFormat = "yyyy - MM - dd";
-            this.dateTimestockaddeddate.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimestockaddeddate.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimestockaddeddate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimestockaddeddate.Location = new System.Drawing.Point(296, 339);
             this.dateTimestockaddeddate.Name = "dateTimestockaddeddate";
-            this.dateTimestockaddeddate.Size = new System.Drawing.Size(299, 39);
+            this.dateTimestockaddeddate.Size = new System.Drawing.Size(299, 32);
             this.dateTimestockaddeddate.TabIndex = 177;
             // 
             // txtsnumber
             // 
             this.txtsnumber.BackColor = System.Drawing.Color.Silver;
-            this.txtsnumber.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtsnumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtsnumber.Location = new System.Drawing.Point(296, 24);
             this.txtsnumber.Name = "txtsnumber";
             this.txtsnumber.ReadOnly = true;
-            this.txtsnumber.Size = new System.Drawing.Size(299, 39);
+            this.txtsnumber.Size = new System.Drawing.Size(299, 32);
             this.txtsnumber.TabIndex = 182;
             // 
             // labelSNo
             // 
             this.labelSNo.AutoSize = true;
-            this.labelSNo.Font = new System.Drawing.Font("Myanmar Text", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSNo.Location = new System.Drawing.Point(136, 26);
+            this.labelSNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSNo.Location = new System.Drawing.Point(29, 20);
             this.labelSNo.Name = "labelSNo";
-            this.labelSNo.Size = new System.Drawing.Size(113, 43);
+            this.labelSNo.Size = new System.Drawing.Size(100, 29);
             this.labelSNo.TabIndex = 181;
             this.labelSNo.Text = "Number";
             // 
@@ -594,7 +593,7 @@ namespace itproject
             // 
             // panel8
             // 
-            this.panel8.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel8.BackColor = System.Drawing.Color.Transparent;
             this.panel8.Controls.Add(this.txtsnumber);
             this.panel8.Controls.Add(this.label4);
             this.panel8.Controls.Add(this.labelstockpatternname);
@@ -616,16 +615,6 @@ namespace itproject
             this.panel8.Size = new System.Drawing.Size(732, 427);
             this.panel8.TabIndex = 195;
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(638, 136);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 196;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Button1_Click);
-            // 
             // Stock
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -634,7 +623,6 @@ namespace itproject
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1724, 868);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
@@ -721,6 +709,5 @@ namespace itproject
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Button button1;
     }
 }
