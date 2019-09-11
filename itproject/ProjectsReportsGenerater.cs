@@ -30,6 +30,12 @@ namespace itproject
         private void ProjectsReportsGenerater_Load(object sender, EventArgs e)
         {
             //projectReportsBindingSource.Add(new ProjectReports() { ProjectID = 1, OrderID = 1, AddedDate = "2019-08-31", DeadlineDate = "2019-09-07", Status = "Pending" });
+            for (int i = 0; i < dataGridViewForReports.Columns.Count; i++)
+            {
+                dataGridViewForReports.Columns[i].HeaderCell.Style.Font = new Font("Sitka Text", 10, FontStyle.Bold);
+                dataGridViewForReports.Columns[i].HeaderCell.Style.BackColor = Color.MintCream;
+                dataGridViewForReports.EnableHeadersVisualStyles = false;
+            }
         }
 
         private void TxtBoxSearchByAddedDate_TextChanged(object sender, EventArgs e)
