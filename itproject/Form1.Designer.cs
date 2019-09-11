@@ -42,7 +42,7 @@
             this.logoPanel = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.employeeDetailsUserControl1 = new itproject.EmployeeDetailsUserControl();
-            this.patternAndStockManagement1 = new itproject.PatternAndStockManagement();
+         
             this.customers1 = new itproject.Customers();
             this.sidePanel.SuspendLayout();
             this.logoPanel.SuspendLayout();
@@ -218,11 +218,7 @@
             // 
             // patternAndStockManagement1
             // 
-            this.patternAndStockManagement1.Location = new System.Drawing.Point(351, 222);
-            this.patternAndStockManagement1.Name = "patternAndStockManagement1";
-            this.patternAndStockManagement1.Size = new System.Drawing.Size(1043, 567);
-            this.patternAndStockManagement1.TabIndex = 5;
-            this.patternAndStockManagement1.Load += new System.EventHandler(this.PatternAndStockManagement1_Load);
+         
             // 
             // customers1
             // 
@@ -241,7 +237,7 @@
             this.Controls.Add(this.topPanel);
             this.Controls.Add(this.sidePanel);
             this.Controls.Add(this.employeeDetailsUserControl1);
-            this.Controls.Add(this.patternAndStockManagement1);
+           
             this.Controls.Add(this.customers1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
@@ -268,7 +264,7 @@
         private System.Windows.Forms.Button buttonLeaveManagement;
         private EmployeeDetailsUserControl employeeDetailsUserControl1;
         private System.Windows.Forms.Button buttonLoan;
-        private PatternAndStockManagement patternAndStockManagement1;
+    
         private Customers customers1;
         private System.Windows.Forms.Button buttonViewAttendance;
     }

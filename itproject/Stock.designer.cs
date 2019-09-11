@@ -76,6 +76,7 @@ namespace itproject
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.datagridviewstock)).BeginInit();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -615,6 +616,16 @@ namespace itproject
             this.panel8.Size = new System.Drawing.Size(732, 427);
             this.panel8.TabIndex = 195;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(638, 136);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 196;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            // 
             // Stock
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -623,6 +634,7 @@ namespace itproject
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1724, 868);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
@@ -709,5 +721,6 @@ namespace itproject
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Button button1;
     }
 }

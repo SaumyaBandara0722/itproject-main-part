@@ -45,13 +45,13 @@ namespace itproject
 
         private void ButtonStocks_Click(object sender, EventArgs e)
         {
-            patternAndStockManagement1.BringToFront();
+            PatternAndStockMangementSystem pass = new PatternAndStockMangementSystem();
+            pass.Show();
         }
 
         private void Button2_Click(object sender, EventArgs e)
         {
-            Pattern pattern = new Pattern();
-            pattern.ShowDialog();
+           
         }
 
         private void PatternAndStockManagement1_Load(object sender, EventArgs e)
