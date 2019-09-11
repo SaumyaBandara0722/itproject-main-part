@@ -28,5 +28,10 @@ namespace itproject
             projectAndTaskControler pro = new projectAndTaskControler();
             pro.ShowDialog();
         }
+
+        private void MainProjectTask_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

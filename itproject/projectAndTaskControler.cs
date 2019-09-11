@@ -158,6 +158,13 @@ namespace itproject
         {
             DataTable dt = ptc.Select();
             dataGridViewInForm.DataSource = dt;
+
+            for (int i = 0; i < dataGridViewInForm.Columns.Count; i++)
+            {
+                dataGridViewInForm.Columns[i].HeaderCell.Style.Font = new Font("Sitka Text", 10, FontStyle.Bold);
+                dataGridViewInForm.Columns[i].HeaderCell.Style.BackColor = Color.MintCream;
+                dataGridViewInForm.EnableHeadersVisualStyles = false;
+            }
         }
         public void clear()
         {
