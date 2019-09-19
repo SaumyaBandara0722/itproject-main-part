@@ -64,7 +64,7 @@ namespace itproject
                 c.Phone = txtNum.Text;
                 c.Email = txtEmail.Text;
                 c.Dept = comboBox2.Text;
-                c.Date = txtJoinedDate.Text.ToString();
+                c.Date = txtJoinedDate.Value.ToString();
                 c.Salary = double.Parse(txtSal.Text);
       
                 //insert data into database using the method created
@@ -208,6 +208,21 @@ namespace itproject
                 txtEmail.SelectAll();
                 e.Cancel = true;
             }
+        }
+
+        private void ComboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LblSal_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TxtEnterDep_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
