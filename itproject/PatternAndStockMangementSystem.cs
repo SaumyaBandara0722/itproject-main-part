@@ -31,8 +31,8 @@ namespace itproject
 
         private void Btnemail_Click(object sender, EventArgs e)
         {
-            Mail mail = new Mail();
-            mail.ShowDialog();
+            //Mail mail = new Mail();
+            //mail.ShowDialog();
         }
 
         private void Pictureboxpatternclose_Click(object sender, EventArgs e)
