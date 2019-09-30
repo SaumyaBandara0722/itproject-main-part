@@ -47,6 +47,8 @@ namespace itproject
             comboBox2.ValueMember = "depName";
             comboBox2.DataSource = d;
             conn.Close();
+
+            txtEnterDep.Text = "";
         }
         int num = 0;
         double sal = 0.0;
@@ -250,18 +252,63 @@ namespace itproject
             if (success == true)
             {
                 MessageBox.Show("New Department Successfully Inserted");
-                txtEnterDep.Text = "";
             }
             else
             {
-                MessageBox.Show("Failed to add new employee.Try again");
-            }         
+                MessageBox.Show("Failed to add new department.Try again");
+            }
+
+            //Display departments in combobox2
+            SqlConnection conn = new SqlConnection(myconnstrng);
+            DataTable d = new DataTable();
+            string sql = "SELECT * from Department";
+            SqlCommand cmd = new SqlCommand(sql, conn);
+            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+            conn.Open();
+            adapter.Fill(d);
+            comboBox2.ValueMember = "depName";
+            comboBox2.DataSource = d;
+            conn.Close();
+
+            txtEnterDep.Text = "";
         }
 
         //Display the combobox selected department in textbox  
         private void ComboBox2_SelectedValueChanged(object sender, EventArgs e)
         {
             txtEnterDep.Text = comboBox2.Text;
+        }
+
+        private void BtnRemove_Click(object sender, EventArgs e)
+        {
+            //get the value from input field
+            c.Dept = txtEnterDep.Text;
+
+            //insert data into database using the method created
+            bool success = c.DeleteDepartment(c);
+            if (success == true)
+            {
+                MessageBox.Show("Department Successfully Deleted");
+                txtEnterDep.Text = "";
+            }
+            else
+            {
+                MessageBox.Show("Failed to delete department.Try again");
+            }
+
+            //Display departments in combobox2
+            SqlConnection conn = new SqlConnection(myconnstrng);
+            DataTable d = new DataTable();
+            string sql = "SELECT * from Department";
+            SqlCommand cmd = new SqlCommand(sql, conn);
+            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+            conn.Open();
+            adapter.Fill(d);
+            comboBox2.ValueMember = "depName";
+            comboBox2.DataSource = d;
+            conn.Close();
+
+            txtEnterDep.Text = "";
         }
     }     
 }

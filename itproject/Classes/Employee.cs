@@ -246,5 +246,43 @@ namespace itproject.Classes
             }
             return isSuccess;
         }
+
+        //Remove a department
+        public bool DeleteDepartment(Employee c)
+        {
+            bool isSuccess = false;
+
+            SqlConnection conn = new SqlConnection(myconnstrng);
+            try
+            {
+                //command to delete data
+                string sql = "DELETE FROM Department WHERE depName=@depName";
+                SqlCommand cmd = new SqlCommand(sql, conn);
+
+                //create parameters to delete data
+                cmd.Parameters.AddWithValue("@depName", c.Dept);
+
+                conn.Open();
+
+                int rows = cmd.ExecuteNonQuery();
+                if (rows > 0)
+                {
+                    isSuccess = true;
+                }
+                else
+                {
+                    isSuccess = false;
+                }
+            }
+            catch (Exception ex)
+            {
+
+            }
+            finally
+            {
+                conn.Close();
+            }
+            return isSuccess;
+        }
     }
 }
