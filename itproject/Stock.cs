@@ -411,7 +411,7 @@ namespace itproject
             }
 
             ClassStock helper = new ClassStock();
-            if (helper.exportDtatTableToPdfSTOCK(datagridviewstock, "C:\\Users\\ASUS\\Downloads\\ITP\\Stock Report.pdf"))
+            if (helper.exportDtatTableToPdfSTOCK(datagridviewstock, "C:\\Users\\Amith\\Downloads\\ITP\\Stock Report.pdf"))
             {
 
                 MessageBox.Show("Report was saved as  Stock Report.pdf", "Report Saved.", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);

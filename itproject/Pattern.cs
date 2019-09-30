@@ -386,7 +386,7 @@ namespace itproject
             }
 
             ClassPattern helper = new ClassPattern();
-            if (helper.exportDtatTableToPdf(dataGridViewpattern, "C:\\Users\\ASUS\\Downloads\\ITP\\Pattern Report.pdf"))
+            if (helper.exportDtatTableToPdf(dataGridViewpattern, "C:\\Users\\Amith\\Downloads\\ITP\\Pattern Report.pdf"))
             {
 
                 MessageBox.Show("Report was saved as  Pattern Report.pdf", "Report Saved.", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
