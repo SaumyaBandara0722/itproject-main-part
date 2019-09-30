@@ -219,6 +219,7 @@
             this.btnPdf.TabIndex = 16;
             this.btnPdf.Text = "PDF";
             this.btnPdf.UseVisualStyleBackColor = false;
+            this.btnPdf.Click += new System.EventHandler(this.btnPdf_Click);
             // 
             // ViewEmployee
             // 

@@ -124,5 +124,11 @@ namespace itproject
         {
 
         }
+
+        private void btnPdf_Click(object sender, EventArgs e)
+        {
+            EmployeeReport employeeReport = new EmployeeReport();
+            employeeReport.Show();
+        }
     }
 }
