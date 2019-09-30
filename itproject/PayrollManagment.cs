@@ -242,16 +242,15 @@ namespace itproject
 
 	private void View_Load(object sender, EventArgs e)
     	{
-            // TODO: This line of code loads data into the 'itproject_newDataSet.Payroll' table. You can move, or remove it, as needed.
-     //       this.PayrollTableAdapter.Fill(this.itproject_newDataSet.Payroll);
-            con.Open();
+
+      /*      con.Open();
         	String query = "SELECT * FROM Payroll";
         	SqlDataAdapter sd = new SqlDataAdapter(query, con);
         	DataTable dt = new DataTable();
         	sd.Fill(dt);
         	dataGridView1.DataSource = dt;
-        	con.Close();
-    //        this.reportViewer1.RefreshReport();
+        	con.Close();*/
+
         }
 
         private void BtnGetData_Click(object sender, EventArgs e)
@@ -326,13 +325,13 @@ namespace itproject
 
         private void Buttongenarate_Click(object sender, EventArgs e)
         {
-     //       DataTable dataTable = new DataTable();
+            //       DataTable dataTable = new DataTable();
 
-    //        dataGridView2.DataSource = null;
-    //        downloadingDataTable = null;
+            //        dataGridView2.DataSource = null;
+            //        downloadingDataTable = null;
 
-            this.PayrollTableAdapter.Fill(this.itproject_newDataSet.Payroll, textBox3.Text.ToString());
-            this.reportViewer1.RefreshReport();
+
+
         }
 
         //validations

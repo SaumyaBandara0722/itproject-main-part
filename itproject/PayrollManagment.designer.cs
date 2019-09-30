@@ -87,21 +87,18 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.btnDownload = new System.Windows.Forms.Button();
             this.buttongenarate = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label20 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
-            this.cachedCrystalReport11 = new itproject.CachedCrystalReport1();
-            this.crystalReport12 = new itproject.CrystalReport1();
-            this.PayrollTableAdapter = new itproject.itproject_newDataSetTableAdapters.PayrollTableAdapter();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
+
             ((System.ComponentModel.ISupportInitialize)(this.PayrollBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.itproject_newDataSet)).BeginInit();
             this.tabControl1.SuspendLayout();
@@ -114,15 +111,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // PayrollBindingSource
             // 
-            this.PayrollBindingSource.DataMember = "Payroll";
             this.PayrollBindingSource.DataSource = this.itproject_newDataSet;
+            this.PayrollBindingSource.Position = 0;
             // 
             // itproject_newDataSet
             // 
@@ -846,14 +842,13 @@
             // tabPage3
             // 
             this.tabPage3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tabPage3.Controls.Add(this.textBox3);
             this.tabPage3.Controls.Add(this.reportViewer1);
+            this.tabPage3.Controls.Add(this.textBox3);
             this.tabPage3.Controls.Add(this.btnDownload);
             this.tabPage3.Controls.Add(this.buttongenarate);
             this.tabPage3.Controls.Add(this.comboBox1);
             this.tabPage3.Controls.Add(this.textBox2);
             this.tabPage3.Controls.Add(this.textBox1);
-            this.tabPage3.Controls.Add(this.dataGridView2);
             this.tabPage3.Controls.Add(this.panel3);
             this.tabPage3.Controls.Add(this.button2);
             this.tabPage3.Location = new System.Drawing.Point(4, 31);
@@ -865,16 +860,12 @@
             this.tabPage3.UseVisualStyleBackColor = true;
             this.tabPage3.Click += new System.EventHandler(this.TabPage3_Click);
             // 
-            // reportViewer1
+            // textBox3
             // 
-            reportDataSource1.Name = "PayRollDataSet";
-            reportDataSource1.Value = this.PayrollBindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "itproject.Report1.rdlc";
-            this.reportViewer1.Location = new System.Drawing.Point(164, 236);
-            this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.Size = new System.Drawing.Size(1083, 316);
-            this.reportViewer1.TabIndex = 8;
+            this.textBox3.Location = new System.Drawing.Point(571, 105);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(100, 28);
+            this.textBox3.TabIndex = 9;
             // 
             // btnDownload
             // 
@@ -926,17 +917,6 @@
             this.textBox1.Size = new System.Drawing.Size(218, 28);
             this.textBox1.TabIndex = 3;
             // 
-            // dataGridView2
-            // 
-            this.dataGridView2.BackgroundColor = System.Drawing.SystemColors.InactiveCaption;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(9, 221);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowHeadersWidth = 51;
-            this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(1366, 355);
-            this.dataGridView2.TabIndex = 2;
-            // 
             // panel3
             // 
             this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -984,16 +964,16 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.Button2_Click);
             // 
-            // PayrollTableAdapter
+            // reportViewer1
             // 
-            this.PayrollTableAdapter.ClearBeforeFill = true;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(571, 105);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 28);
-            this.textBox3.TabIndex = 9;
+            reportDataSource1.Name = "PayrollDataSet";
+            reportDataSource1.Value = this.PayrollBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "itproject.Report4.rdlc";
+            this.reportViewer1.Location = new System.Drawing.Point(57, 217);
+            this.reportViewer1.Name = "reportViewer1";
+            this.reportViewer1.Size = new System.Drawing.Size(1177, 350);
+            this.reportViewer1.TabIndex = 10;
             // 
             // View
             // 
@@ -1022,7 +1002,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
@@ -1087,7 +1066,6 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.TextBox txtId;
@@ -1096,12 +1074,11 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
-        private CachedCrystalReport1 cachedCrystalReport11;
-        private CrystalReport1 crystalReport12;
-        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
         private System.Windows.Forms.BindingSource PayrollBindingSource;
         private itproject_newDataSet itproject_newDataSet;
-        private itproject_newDataSetTableAdapters.PayrollTableAdapter PayrollTableAdapter;
+//        private itproject_newDataSetTableAdapters.PayrollTableAdapter PayrollTableAdapter;
         private System.Windows.Forms.TextBox textBox3;
+        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
+
     }
 }
