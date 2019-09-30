@@ -15,6 +15,16 @@ using System.Timers;
 //using System.Web.UI.WebControls;
 using BorderStyle = System.Windows.Forms.BorderStyle;
 using System.Threading;
+using Microsoft.Win32;
+
+using System.Diagnostics;
+
+using System.Text.RegularExpressions;
+
+using System.IO;
+using iTextSharp.text;
+using iTextSharp.text.pdf;
+using Color = System.Drawing.Color;
 
 namespace itproject
 {
@@ -27,7 +37,11 @@ namespace itproject
             InitializeComponent();
         }
 
+        /// ////////////////////////////////////////////////////////////////  class  //////////////////////////////////////////////
+     
         ClassPattern y = new ClassPattern();
+
+        /// ////////////////////////////////////////////////////////////////  Button add  //////////////////////////////////////////////
         private void Buttonpatternadd_Click(object sender, EventArgs e)
         {
             try
@@ -68,12 +82,9 @@ namespace itproject
                 MessageBox.Show("Error", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
 
-
-
-
-
         }
 
+        ///////////////////////////////////////////////////////////////////  loading pattern page  //////////////////////////////////////////////
         private void Pattern_Load(object sender, EventArgs e)
         {
 
@@ -82,14 +93,14 @@ namespace itproject
             dataGridViewpattern.DataSource = dt;
 
             dataGridViewpattern.BorderStyle = BorderStyle.None;
-            dataGridViewpattern.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(238, 239, 249);
+            dataGridViewpattern.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(254, 249, 231);
             dataGridViewpattern.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
-            dataGridViewpattern.DefaultCellStyle.SelectionBackColor = Color.DarkTurquoise;
+            dataGridViewpattern.DefaultCellStyle.SelectionBackColor = Color.FromArgb(133, 146, 158);
             dataGridViewpattern.DefaultCellStyle.SelectionForeColor = Color.WhiteSmoke;
 
             dataGridViewpattern.EnableHeadersVisualStyles = false;
             dataGridViewpattern.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            dataGridViewpattern.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(20, 25, 72);
+            dataGridViewpattern.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(235, 152, 78);
             dataGridViewpattern.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
 
             dataGridViewpattern.Columns["Pid"].HeaderText = "Number";
@@ -100,6 +111,7 @@ namespace itproject
         
         }
 
+        //////////////////////////////////////////////////////////////////  view on data grid  //////////////////////////////////////////////
         private void DataGridViewpattern_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             int rowIndex = e.RowIndex;
@@ -110,6 +122,8 @@ namespace itproject
             textpatterndescription.Text = dataGridViewpattern.Rows[rowIndex].Cells[4].Value.ToString();
           
         }
+
+        //////////////////////////////////////////////////////////////////  Clear method  //////////////////////////////////////////////
         private void Clear()
         {
             textPNumber.Text = "";
@@ -119,12 +133,14 @@ namespace itproject
           textpatterndescription.Text = "";
         }
 
+        //////////////////////////////////////////////////////////////////  button clear  //////////////////////////////////////////////
         private void Buttonpatternclear_Click(object sender, EventArgs e)
         {
            Clear();
         }
 
-         private void Buttonpatternupdate_Click(object sender, EventArgs e)
+        //////////////////////////////////////////////////////////////////  button update  //////////////////////////////////////////////
+        private void Buttonpatternupdate_Click(object sender, EventArgs e)
         {
 
             try {
@@ -166,7 +182,10 @@ namespace itproject
 
         }
 
-       private void Buttonpatterndelete_Click(object sender, EventArgs e)
+
+        //////////////////////////////////////////////////////////////////  button delete  //////////////////////////////////////////////
+
+        private void Buttonpatterndelete_Click(object sender, EventArgs e)
         {
 
             y.Pid = Convert.ToInt32(textPNumber.Text);
@@ -188,14 +207,20 @@ namespace itproject
             }
        }
 
+        //////////////////////////////////////////////////////////////////  data grid loading data  //////////////////////////////////////////////
         private void DataGridViewpattern_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
           DataTable dt = y.Select();
              dataGridViewpattern.DataSource = dt;
         }
 
+
+        //////////////////////////////////////////////////////////////////  connection to database to searching  //////////////////////////////////////////////
+        
         static string myconnstr = ConfigurationManager.ConnectionStrings["connstrng"].ConnectionString;
 
+
+        //////////////////////////////////////////////////////////////////  searching  //////////////////////////////////////////////
         private void Textpatternsearch_TextChanged(object sender, EventArgs e)
         {
 
@@ -212,6 +237,7 @@ namespace itproject
             dataGridViewpattern.DataSource = dt1;
         }
 
+        //////////////////////////////////////////////////////////////////  navigate to stock page  //////////////////////////////////////////////
         private void Buttonstock2_Click(object sender, EventArgs e)
         {
             bool Isopen = false;
@@ -242,26 +268,33 @@ namespace itproject
 
         }
 
+        //////////////////////////////////////////////////////////////////  open stock page with method navigation  //////////////////////////////////////////////
         private void openStock()
         {
             Application.Run(new Stock());
-        } 
+        }
 
+
+        //////////////////////////////////////////////////////////////////  Close button  //////////////////////////////////////////////
         private void Pictureboxpatternclose_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-      
+        //////////////////////////////////////////////////////////////////  Close button  //////////////////////////////////////////////
         private void Pictureboxpatternclose_Click_1(object sender, EventArgs e)
         {
             this.Close();
         }
 
+        //////////////////////////////////////////////////////////////////  button minimaize  //////////////////////////////////////////////
         private void Btnminimize_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+
+        //////////////////////////////////////////////////////////////////  button maximaize  //////////////////////////////////////////////
 
         private void Btnmaximize_Click(object sender, EventArgs e)
         {
@@ -277,9 +310,9 @@ namespace itproject
 
         }
 
-       
+        //////////////////////////////////////////////////////////////////  validations  //////////////////////////////////////////////
 
-      private void TextPNumber_KeyPress(object sender, KeyPressEventArgs e)
+        private void TextPNumber_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
                 e.Handled = true;
@@ -341,5 +374,35 @@ namespace itproject
             else
                 e.Handled = false;
         }
+
+
+        //////////////////////////////////////////////////////////////////  conveting pattern daat to PDF  //////////////////////////////////////////////
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            if (dataGridViewpattern == null)
+            {
+                MessageBox.Show("Coudn't create report because the Dataset is Empty", "Unsuccessful", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            ClassPattern helper = new ClassPattern();
+            if (helper.exportDtatTableToPdf(dataGridViewpattern, "C:\\Users\\ASUS\\Downloads\\ITP\\Pattern Report.pdf"))
+            {
+
+                MessageBox.Show("Report was saved as  Pattern Report.pdf", "Report Saved.", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+
+            }
+            else
+            {
+                MessageBox.Show("Something went wrong!", "Report Not Saved.", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+
+        }
+
+     
+
+      
+
+
     }
 }

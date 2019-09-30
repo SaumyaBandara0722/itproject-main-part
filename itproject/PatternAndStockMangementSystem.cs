@@ -1,12 +1,18 @@
-﻿using System;
+﻿using iTextSharp.text;
+using iTextSharp.text.pdf;
+using itproject.Classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Color = System.Drawing.Color;
+
 
 namespace itproject
 {
@@ -16,13 +22,19 @@ namespace itproject
         {
             InitializeComponent();
         }
+        private void PatternAndStockMangementSystem_Load(object sender, EventArgs e)
+        {
 
+        }
+
+        /////////////////////////////////////////////////////////////////////////// Button Pattern ///////////////////////////////////////////////////////
         private void Buttonpattern_Click(object sender, EventArgs e)
         {
             Pattern pattern = new Pattern();
             pattern.ShowDialog();
         }
 
+        /////////////////////////////////////////////////////////////////////////// Button Stock ///////////////////////////////////////////////////////
         private void Buttonstock_Click(object sender, EventArgs e)
         {
             Stock stock = new Stock();
@@ -31,16 +43,18 @@ namespace itproject
 
         private void Btnemail_Click(object sender, EventArgs e)
         {
-            //Mail mail = new Mail();
-            //mail.ShowDialog();
         }
 
+
+        /////////////////////////////////////////////////////////////////////////// Button Close ///////////////////////////////////////////////////////
         private void Pictureboxpatternclose_Click(object sender, EventArgs e)
         {
             this.Close();
 
         }
 
+
+        /////////////////////////////////////////////////////////////////////////// Button Minimaize ///////////////////////////////////////////////////////
         private void Btnmaximize_Click(object sender, EventArgs e)
         {
             if (this.WindowState == FormWindowState.Maximized)
@@ -53,6 +67,8 @@ namespace itproject
             }
         }
 
+
+        /////////////////////////////////////////////////////////////////////////// Button Maximaize ///////////////////////////////////////////////////////
         private void Btnminimize_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
@@ -62,5 +78,12 @@ namespace itproject
         {
 
         }
+
+
+
+
+     
+
+       
     }
 }
