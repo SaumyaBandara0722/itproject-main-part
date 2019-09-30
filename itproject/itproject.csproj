@@ -162,6 +162,14 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>itproject_newDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="itproject_newDataSet1.cs">
+      <DependentUpon>itproject_newDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="itproject_newDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>itproject_newDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="LeaveManagementForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -320,6 +328,7 @@
     </Compile>
     <EmbeddedResource Include="Report1.rdlc" />
     <EmbeddedResource Include="Report2.rdlc" />
+    <EmbeddedResource Include="Report3.rdlc" />
     <EmbeddedResource Include="ShowAttendance.resx">
       <DependentUpon>ShowAttendance.cs</DependentUpon>
     </EmbeddedResource>
@@ -356,6 +365,17 @@
     </None>
     <None Include="itproject_newDataSet.xss">
       <DependentUpon>itproject_newDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="itproject_newDataSet1.xsc">
+      <DependentUpon>itproject_newDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="itproject_newDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>itproject_newDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="itproject_newDataSet1.xss">
+      <DependentUpon>itproject_newDataSet1.xsd</DependentUpon>
     </None>
     <None Include="itproject_TemporaryKey.pfx" />
     <None Include="packages.config" />
