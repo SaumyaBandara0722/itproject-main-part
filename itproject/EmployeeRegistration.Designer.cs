@@ -55,9 +55,9 @@
             this.txtJoinedDate = new System.Windows.Forms.DateTimePicker();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtEnterDep = new System.Windows.Forms.TextBox();
-            this.btnAddNewDep = new System.Windows.Forms.Button();
             this.btnRemove = new System.Windows.Forms.Button();
+            this.btnAddNewDep = new System.Windows.Forms.Button();
+            this.txtEnterDep = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDetails)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
@@ -114,16 +114,16 @@
             // 
             // comboBox2
             // 
+            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "Embroidery",
-            "Iron and Warehouse",
-            "Line"});
             this.comboBox2.Location = new System.Drawing.Point(164, 337);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(257, 21);
             this.comboBox2.TabIndex = 37;
             this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.ComboBox2_SelectedIndexChanged);
+            this.comboBox2.SelectedValueChanged += new System.EventHandler(this.ComboBox2_SelectedValueChanged);
+            this.comboBox2.CursorChanged += new System.EventHandler(this.ComboBox2_CursorChanged);
+            this.comboBox2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ComboBox2_MouseClick);
             // 
             // lblGender
             // 
@@ -139,6 +139,7 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "Male",
@@ -373,25 +374,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "New Department";
             // 
-            // txtEnterDep
-            // 
-            this.txtEnterDep.Location = new System.Drawing.Point(43, 34);
-            this.txtEnterDep.Name = "txtEnterDep";
-            this.txtEnterDep.Size = new System.Drawing.Size(136, 20);
-            this.txtEnterDep.TabIndex = 0;
-            this.txtEnterDep.TextChanged += new System.EventHandler(this.TxtEnterDep_TextChanged);
-            // 
-            // btnAddNewDep
-            // 
-            this.btnAddNewDep.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnAddNewDep.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddNewDep.Location = new System.Drawing.Point(73, 69);
-            this.btnAddNewDep.Name = "btnAddNewDep";
-            this.btnAddNewDep.Size = new System.Drawing.Size(75, 23);
-            this.btnAddNewDep.TabIndex = 1;
-            this.btnAddNewDep.Text = "ADD";
-            this.btnAddNewDep.UseVisualStyleBackColor = false;
-            // 
             // btnRemove
             // 
             this.btnRemove.BackColor = System.Drawing.Color.Salmon;
@@ -403,6 +385,26 @@
             this.btnRemove.TabIndex = 2;
             this.btnRemove.Text = "REMOVE";
             this.btnRemove.UseVisualStyleBackColor = false;
+            // 
+            // btnAddNewDep
+            // 
+            this.btnAddNewDep.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnAddNewDep.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddNewDep.Location = new System.Drawing.Point(73, 69);
+            this.btnAddNewDep.Name = "btnAddNewDep";
+            this.btnAddNewDep.Size = new System.Drawing.Size(75, 23);
+            this.btnAddNewDep.TabIndex = 1;
+            this.btnAddNewDep.Text = "ADD";
+            this.btnAddNewDep.UseVisualStyleBackColor = false;
+            this.btnAddNewDep.Click += new System.EventHandler(this.BtnAddNewDep_Click);
+            // 
+            // txtEnterDep
+            // 
+            this.txtEnterDep.Location = new System.Drawing.Point(43, 34);
+            this.txtEnterDep.Name = "txtEnterDep";
+            this.txtEnterDep.Size = new System.Drawing.Size(136, 20);
+            this.txtEnterDep.TabIndex = 0;
+            this.txtEnterDep.TextChanged += new System.EventHandler(this.TxtEnterDep_TextChanged);
             // 
             // tableLayoutPanel5
             // 
