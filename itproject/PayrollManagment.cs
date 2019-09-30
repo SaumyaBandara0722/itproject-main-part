@@ -243,7 +243,7 @@ namespace itproject
 	private void View_Load(object sender, EventArgs e)
     	{
             // TODO: This line of code loads data into the 'itproject_newDataSetPayRoll.Payroll' table. You can move, or remove it, as needed.
-            this.PayrollTableAdapter.Fill(this.itproject_newDataSetPayRoll.Payroll);
+       //     this.PayrollTableAdapter.Fill(this.itproject_newDataSetPayRoll.Payroll);
 
                   con.Open();
                   String query = "SELECT * FROM Payroll";
@@ -252,7 +252,7 @@ namespace itproject
                   sd.Fill(dt);
                   dataGridView1.DataSource = dt;
                   con.Close();
-            this.reportViewer1.RefreshReport();
+        //    this.reportViewer1.RefreshReport();
         }
 
         private void BtnGetData_Click(object sender, EventArgs e)
@@ -332,7 +332,8 @@ namespace itproject
             //        dataGridView2.DataSource = null;
             //        downloadingDataTable = null;
 
-
+            PayRollReportForm payRollReportForm = new PayRollReportForm();
+            payRollReportForm.Show();
 
         }
 
@@ -414,6 +415,12 @@ namespace itproject
         private void TabPage3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void buttonReport_Click(object sender, EventArgs e)
+        {
+            PayRollReportForm payRollReportForm = new PayRollReportForm();
+            payRollReportForm.Show();
         }
     }
 }

@@ -268,6 +268,12 @@
     <Compile Include="PayrollManagment.designer.cs">
       <DependentUpon>PayrollManagment.cs</DependentUpon>
     </Compile>
+    <Compile Include="PayRollReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PayRollReportForm.Designer.cs">
+      <DependentUpon>PayRollReportForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ProcessLoan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -362,6 +368,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PayrollManagment.resx">
       <DependentUpon>PayrollManagment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PayRollReportForm.resx">
+      <DependentUpon>PayRollReportForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProcessLoan.resx">
       <DependentUpon>ProcessLoan.cs</DependentUpon>

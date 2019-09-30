@@ -1465,16 +1465,23 @@ SELECT EmployeeName, Section, OTHours, BasicSalary, PaySlipNo, EmployeeID, OTRat
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT EmployeeName, Section, OTHours, BasicSalary, PaySlipNo, EmployeeID, OTRate" +
                 ", Transport, Special, Holiday, Attendance, SalaryMonthFrom, SalaryMonthTo, Gross" +
-                "Pay, NetPay FROM dbo.Payroll";
+                "Pay, NetPay FROM dbo.Payroll WHERE Section=@Department";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Department", global::System.Data.SqlDbType.VarChar, 100, global::System.Data.ParameterDirection.Input, 0, 0, "Section", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(itproject_newDataSetPayRoll.PayrollDataTable dataTable) {
+        public virtual int Fill(itproject_newDataSetPayRoll.PayrollDataTable dataTable, string Department) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((Department == null)) {
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(Department));
+            }
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
             }
@@ -1486,8 +1493,14 @@ SELECT EmployeeName, Section, OTHours, BasicSalary, PaySlipNo, EmployeeID, OTRat
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual itproject_newDataSetPayRoll.PayrollDataTable GetData() {
+        public virtual itproject_newDataSetPayRoll.PayrollDataTable GetData(string Department) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((Department == null)) {
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(Department));
+            }
             itproject_newDataSetPayRoll.PayrollDataTable dataTable = new itproject_newDataSetPayRoll.PayrollDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
