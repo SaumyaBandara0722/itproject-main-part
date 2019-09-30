@@ -113,5 +113,15 @@ namespace itproject
             DataTable dt = c.Select();
             dgvEmployeeList.DataSource = dt;
         }
+
+        private void TxtId_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LblSelectedEmp_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

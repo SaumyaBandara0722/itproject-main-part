@@ -55,9 +55,9 @@
             this.txtJoinedDate = new System.Windows.Forms.DateTimePicker();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtEnterDep = new System.Windows.Forms.TextBox();
-            this.btnAddNewDep = new System.Windows.Forms.Button();
             this.btnRemove = new System.Windows.Forms.Button();
+            this.btnAddNewDep = new System.Windows.Forms.Button();
+            this.txtEnterDep = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDetails)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
@@ -114,6 +114,7 @@
             // 
             // comboBox2
             // 
+            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
             "Embroidery",
@@ -139,6 +140,7 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "Male",
@@ -373,13 +375,17 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "New Department";
             // 
-            // txtEnterDep
+            // btnRemove
             // 
-            this.txtEnterDep.Location = new System.Drawing.Point(43, 34);
-            this.txtEnterDep.Name = "txtEnterDep";
-            this.txtEnterDep.Size = new System.Drawing.Size(136, 20);
-            this.txtEnterDep.TabIndex = 0;
-            this.txtEnterDep.TextChanged += new System.EventHandler(this.TxtEnterDep_TextChanged);
+            this.btnRemove.BackColor = System.Drawing.Color.Salmon;
+            this.btnRemove.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRemove.ForeColor = System.Drawing.Color.Black;
+            this.btnRemove.Location = new System.Drawing.Point(73, 98);
+            this.btnRemove.Name = "btnRemove";
+            this.btnRemove.Size = new System.Drawing.Size(75, 23);
+            this.btnRemove.TabIndex = 2;
+            this.btnRemove.Text = "REMOVE";
+            this.btnRemove.UseVisualStyleBackColor = false;
             // 
             // btnAddNewDep
             // 
@@ -392,17 +398,13 @@
             this.btnAddNewDep.Text = "ADD";
             this.btnAddNewDep.UseVisualStyleBackColor = false;
             // 
-            // btnRemove
+            // txtEnterDep
             // 
-            this.btnRemove.BackColor = System.Drawing.Color.Salmon;
-            this.btnRemove.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRemove.ForeColor = System.Drawing.Color.Black;
-            this.btnRemove.Location = new System.Drawing.Point(73, 98);
-            this.btnRemove.Name = "btnRemove";
-            this.btnRemove.Size = new System.Drawing.Size(75, 23);
-            this.btnRemove.TabIndex = 2;
-            this.btnRemove.Text = "REMOVE";
-            this.btnRemove.UseVisualStyleBackColor = false;
+            this.txtEnterDep.Location = new System.Drawing.Point(43, 34);
+            this.txtEnterDep.Name = "txtEnterDep";
+            this.txtEnterDep.Size = new System.Drawing.Size(136, 20);
+            this.txtEnterDep.TabIndex = 0;
+            this.txtEnterDep.TextChanged += new System.EventHandler(this.TxtEnterDep_TextChanged);
             // 
             // tableLayoutPanel5
             // 
