@@ -29,8 +29,9 @@
         private void InitializeComponent()
         {
             this.btnProjectMaintainer = new System.Windows.Forms.Button();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.btnReportGenerator = new System.Windows.Forms.Button();
+            this.btnViewProjects = new System.Windows.Forms.Button();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -41,30 +42,13 @@
             this.btnProjectMaintainer.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnProjectMaintainer.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProjectMaintainer.ForeColor = System.Drawing.Color.White;
-            this.btnProjectMaintainer.Location = new System.Drawing.Point(3, 3);
+            this.btnProjectMaintainer.Location = new System.Drawing.Point(3, 13);
             this.btnProjectMaintainer.Name = "btnProjectMaintainer";
-            this.btnProjectMaintainer.Size = new System.Drawing.Size(405, 107);
+            this.btnProjectMaintainer.Size = new System.Drawing.Size(194, 107);
             this.btnProjectMaintainer.TabIndex = 0;
             this.btnProjectMaintainer.Text = "PROJECT MAINTAINER";
             this.btnProjectMaintainer.UseVisualStyleBackColor = false;
             this.btnProjectMaintainer.Click += new System.EventHandler(this.BtnADDPROJECTS_Click);
-            // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel1.ColumnCount = 1;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Controls.Add(this.btnProjectMaintainer, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.btnReportGenerator, 0, 1);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(299, 203);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(411, 226);
-            this.tableLayoutPanel1.TabIndex = 2;
             // 
             // btnReportGenerator
             // 
@@ -72,13 +56,44 @@
             this.btnReportGenerator.BackColor = System.Drawing.Color.PaleGreen;
             this.btnReportGenerator.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReportGenerator.ForeColor = System.Drawing.Color.Black;
-            this.btnReportGenerator.Location = new System.Drawing.Point(3, 116);
+            this.btnReportGenerator.Location = new System.Drawing.Point(3, 280);
             this.btnReportGenerator.Name = "btnReportGenerator";
-            this.btnReportGenerator.Size = new System.Drawing.Size(405, 107);
+            this.btnReportGenerator.Size = new System.Drawing.Size(194, 107);
             this.btnReportGenerator.TabIndex = 1;
             this.btnReportGenerator.Text = "REPORT GENERATOR";
             this.btnReportGenerator.UseVisualStyleBackColor = false;
             this.btnReportGenerator.Click += new System.EventHandler(this.Button2_Click);
+            // 
+            // btnViewProjects
+            // 
+            this.btnViewProjects.BackColor = System.Drawing.Color.YellowGreen;
+            this.btnViewProjects.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnViewProjects.Location = new System.Drawing.Point(3, 137);
+            this.btnViewProjects.Name = "btnViewProjects";
+            this.btnViewProjects.Size = new System.Drawing.Size(194, 107);
+            this.btnViewProjects.TabIndex = 2;
+            this.btnViewProjects.Text = "View Projects";
+            this.btnViewProjects.UseVisualStyleBackColor = false;
+            this.btnViewProjects.Click += new System.EventHandler(this.btnViewProjects_Click);
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel1.ColumnCount = 1;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Controls.Add(this.btnProjectMaintainer, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.btnReportGenerator, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.btnViewProjects, 0, 1);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(411, 66);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 3;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 130F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(200, 399);
+            this.tableLayoutPanel1.TabIndex = 3;
             // 
             // MainProjectTask
             // 
@@ -97,7 +112,8 @@
         #endregion
 
         private System.Windows.Forms.Button btnProjectMaintainer;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Button btnReportGenerator;
+        private System.Windows.Forms.Button btnViewProjects;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
     }
 }

@@ -1,0 +1,115 @@
+CREATE TABLE Employees (
+    EmpId INT NOT NULL IDENTITY(1,1),
+    EmpName VARCHAR(50),
+    Bdy DATE,
+    Gender VARCHAR(10),
+    Address VARCHAR(200),
+    Phone VARCHAR(50),
+    Email VARCHAR(200),
+    Department VARCHAR(50),
+    JoinedDate DATE,
+    BasicSal REAL,
+    CONSTRAINT PK_Employee PRIMARY KEY (EmpID)
+);
+
+CREATE TABLE Attendance (
+    AttendID INT NOT NULL IDENTITY(1,1),
+    EmpID INT,
+    date VARCHAR(40),
+    inTime VARCHAR(40),
+    outTime VARCHAR(40),
+    hoursWorked INT,
+    CONSTRAINT PK_Attendance PRIMARY KEY (AttendID)
+);
+
+CREATE TABLE LeaveRequests (
+    ReqID INT NOT NULL IDENTITY(1,1),
+    EmpID VARCHAR(10),
+    Date DATE,
+    LeaveHours INT,
+    Description VARCHAR(500),
+    Department VARCHAR(30),
+    Status VARCHAR(20),
+    CONSTRAINT PK_LeaveRequests PRIMARY KEY (ReqID)
+);
+
+CREATE TABLE Customers (
+    CustomerID INT NOT NULL IDENTITY(1,1),
+    CustomerName VARCHAR(50),
+    CustomerAddress VARCHAR(50),
+    PhoneNumber VARCHAR(10),
+    CONSTRAINT PK_Customers PRIMARY KEY (CustomerID)
+);
+
+CREATE TABLE Patterns (
+    Pid INT NOT NULL IDENTITY(1,1),
+    PatternID VARCHAR(50),
+    PatternName VARCHAR(50),
+    unitPrice REAL,
+    Description VARCHAR(500),
+    CONSTRAINT PK_Patterns PRIMARY KEY (Pid)
+);
+
+CREATE TABLE Orders (
+    OrderID INT NOT NULL IDENTITY(1,1),
+    CustomerID INT,
+    PatternID VARCHAR(50),
+    Quantity INT,
+    OrderDate DATE,
+    ExpectedDate DATE,
+    NeededQty INT,
+    CONSTRAINT PK_Orders PRIMARY KEY (OrderID)
+);
+
+CREATE TABLE Stocks (
+    Sid INT NOT NULL IDENTITY(1,1),
+    PatternID VARCHAR(50),
+    PatternName VARCHAR(50),
+    AvailableQty INT,
+    AddedQty INT,
+    AddedDate DATE,
+    CONSTRAINT PK_Stocks PRIMARY KEY (Sid)
+);
+
+CREATE TABLE Projects_Tasks (
+    ProjectID INT NOT NULL IDENTITY(1,1),
+    OrderID INT,
+    Description VARCHAR(100),
+    PatternID VARCHAR(50),
+    NeededQty INT,
+    AddedDate DATE,
+    DeadlineDate DATE,
+    Status VARCHAR(50),
+    CONSTRAINT PK_Projects_Tasks PRIMARY KEY (ProjectID)
+);
+
+CREATE TABLE Payroll (
+    EmployeeName VARCHAR(100),
+    Section VARCHAR(100),
+    OTHours INT,
+    BasicSalary REAL,
+    PaySlipNo VARCHAR(100),
+    EmployeeID VARCHAR(20),
+    OTRate REAL,
+    Transport REAL,
+    Special REAL,
+    Holiday REAL,
+    Attendance REAL,
+    SalaryMonthFrom DATE,
+    SalaryMonthTo DATE,
+    GrossPay REAL,
+    NetPay REAL
+    CONSTRAINT PK_Payroll PRIMARY KEY (EmployeeID)
+);
+
+CREATE TABLE Loans (
+    LoanID INT NOT NULL IDENTITY(1,1),
+    EmpID INT,
+    EmpName VARCHAR(50),
+    EmpDepartment VARCHAR(50),
+    BasicSalary REAL,
+    LoanAmount REAL,
+    Installment REAL,
+    StartDate DATE,
+    EndDate DATE
+);

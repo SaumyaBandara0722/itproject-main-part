@@ -255,6 +255,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(978, 637);
             this.Controls.Add(this.groupBox1);
+            this.MaximizeBox = false;
             this.Name = "FormLoanConfirm";
             this.Text = "FormLoanConfirm";
             this.Load += new System.EventHandler(this.FormLoanConfirm_Load);

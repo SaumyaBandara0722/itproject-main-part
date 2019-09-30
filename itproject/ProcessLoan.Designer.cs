@@ -186,6 +186,7 @@
             this.ClientSize = new System.Drawing.Size(1071, 679);
             this.Controls.Add(this.buttonView);
             this.Controls.Add(this.groupBox1);
+            this.MaximizeBox = false;
             this.Name = "ProcessLoan";
             this.Text = "ProcessLoan";
             this.Load += new System.EventHandler(this.ProcessLoan_Load);

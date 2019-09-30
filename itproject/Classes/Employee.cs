@@ -39,7 +39,7 @@ namespace itproject.Classes
                 conn.Open();
                 adapter.Fill(dt);
             }
-            catch (Exception ex)
+            catch (Exception )
             {
 
             }
@@ -184,6 +184,83 @@ namespace itproject.Classes
 
                 //create parameters to delete data
                 cmd.Parameters.AddWithValue("@EmpId", c.EmpId);
+
+                conn.Open();
+
+                int rows = cmd.ExecuteNonQuery();
+                if (rows > 0)
+                {
+                    isSuccess = true;
+                }
+                else
+                {
+                    isSuccess = false;
+                }
+            }
+            catch (Exception ex)
+            {
+
+            }
+            finally
+            {
+                conn.Close();
+            }
+            return isSuccess;
+        }
+
+        //Add new department
+        public bool InsertDepartment(Employee c)
+        {
+            bool isSuccess = false;
+
+            SqlConnection conn = new SqlConnection(myconnstrng);
+            try
+            {
+                //command to insert data
+                string sql = "INSERT INTO Department (depName) VALUES(@depName)";
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                //create parameters to add data
+                cmd.Parameters.AddWithValue("@depName", c.Dept);
+
+                conn.Open();
+                int rows = cmd.ExecuteNonQuery();
+                //if the query runs successfull then the value of rows will be greater than zero else the value will ne 0
+                if (rows > 0)
+                {
+                    isSuccess = true;
+                }
+                else
+                {
+                    isSuccess = false;
+                }
+
+
+            }
+            catch (Exception ex)
+            {
+
+            }
+            finally
+            {
+                conn.Close();
+            }
+            return isSuccess;
+        }
+
+        //Remove a department
+        public bool DeleteDepartment(Employee c)
+        {
+            bool isSuccess = false;
+
+            SqlConnection conn = new SqlConnection(myconnstrng);
+            try
+            {
+                //command to delete data
+                string sql = "DELETE FROM Department WHERE depName=@depName";
+                SqlCommand cmd = new SqlCommand(sql, conn);
+
+                //create parameters to delete data
+                cmd.Parameters.AddWithValue("@depName", c.Dept);
 
                 conn.Open();
 

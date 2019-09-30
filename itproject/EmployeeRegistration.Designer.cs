@@ -53,27 +53,36 @@
             this.dataGridViewDetails = new System.Windows.Forms.DataGridView();
             this.txtBdy = new System.Windows.Forms.DateTimePicker();
             this.txtJoinedDate = new System.Windows.Forms.DateTimePicker();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnRemove = new System.Windows.Forms.Button();
+            this.btnAddNewDep = new System.Windows.Forms.Button();
+            this.txtEnterDep = new System.Windows.Forms.TextBox();
+            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDetails)).BeginInit();
+            this.tableLayoutPanel1.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.tableLayoutPanel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblJoinedDate
             // 
             this.lblJoinedDate.AutoSize = true;
             this.lblJoinedDate.BackColor = System.Drawing.Color.Transparent;
-            this.lblJoinedDate.Font = new System.Drawing.Font("Sitka Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblJoinedDate.Location = new System.Drawing.Point(18, 389);
+            this.lblJoinedDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.lblJoinedDate.Location = new System.Drawing.Point(3, 379);
             this.lblJoinedDate.Name = "lblJoinedDate";
-            this.lblJoinedDate.Size = new System.Drawing.Size(96, 23);
+            this.lblJoinedDate.Size = new System.Drawing.Size(110, 24);
             this.lblJoinedDate.TabIndex = 41;
             this.lblJoinedDate.Text = "Joined Date";
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.Salmon;
-            this.button3.Font = new System.Drawing.Font("Microsoft Tai Le", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(558, 364);
+            this.button3.BackColor = System.Drawing.Color.Yellow;
+            this.button3.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold);
+            this.button3.Location = new System.Drawing.Point(3, 259);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(228, 60);
+            this.button3.Size = new System.Drawing.Size(225, 50);
             this.button3.TabIndex = 40;
             this.button3.Text = "CLEAR";
             this.button3.UseVisualStyleBackColor = false;
@@ -81,11 +90,11 @@
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.Orange;
-            this.button2.Font = new System.Drawing.Font("Microsoft Tai Le", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(558, 272);
+            this.button2.BackColor = System.Drawing.Color.SpringGreen;
+            this.button2.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold);
+            this.button2.Location = new System.Drawing.Point(3, 208);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(228, 61);
+            this.button2.Size = new System.Drawing.Size(225, 45);
             this.button2.TabIndex = 39;
             this.button2.Text = "UPDATE";
             this.button2.UseVisualStyleBackColor = false;
@@ -93,11 +102,11 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.SteelBlue;
-            this.button1.Font = new System.Drawing.Font("Microsoft Tai Le", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(558, 175);
+            this.button1.BackColor = System.Drawing.Color.DodgerBlue;
+            this.button1.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(3, 150);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(228, 65);
+            this.button1.Size = new System.Drawing.Size(225, 50);
             this.button1.TabIndex = 38;
             this.button1.Text = "ADD";
             this.button1.UseVisualStyleBackColor = false;
@@ -105,46 +114,46 @@
             // 
             // comboBox2
             // 
+            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "Embroidery",
-            "Iron and Warehouse",
-            "Line"});
-            this.comboBox2.Location = new System.Drawing.Point(183, 349);
+            this.comboBox2.Location = new System.Drawing.Point(164, 337);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(288, 21);
+            this.comboBox2.Size = new System.Drawing.Size(257, 21);
             this.comboBox2.TabIndex = 37;
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.ComboBox2_SelectedIndexChanged);
+            this.comboBox2.SelectedValueChanged += new System.EventHandler(this.ComboBox2_SelectedValueChanged);
             // 
             // lblGender
             // 
             this.lblGender.AutoSize = true;
             this.lblGender.BackColor = System.Drawing.Color.Transparent;
-            this.lblGender.Font = new System.Drawing.Font("Sitka Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGender.Location = new System.Drawing.Point(18, 143);
+            this.lblGender.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.lblGender.Location = new System.Drawing.Point(3, 135);
             this.lblGender.Name = "lblGender";
-            this.lblGender.Size = new System.Drawing.Size(63, 23);
+            this.lblGender.Size = new System.Drawing.Size(74, 24);
             this.lblGender.TabIndex = 36;
             this.lblGender.Text = "Gender";
             this.lblGender.Click += new System.EventHandler(this.LblGender_Click);
             // 
             // comboBox1
             // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "Male",
             "Female"});
-            this.comboBox1.Location = new System.Drawing.Point(183, 145);
+            this.comboBox1.Location = new System.Drawing.Point(164, 138);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(288, 21);
+            this.comboBox1.Size = new System.Drawing.Size(257, 21);
             this.comboBox1.TabIndex = 35;
             // 
             // txtAdd
             // 
             this.txtAdd.BackColor = System.Drawing.SystemColors.Window;
-            this.txtAdd.Location = new System.Drawing.Point(183, 188);
+            this.txtAdd.Location = new System.Drawing.Point(164, 183);
             this.txtAdd.Multiline = true;
             this.txtAdd.Name = "txtAdd";
-            this.txtAdd.Size = new System.Drawing.Size(288, 52);
+            this.txtAdd.Size = new System.Drawing.Size(257, 52);
             this.txtAdd.TabIndex = 34;
             this.txtAdd.TextChanged += new System.EventHandler(this.TxtAdd_TextChanged);
             // 
@@ -152,19 +161,19 @@
             // 
             this.lbladd.AutoSize = true;
             this.lbladd.BackColor = System.Drawing.Color.Transparent;
-            this.lbladd.Font = new System.Drawing.Font("Sitka Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbladd.Location = new System.Drawing.Point(18, 190);
+            this.lbladd.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.lbladd.Location = new System.Drawing.Point(3, 180);
             this.lbladd.Name = "lbladd";
-            this.lbladd.Size = new System.Drawing.Size(67, 23);
+            this.lbladd.Size = new System.Drawing.Size(80, 24);
             this.lbladd.TabIndex = 33;
             this.lbladd.Text = "Address";
             // 
             // txtNum
             // 
             this.txtNum.BackColor = System.Drawing.SystemColors.Window;
-            this.txtNum.Location = new System.Drawing.Point(183, 262);
+            this.txtNum.Location = new System.Drawing.Point(164, 247);
             this.txtNum.Name = "txtNum";
-            this.txtNum.Size = new System.Drawing.Size(288, 20);
+            this.txtNum.Size = new System.Drawing.Size(257, 20);
             this.txtNum.TabIndex = 32;
             this.txtNum.TextChanged += new System.EventHandler(this.TxtNum_TextChanged);
             // 
@@ -172,19 +181,19 @@
             // 
             this.lblNum.AutoSize = true;
             this.lblNum.BackColor = System.Drawing.Color.Transparent;
-            this.lblNum.Font = new System.Drawing.Font("Sitka Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNum.Location = new System.Drawing.Point(18, 259);
+            this.lblNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.lblNum.Location = new System.Drawing.Point(3, 244);
             this.lblNum.Name = "lblNum";
-            this.lblNum.Size = new System.Drawing.Size(121, 23);
+            this.lblNum.Size = new System.Drawing.Size(140, 24);
             this.lblNum.TabIndex = 31;
             this.lblNum.Text = "Phone Number";
             // 
             // txtEmail
             // 
             this.txtEmail.BackColor = System.Drawing.SystemColors.Window;
-            this.txtEmail.Location = new System.Drawing.Point(183, 305);
+            this.txtEmail.Location = new System.Drawing.Point(164, 292);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(288, 20);
+            this.txtEmail.Size = new System.Drawing.Size(257, 20);
             this.txtEmail.TabIndex = 30;
             this.txtEmail.Validating += new System.ComponentModel.CancelEventHandler(this.TxtEmail_Validating);
             // 
@@ -192,10 +201,10 @@
             // 
             this.lblEmail.AutoSize = true;
             this.lblEmail.BackColor = System.Drawing.Color.Transparent;
-            this.lblEmail.Font = new System.Drawing.Font("Sitka Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmail.Location = new System.Drawing.Point(18, 302);
+            this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.lblEmail.Location = new System.Drawing.Point(3, 289);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(115, 23);
+            this.lblEmail.Size = new System.Drawing.Size(132, 24);
             this.lblEmail.TabIndex = 29;
             this.lblEmail.Text = "Email Address";
             // 
@@ -203,10 +212,10 @@
             // 
             this.lblBdy.AutoSize = true;
             this.lblBdy.BackColor = System.Drawing.Color.Transparent;
-            this.lblBdy.Font = new System.Drawing.Font("Sitka Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBdy.Location = new System.Drawing.Point(18, 100);
+            this.lblBdy.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.lblBdy.Location = new System.Drawing.Point(3, 90);
             this.lblBdy.Name = "lblBdy";
-            this.lblBdy.Size = new System.Drawing.Size(107, 23);
+            this.lblBdy.Size = new System.Drawing.Size(110, 24);
             this.lblBdy.TabIndex = 27;
             this.lblBdy.Text = "Date of Birth";
             // 
@@ -214,19 +223,19 @@
             // 
             this.lblDept.AutoSize = true;
             this.lblDept.BackColor = System.Drawing.Color.Transparent;
-            this.lblDept.Font = new System.Drawing.Font("Sitka Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDept.Location = new System.Drawing.Point(18, 347);
+            this.lblDept.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.lblDept.Location = new System.Drawing.Point(3, 334);
             this.lblDept.Name = "lblDept";
-            this.lblDept.Size = new System.Drawing.Size(98, 23);
+            this.lblDept.Size = new System.Drawing.Size(107, 24);
             this.lblDept.TabIndex = 26;
             this.lblDept.Text = "Department";
             // 
             // txtempName
             // 
             this.txtempName.BackColor = System.Drawing.SystemColors.Window;
-            this.txtempName.Location = new System.Drawing.Point(183, 61);
+            this.txtempName.Location = new System.Drawing.Point(164, 48);
             this.txtempName.Name = "txtempName";
-            this.txtempName.Size = new System.Drawing.Size(288, 20);
+            this.txtempName.Size = new System.Drawing.Size(257, 20);
             this.txtempName.TabIndex = 25;
             this.txtempName.TextChanged += new System.EventHandler(this.b);
             // 
@@ -234,31 +243,31 @@
             // 
             this.lblempName.AutoSize = true;
             this.lblempName.BackColor = System.Drawing.Color.Transparent;
-            this.lblempName.Font = new System.Drawing.Font("Sitka Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblempName.Location = new System.Drawing.Point(18, 58);
+            this.lblempName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblempName.Location = new System.Drawing.Point(3, 45);
             this.lblempName.Name = "lblempName";
-            this.lblempName.Size = new System.Drawing.Size(130, 23);
+            this.lblempName.Size = new System.Drawing.Size(152, 24);
             this.lblempName.TabIndex = 24;
             this.lblempName.Text = "Employee Name";
             // 
             // txtempId
             // 
             this.txtempId.BackColor = System.Drawing.SystemColors.Window;
-            this.txtempId.Location = new System.Drawing.Point(183, 18);
+            this.txtempId.Location = new System.Drawing.Point(164, 3);
             this.txtempId.Name = "txtempId";
             this.txtempId.ReadOnly = true;
-            this.txtempId.Size = new System.Drawing.Size(288, 20);
+            this.txtempId.Size = new System.Drawing.Size(257, 20);
             this.txtempId.TabIndex = 23;
             // 
             // lblempId
             // 
             this.lblempId.AutoSize = true;
             this.lblempId.BackColor = System.Drawing.Color.Transparent;
-            this.lblempId.Font = new System.Drawing.Font("Sitka Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblempId.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblempId.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblempId.Location = new System.Drawing.Point(18, 18);
+            this.lblempId.Location = new System.Drawing.Point(3, 0);
             this.lblempId.Name = "lblempId";
-            this.lblempId.Size = new System.Drawing.Size(104, 23);
+            this.lblempId.Size = new System.Drawing.Size(118, 24);
             this.lblempId.TabIndex = 22;
             this.lblempId.Text = "Employee ID";
             // 
@@ -266,24 +275,27 @@
             // 
             this.lblSal.AutoSize = true;
             this.lblSal.BackColor = System.Drawing.Color.Transparent;
-            this.lblSal.Font = new System.Drawing.Font("Sitka Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSal.Location = new System.Drawing.Point(18, 434);
+            this.lblSal.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.lblSal.Location = new System.Drawing.Point(3, 424);
             this.lblSal.Name = "lblSal";
-            this.lblSal.Size = new System.Drawing.Size(102, 23);
+            this.lblSal.Size = new System.Drawing.Size(111, 24);
             this.lblSal.TabIndex = 43;
             this.lblSal.Text = "Basic Salary";
+            this.lblSal.Click += new System.EventHandler(this.LblSal_Click);
             // 
             // txtSal
             // 
-            this.txtSal.Location = new System.Drawing.Point(183, 437);
+            this.txtSal.Location = new System.Drawing.Point(164, 427);
             this.txtSal.Name = "txtSal";
-            this.txtSal.Size = new System.Drawing.Size(288, 20);
+            this.txtSal.Size = new System.Drawing.Size(257, 20);
             this.txtSal.TabIndex = 44;
             // 
             // dataGridViewDetails
             // 
+            this.dataGridViewDetails.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.dataGridViewDetails.BackgroundColor = System.Drawing.Color.LightSeaGreen;
             this.dataGridViewDetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewDetails.Location = new System.Drawing.Point(477, 18);
+            this.dataGridViewDetails.Location = new System.Drawing.Point(452, 45);
             this.dataGridViewDetails.Name = "dataGridViewDetails";
             this.dataGridViewDetails.Size = new System.Drawing.Size(405, 115);
             this.dataGridViewDetails.TabIndex = 45;
@@ -292,17 +304,126 @@
             // 
             // txtBdy
             // 
-            this.txtBdy.Location = new System.Drawing.Point(183, 103);
+            this.txtBdy.Location = new System.Drawing.Point(164, 93);
             this.txtBdy.Name = "txtBdy";
-            this.txtBdy.Size = new System.Drawing.Size(288, 20);
+            this.txtBdy.Size = new System.Drawing.Size(257, 20);
             this.txtBdy.TabIndex = 46;
             // 
             // txtJoinedDate
             // 
-            this.txtJoinedDate.Location = new System.Drawing.Point(183, 392);
+            this.txtJoinedDate.Location = new System.Drawing.Point(164, 382);
             this.txtJoinedDate.Name = "txtJoinedDate";
-            this.txtJoinedDate.Size = new System.Drawing.Size(288, 20);
+            this.txtJoinedDate.Size = new System.Drawing.Size(257, 20);
             this.txtJoinedDate.TabIndex = 47;
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.tableLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 37.9717F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 62.0283F));
+            this.tableLayoutPanel1.Controls.Add(this.lblempId, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.txtJoinedDate, 1, 8);
+            this.tableLayoutPanel1.Controls.Add(this.txtSal, 1, 9);
+            this.tableLayoutPanel1.Controls.Add(this.txtempId, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.lblSal, 0, 9);
+            this.tableLayoutPanel1.Controls.Add(this.txtBdy, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.lblempName, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.txtempName, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.lblJoinedDate, 0, 8);
+            this.tableLayoutPanel1.Controls.Add(this.lblBdy, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.lblGender, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.comboBox1, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.lbladd, 0, 4);
+            this.tableLayoutPanel1.Controls.Add(this.comboBox2, 1, 7);
+            this.tableLayoutPanel1.Controls.Add(this.txtAdd, 1, 4);
+            this.tableLayoutPanel1.Controls.Add(this.lblDept, 0, 7);
+            this.tableLayoutPanel1.Controls.Add(this.txtEmail, 1, 6);
+            this.tableLayoutPanel1.Controls.Add(this.txtNum, 1, 5);
+            this.tableLayoutPanel1.Controls.Add(this.lblEmail, 0, 6);
+            this.tableLayoutPanel1.Controls.Add(this.lblNum, 0, 5);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 42);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 10;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.615385F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.615385F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.615385F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.615385F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.46154F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.615385F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.615385F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.615385F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.615385F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.615385F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(424, 477);
+            this.tableLayoutPanel1.TabIndex = 48;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.btnRemove);
+            this.groupBox1.Controls.Add(this.btnAddNewDep);
+            this.groupBox1.Controls.Add(this.txtEnterDep);
+            this.groupBox1.Location = new System.Drawing.Point(3, 3);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(225, 138);
+            this.groupBox1.TabIndex = 52;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "New Department";
+            // 
+            // btnRemove
+            // 
+            this.btnRemove.BackColor = System.Drawing.Color.Salmon;
+            this.btnRemove.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRemove.ForeColor = System.Drawing.Color.Black;
+            this.btnRemove.Location = new System.Drawing.Point(73, 98);
+            this.btnRemove.Name = "btnRemove";
+            this.btnRemove.Size = new System.Drawing.Size(75, 23);
+            this.btnRemove.TabIndex = 2;
+            this.btnRemove.Text = "REMOVE";
+            this.btnRemove.UseVisualStyleBackColor = false;
+            this.btnRemove.Click += new System.EventHandler(this.BtnRemove_Click);
+            // 
+            // btnAddNewDep
+            // 
+            this.btnAddNewDep.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnAddNewDep.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddNewDep.Location = new System.Drawing.Point(73, 69);
+            this.btnAddNewDep.Name = "btnAddNewDep";
+            this.btnAddNewDep.Size = new System.Drawing.Size(75, 23);
+            this.btnAddNewDep.TabIndex = 1;
+            this.btnAddNewDep.Text = "ADD";
+            this.btnAddNewDep.UseVisualStyleBackColor = false;
+            this.btnAddNewDep.Click += new System.EventHandler(this.BtnAddNewDep_Click);
+            // 
+            // txtEnterDep
+            // 
+            this.txtEnterDep.Location = new System.Drawing.Point(43, 34);
+            this.txtEnterDep.Name = "txtEnterDep";
+            this.txtEnterDep.Size = new System.Drawing.Size(136, 20);
+            this.txtEnterDep.TabIndex = 0;
+            this.txtEnterDep.TextChanged += new System.EventHandler(this.TxtEnterDep_TextChanged);
+            // 
+            // tableLayoutPanel5
+            // 
+            this.tableLayoutPanel5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.tableLayoutPanel5.BackColor = System.Drawing.Color.Transparent;
+            this.tableLayoutPanel5.ColumnCount = 1;
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel5.Controls.Add(this.groupBox1, 0, 0);
+            this.tableLayoutPanel5.Controls.Add(this.button2, 0, 2);
+            this.tableLayoutPanel5.Controls.Add(this.button1, 0, 1);
+            this.tableLayoutPanel5.Controls.Add(this.button3, 0, 3);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(544, 180);
+            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
+            this.tableLayoutPanel5.RowCount = 4;
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 43.82353F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.35294F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.33923F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 24.18879F));
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(231, 339);
+            this.tableLayoutPanel5.TabIndex = 53;
             // 
             // EmployeeRegistration
             // 
@@ -310,37 +431,21 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(894, 501);
-            this.Controls.Add(this.txtJoinedDate);
-            this.Controls.Add(this.txtBdy);
+            this.ClientSize = new System.Drawing.Size(894, 561);
+            this.Controls.Add(this.tableLayoutPanel5);
+            this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.dataGridViewDetails);
-            this.Controls.Add(this.txtSal);
-            this.Controls.Add(this.lblSal);
-            this.Controls.Add(this.lblJoinedDate);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.lblGender);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.txtAdd);
-            this.Controls.Add(this.lbladd);
-            this.Controls.Add(this.txtNum);
-            this.Controls.Add(this.lblNum);
-            this.Controls.Add(this.txtEmail);
-            this.Controls.Add(this.lblEmail);
-            this.Controls.Add(this.lblBdy);
-            this.Controls.Add(this.lblDept);
-            this.Controls.Add(this.txtempName);
-            this.Controls.Add(this.lblempName);
-            this.Controls.Add(this.txtempId);
-            this.Controls.Add(this.lblempId);
+            this.MinimumSize = new System.Drawing.Size(800, 600);
             this.Name = "EmployeeRegistration";
             this.Text = "EmployeeRegistration";
             this.Load += new System.EventHandler(this.EmployeeRegistration_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDetails)).EndInit();
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.tableLayoutPanel5.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -369,5 +474,11 @@
         public System.Windows.Forms.TextBox txtSal;
         public System.Windows.Forms.DateTimePicker txtBdy;
         public System.Windows.Forms.DateTimePicker txtJoinedDate;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button btnRemove;
+        private System.Windows.Forms.Button btnAddNewDep;
+        private System.Windows.Forms.TextBox txtEnterDep;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
     }
 }
