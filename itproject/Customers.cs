@@ -28,5 +28,10 @@ namespace itproject
             CustomerRegistration cr = new CustomerRegistration();
             cr.ShowDialog();
         }
+
+        private void Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

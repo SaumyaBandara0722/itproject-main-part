@@ -32,5 +32,16 @@ namespace itproject.Properties {
                 return ((string)(this["itprojectConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-COF6S90;Initial Catalog=itproject_new;Integrated Security=Tru" +
+            "e")]
+        public string itproject_newConnectionString {
+            get {
+                return ((string)(this["itproject_newConnectionString"]));
+            }
+        }
     }
 }
