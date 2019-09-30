@@ -18,7 +18,7 @@ namespace itproject
         {
             InitializeComponent();
         }
-        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-COF6S90;Initial Catalog=itproject_new;Integrated Security=True;");
+        SqlConnection con = new SqlConnection(@"Data Source=AMITH-PC;Initial Catalog=itproject_new;Integrated Security=True;");
         private object downloadingDataTable;
 
         private void Save_btn_Click(object sender, EventArgs e)
@@ -224,17 +224,17 @@ namespace itproject
 
 	private void TxtId_TextChanged(object sender, EventArgs e)
     	{
-            //String keyword = txtId.Text;
-
-            //con.Open();
-            //String query = "SELECT * FROM Payroll WHERE EmployeeID LIKE '" + keyword + "%'";
-            //SqlDataAdapter sd = new SqlDataAdapter(query, con);
-            //DataTable dt = new DataTable();
-            //sd.Fill(dt);
-            //dataGridView1.DataSource = dt;
-            //con.Close();
-
             String keyword = txtId.Text;
+
+            con.Open();
+            String query = "SELECT * FROM Payroll WHERE EmployeeID LIKE '" + keyword + "%'";
+            SqlDataAdapter sd = new SqlDataAdapter(query, con);
+            DataTable dt = new DataTable();
+            sd.Fill(dt);
+            dataGridView1.DataSource = dt;
+            con.Close();
+
+            //String keyword = txtId.Text;
 
 
 
@@ -242,14 +242,17 @@ namespace itproject
 
 	private void View_Load(object sender, EventArgs e)
     	{
+            // TODO: This line of code loads data into the 'itproject_newDataSetPayRoll.Payroll' table. You can move, or remove it, as needed.
+            this.PayrollTableAdapter.Fill(this.itproject_newDataSetPayRoll.Payroll);
 
-            /*      con.Open();
+                  con.Open();
                   String query = "SELECT * FROM Payroll";
                   SqlDataAdapter sd = new SqlDataAdapter(query, con);
                   DataTable dt = new DataTable();
                   sd.Fill(dt);
                   dataGridView1.DataSource = dt;
-                  con.Close();*/
+                  con.Close();
+            this.reportViewer1.RefreshReport();
         }
 
         private void BtnGetData_Click(object sender, EventArgs e)

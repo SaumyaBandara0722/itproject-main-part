@@ -170,6 +170,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>itproject_newDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="itproject_newDataSetPayRoll.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>itproject_newDataSetPayRoll.xsd</DependentUpon>
+    </Compile>
     <Compile Include="LeaveManagementForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -335,6 +340,7 @@
     <EmbeddedResource Include="Report1.rdlc" />
     <EmbeddedResource Include="Report2.rdlc" />
     <EmbeddedResource Include="Report3.rdlc" />
+    <EmbeddedResource Include="Report4.rdlc" />
     <EmbeddedResource Include="SearchProjects.resx">
       <DependentUpon>SearchProjects.cs</DependentUpon>
     </EmbeddedResource>
@@ -385,6 +391,17 @@
     </None>
     <None Include="itproject_newDataSet1.xss">
       <DependentUpon>itproject_newDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="itproject_newDataSetPayRoll.xsc">
+      <DependentUpon>itproject_newDataSetPayRoll.xsd</DependentUpon>
+    </None>
+    <None Include="itproject_newDataSetPayRoll.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>itproject_newDataSetPayRoll.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="itproject_newDataSetPayRoll.xss">
+      <DependentUpon>itproject_newDataSetPayRoll.xsd</DependentUpon>
     </None>
     <None Include="itproject_TemporaryKey.pfx" />
     <None Include="packages.config" />

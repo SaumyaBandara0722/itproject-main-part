@@ -41,7 +41,7 @@ namespace itproject
                 dgvEmployeeList.Columns[i].HeaderCell.Style.BackColor = Color.Plum;
                 dgvEmployeeList.EnableHeadersVisualStyles = false;
             }
-            this.reportViewer1.RefreshReport();
+           // this.reportViewer1.RefreshReport();
         }
 
         private void Button4_Click(object sender, EventArgs e)

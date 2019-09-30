@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(View));
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.PayrollBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.itproject_newDataSet = new itproject.itproject_newDataSet();
             this.tabControl1 = new System.Windows.Forms.TabControl();
@@ -95,6 +96,9 @@
             this.label20 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.itproject_newDataSetPayRoll = new itproject.itproject_newDataSetPayRoll();
+            this.PayrollTableAdapter = new itproject.itproject_newDataSetPayRollTableAdapters.PayrollTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.PayrollBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.itproject_newDataSet)).BeginInit();
             this.tabControl1.SuspendLayout();
@@ -109,6 +113,7 @@
             this.tabPage3.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.itproject_newDataSetPayRoll)).BeginInit();
             this.SuspendLayout();
             // 
             // PayrollBindingSource
@@ -838,6 +843,7 @@
             // tabPage3
             // 
             this.tabPage3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.tabPage3.Controls.Add(this.reportViewer1);
             this.tabPage3.Controls.Add(this.btnDownload);
             this.tabPage3.Controls.Add(this.buttongenarate);
             this.tabPage3.Controls.Add(this.comboBox1);
@@ -951,6 +957,26 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.Button2_Click);
             // 
+            // reportViewer1
+            // 
+            reportDataSource1.Name = "DataSetPayRoll";
+            reportDataSource1.Value = this.PayrollBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "itproject.Report4.rdlc";
+            this.reportViewer1.Location = new System.Drawing.Point(108, 227);
+            this.reportViewer1.Name = "reportViewer1";
+            this.reportViewer1.Size = new System.Drawing.Size(1085, 350);
+            this.reportViewer1.TabIndex = 8;
+            // 
+            // itproject_newDataSetPayRoll
+            // 
+            this.itproject_newDataSetPayRoll.DataSetName = "itproject_newDataSetPayRoll";
+            this.itproject_newDataSetPayRoll.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // PayrollTableAdapter
+            // 
+            this.PayrollTableAdapter.ClearBeforeFill = true;
+            // 
             // View
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -981,6 +1007,7 @@
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.itproject_newDataSetPayRoll)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1052,5 +1079,8 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.BindingSource PayrollBindingSource;
         private itproject_newDataSet itproject_newDataSet;
+        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
+        private itproject_newDataSetPayRoll itproject_newDataSetPayRoll;
+        private itproject_newDataSetPayRollTableAdapters.PayrollTableAdapter PayrollTableAdapter;
     }
 }
