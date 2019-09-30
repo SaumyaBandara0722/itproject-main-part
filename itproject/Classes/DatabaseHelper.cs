@@ -47,7 +47,7 @@ namespace Employee_Management.Classes
                     isSuccess = false;
                 }
             }
-            catch(Exception e)
+            catch(Exception )
             {
 
             }

@@ -39,7 +39,7 @@ namespace itproject.Classes
                 conn.Open();
                 adapter.Fill(dt);
             }
-            catch (Exception ex)
+            catch (Exception )
             {
 
             }
