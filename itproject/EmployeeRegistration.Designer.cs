@@ -121,6 +121,9 @@
             this.comboBox2.Size = new System.Drawing.Size(257, 21);
             this.comboBox2.TabIndex = 37;
             this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.ComboBox2_SelectedIndexChanged);
+            this.comboBox2.SelectedValueChanged += new System.EventHandler(this.ComboBox2_SelectedValueChanged);
+            this.comboBox2.CursorChanged += new System.EventHandler(this.ComboBox2_CursorChanged);
+            this.comboBox2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ComboBox2_MouseClick);
             // 
             // lblGender
             // 

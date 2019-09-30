@@ -257,5 +257,11 @@ namespace itproject
                 MessageBox.Show("Failed to add new employee.Try again");
             }         
         }
+
+        //Display the combobox selected department in textbox  
+        private void ComboBox2_SelectedValueChanged(object sender, EventArgs e)
+        {
+            txtEnterDep.Text = comboBox2.Text;
+        }
     }     
 }
