@@ -99,5 +99,10 @@ namespace itproject
             LeaveManagementForm leaveManagementForm = new LeaveManagementForm();
             leaveManagementForm.Show();
         }
+
+        private void sidePanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

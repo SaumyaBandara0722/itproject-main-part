@@ -111,5 +111,11 @@ namespace itproject
             dataAdapter.Fill(dataTable);
             dataGridView1.DataSource = dataTable;
         }
+
+        private void buttonReport_Click(object sender, EventArgs e)
+        {
+            LoanReportForm loanReportForm = new LoanReportForm();
+            loanReportForm.Show();
+        }
     }
 }

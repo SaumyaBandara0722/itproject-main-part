@@ -61,9 +61,6 @@
     <SignManifests>false</SignManifests>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
-    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
-    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.ReportViewer.11.0.3366.16\lib\Microsoft.ReportViewer.Common.dll</HintPath>
     </Reference>
@@ -91,7 +88,7 @@
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Web.Services" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -115,12 +112,6 @@
     <Compile Include="Classes\DatabaseHelper.cs" />
     <Compile Include="Classes\Employee.cs" />
     <Compile Include="Classes\LoanClass.cs" />
-    <Compile Include="CrystalReport1.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CrystalReport1.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="CustomerClass.cs" />
     <Compile Include="CustomerRegistration.cs">
       <SubType>Form</SubType>
@@ -133,11 +124,6 @@
     </Compile>
     <Compile Include="Customers.designer.cs">
       <DependentUpon>Customers.cs</DependentUpon>
-    </Compile>
-    <Compile Include="DataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DataSet1.xsd</DependentUpon>
     </Compile>
     <Compile Include="EmployeeDetailsUserControl.cs">
       <SubType>UserControl</SubType>
@@ -168,10 +154,21 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>itprojectDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="itproject_newDataSet.cs">
+      <DependentUpon>itproject_newDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="itproject_newDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>itproject_newDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="itproject_newDataSet1.cs">
+      <DependentUpon>itproject_newDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="itproject_newDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>itproject_newDataSet1.xsd</DependentUpon>
     </Compile>
     <Compile Include="LeaveManagementForm.cs">
       <SubType>Form</SubType>
@@ -179,11 +176,11 @@
     <Compile Include="LeaveManagementForm.Designer.cs">
       <DependentUpon>LeaveManagementForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Mail.cs">
+    <Compile Include="LoanReportForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Mail.designer.cs">
-      <DependentUpon>Mail.cs</DependentUpon>
+    <Compile Include="LoanReportForm.Designer.cs">
+      <DependentUpon>LoanReportForm.cs</DependentUpon>
     </Compile>
     <Compile Include="MainProjectTask.cs">
       <SubType>Form</SubType>
@@ -272,10 +269,6 @@
     <EmbeddedResource Include="Attendance.resx">
       <DependentUpon>Attendance.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CrystalReport1.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
-    </EmbeddedResource>
     <EmbeddedResource Include="CustomerRegistration.resx">
       <DependentUpon>CustomerRegistration.cs</DependentUpon>
     </EmbeddedResource>
@@ -297,8 +290,8 @@
     <EmbeddedResource Include="LeaveManagementForm.resx">
       <DependentUpon>LeaveManagementForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Mail.resx">
-      <DependentUpon>Mail.cs</DependentUpon>
+    <EmbeddedResource Include="LoanReportForm.resx">
+      <DependentUpon>LoanReportForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainProjectTask.resx">
       <DependentUpon>MainProjectTask.cs</DependentUpon>
@@ -334,6 +327,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="Report2.rdlc" />
+    <EmbeddedResource Include="Report3.rdlc" />
     <EmbeddedResource Include="ShowAttendance.resx">
       <DependentUpon>ShowAttendance.cs</DependentUpon>
     </EmbeddedResource>
@@ -349,17 +344,6 @@
     <EmbeddedResource Include="ViewLoans.resx">
       <DependentUpon>ViewLoans.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="DataSet1.xsc">
-      <DependentUpon>DataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="DataSet1.xsd">
-      <SubType>Designer</SubType>
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
-    </None>
-    <None Include="DataSet1.xss">
-      <DependentUpon>DataSet1.xsd</DependentUpon>
-    </None>
     <None Include="itprojectDataSet.xsc">
       <DependentUpon>itprojectDataSet.xsd</DependentUpon>
     </None>
@@ -381,6 +365,17 @@
     </None>
     <None Include="itproject_newDataSet.xss">
       <DependentUpon>itproject_newDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="itproject_newDataSet1.xsc">
+      <DependentUpon>itproject_newDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="itproject_newDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>itproject_newDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="itproject_newDataSet1.xss">
+      <DependentUpon>itproject_newDataSet1.xsd</DependentUpon>
     </None>
     <None Include="itproject_TemporaryKey.pfx" />
     <None Include="packages.config" />
@@ -408,9 +403,6 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
-  </ItemGroup>
-  <ItemGroup>
-    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="..\packages\Microsoft.SqlServer.Types.11.0.1\nativeBinaries\x64\msvcr100.dll">

@@ -41,8 +41,8 @@
             this.topPanel = new System.Windows.Forms.Panel();
             this.logoPanel = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.directoryEntry1 = new System.DirectoryServices.DirectoryEntry();
             this.employeeDetailsUserControl1 = new itproject.EmployeeDetailsUserControl();
-         
             this.customers1 = new itproject.Customers();
             this.sidePanel.SuspendLayout();
             this.logoPanel.SuspendLayout();
@@ -64,14 +64,15 @@
             this.sidePanel.Location = new System.Drawing.Point(0, 0);
             this.sidePanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sidePanel.Name = "sidePanel";
-            this.sidePanel.Size = new System.Drawing.Size(335, 878);
+            this.sidePanel.Size = new System.Drawing.Size(335, 886);
             this.sidePanel.TabIndex = 0;
+            this.sidePanel.Paint += new System.Windows.Forms.PaintEventHandler(this.sidePanel_Paint);
             // 
             // buttonViewAttendance
             // 
             this.buttonViewAttendance.Image = ((System.Drawing.Image)(resources.GetObject("buttonViewAttendance.Image")));
             this.buttonViewAttendance.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonViewAttendance.Location = new System.Drawing.Point(23, 768);
+            this.buttonViewAttendance.Location = new System.Drawing.Point(22, 746);
             this.buttonViewAttendance.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonViewAttendance.Name = "buttonViewAttendance";
             this.buttonViewAttendance.Size = new System.Drawing.Size(285, 83);
@@ -84,7 +85,7 @@
             // 
             this.buttonLoan.Image = ((System.Drawing.Image)(resources.GetObject("buttonLoan.Image")));
             this.buttonLoan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonLoan.Location = new System.Drawing.Point(23, 343);
+            this.buttonLoan.Location = new System.Drawing.Point(23, 331);
             this.buttonLoan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonLoan.Name = "buttonLoan";
             this.buttonLoan.Size = new System.Drawing.Size(285, 85);
@@ -97,7 +98,7 @@
             // 
             this.buttonStocks.Image = ((System.Drawing.Image)(resources.GetObject("buttonStocks.Image")));
             this.buttonStocks.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonStocks.Location = new System.Drawing.Point(23, 664);
+            this.buttonStocks.Location = new System.Drawing.Point(23, 640);
             this.buttonStocks.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonStocks.Name = "buttonStocks";
             this.buttonStocks.Size = new System.Drawing.Size(285, 83);
@@ -110,7 +111,7 @@
             // 
             this.buttonProjectsAndTasks.Image = ((System.Drawing.Image)(resources.GetObject("buttonProjectsAndTasks.Image")));
             this.buttonProjectsAndTasks.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonProjectsAndTasks.Location = new System.Drawing.Point(23, 550);
+            this.buttonProjectsAndTasks.Location = new System.Drawing.Point(23, 535);
             this.buttonProjectsAndTasks.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonProjectsAndTasks.Name = "buttonProjectsAndTasks";
             this.buttonProjectsAndTasks.Size = new System.Drawing.Size(285, 83);
@@ -123,7 +124,7 @@
             // 
             this.buttonCustomers.Image = ((System.Drawing.Image)(resources.GetObject("buttonCustomers.Image")));
             this.buttonCustomers.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonCustomers.Location = new System.Drawing.Point(23, 444);
+            this.buttonCustomers.Location = new System.Drawing.Point(23, 433);
             this.buttonCustomers.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonCustomers.Name = "buttonCustomers";
             this.buttonCustomers.Size = new System.Drawing.Size(285, 83);
@@ -136,7 +137,7 @@
             // 
             this.buttonPayroll.Image = ((System.Drawing.Image)(resources.GetObject("buttonPayroll.Image")));
             this.buttonPayroll.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonPayroll.Location = new System.Drawing.Point(23, 239);
+            this.buttonPayroll.Location = new System.Drawing.Point(23, 226);
             this.buttonPayroll.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonPayroll.Name = "buttonPayroll";
             this.buttonPayroll.Size = new System.Drawing.Size(285, 85);
@@ -150,7 +151,7 @@
             this.buttonLeaveManagement.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonLeaveManagement.Image = ((System.Drawing.Image)(resources.GetObject("buttonLeaveManagement.Image")));
             this.buttonLeaveManagement.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonLeaveManagement.Location = new System.Drawing.Point(23, 132);
+            this.buttonLeaveManagement.Location = new System.Drawing.Point(23, 121);
             this.buttonLeaveManagement.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonLeaveManagement.Name = "buttonLeaveManagement";
             this.buttonLeaveManagement.Size = new System.Drawing.Size(285, 85);
@@ -164,7 +165,7 @@
             this.buttonEmployees.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonEmployees.Image = ((System.Drawing.Image)(resources.GetObject("buttonEmployees.Image")));
             this.buttonEmployees.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonEmployees.Location = new System.Drawing.Point(23, 29);
+            this.buttonEmployees.Location = new System.Drawing.Point(23, 17);
             this.buttonEmployees.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonEmployees.Name = "buttonEmployees";
             this.buttonEmployees.Size = new System.Drawing.Size(285, 85);
@@ -216,10 +217,6 @@
             this.employeeDetailsUserControl1.Size = new System.Drawing.Size(1043, 565);
             this.employeeDetailsUserControl1.TabIndex = 3;
             // 
-            // patternAndStockManagement1
-            // 
-         
-            // 
             // customers1
             // 
             this.customers1.Location = new System.Drawing.Point(335, 222);
@@ -232,15 +229,16 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1503, 878);
+            this.ClientSize = new System.Drawing.Size(1503, 886);
             this.Controls.Add(this.logoPanel);
             this.Controls.Add(this.topPanel);
             this.Controls.Add(this.sidePanel);
             this.Controls.Add(this.employeeDetailsUserControl1);
-           
             this.Controls.Add(this.customers1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MaximizeBox = false;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.sidePanel.ResumeLayout(false);
@@ -267,6 +265,7 @@
     
         private Customers customers1;
         private System.Windows.Forms.Button buttonViewAttendance;
+        private System.DirectoryServices.DirectoryEntry directoryEntry1;
     }
 }
 

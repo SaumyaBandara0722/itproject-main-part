@@ -178,7 +178,8 @@ namespace itproject
 
         private void DataGridViewInForm_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            DataTable dt = ptc.Select();
+            dataGridViewInForm.DataSource = dt;
         }
 
         private void DataGridViewInForm_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
