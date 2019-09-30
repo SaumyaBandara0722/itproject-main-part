@@ -2,7 +2,9 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -33,6 +35,18 @@ namespace itproject
                 dataGridViewDetails.Columns[i].HeaderCell.Style.BackColor = Color.Plum;
                 dataGridViewDetails.EnableHeadersVisualStyles = false;
             }
+
+            //Display departments in combobox2
+            SqlConnection conn = new SqlConnection(myconnstrng);
+            DataTable d = new DataTable();
+            string sql = "SELECT * from Department";
+            SqlCommand cmd = new SqlCommand(sql, conn);
+            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+            conn.Open();
+            adapter.Fill(d);
+            comboBox2.ValueMember = "depName";
+            comboBox2.DataSource = d;
+            conn.Close();
         }
         int num = 0;
         double sal = 0.0;
@@ -41,21 +55,21 @@ namespace itproject
             if (txtempName.Text == "" || txtBdy.Text == "" || comboBox1.Text == "" || txtAdd.Text == "" || txtNum.Text == "" || txtEmail.Text == "" || comboBox2.Text == "" || txtJoinedDate.Text == "" || txtSal.Text == "")
             {
                 MessageBox.Show("Cannot keep empty fields");
-            }           
+            }
             else if (txtNum.TextLength != 10)
             {
                 MessageBox.Show("Invalid phone number");
             }
-            else if  (!int.TryParse(txtNum.Text,out num))
+            else if (!int.TryParse(txtNum.Text, out num))
             {
                 MessageBox.Show("Phone number requires integers only");
             }
-            else if(!double.TryParse(txtSal.Text,out sal))
+            else if (!double.TryParse(txtSal.Text, out sal))
             {
                 MessageBox.Show("Invalid Salary Type");
             }
             else
-            { 
+            {
                 //get the value from input field
                 c.EmpName = txtempName.Text;
                 c.Bdy = txtBdy.Value.ToString();
@@ -66,24 +80,24 @@ namespace itproject
                 c.Dept = comboBox2.Text;
                 c.Date = txtJoinedDate.Value.ToString();
                 c.Salary = double.Parse(txtSal.Text);
-      
+
                 //insert data into database using the method created
                 bool success = c.Insert(c);
                 if (success == true)
                 {
-                     MessageBox.Show("New Employee Successfully Inserted");
+                    MessageBox.Show("New Employee Successfully Inserted");
 
-                     //Display details of a paticular employee in the datagrid
-                     DataTable dt = c.SelectView();
-                     dataGridViewDetails.DataSource = dt;
+                    //Display details of a paticular employee in the datagrid
+                    DataTable dt = c.SelectView();
+                    dataGridViewDetails.DataSource = dt;
 
-                     //call the clear method
-                     Clear();
+                    //call the clear method
+                    Clear();
                 }
                 else
                 {
-                     MessageBox.Show("Failed to add new employee.Try again");
-                }               
+                    MessageBox.Show("Failed to add new employee.Try again");
+                }
             }
         }
 
@@ -116,7 +130,7 @@ namespace itproject
                 c.Phone = txtNum.Text;
                 c.Email = txtEmail.Text;
                 c.Dept = comboBox2.Text;
-                c.Date = txtJoinedDate.Value.ToString();                 
+                c.Date = txtJoinedDate.Value.ToString();
                 c.Salary = double.Parse(txtSal.Text);
 
                 bool success = c.Update(c);
@@ -176,7 +190,7 @@ namespace itproject
 
         private void DataGridViewDetails_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-           
+
         }
 
         private void Button3_Click(object sender, EventArgs e)
@@ -186,7 +200,7 @@ namespace itproject
 
         private void TxtNum_TextChanged(object sender, EventArgs e)
         {
-           
+
         }
 
         private void b(object sender, EventArgs e)
@@ -224,5 +238,24 @@ namespace itproject
         {
 
         }
-    }
+
+        static string myconnstrng = ConfigurationManager.ConnectionStrings["connstrng"].ConnectionString;
+        private void BtnAddNewDep_Click(object sender, EventArgs e)
+        {
+            //get the value from input field
+            c.Dept = txtEnterDep.Text;
+
+            //insert data into database using the method created
+            bool success = c.InsertDepartment(c);
+            if (success == true)
+            {
+                MessageBox.Show("New Department Successfully Inserted");
+                txtEnterDep.Text = "";
+            }
+            else
+            {
+                MessageBox.Show("Failed to add new employee.Try again");
+            }         
+        }
+    }     
 }

@@ -207,5 +207,44 @@ namespace itproject.Classes
             }
             return isSuccess;
         }
+
+        //Add new department
+        public bool InsertDepartment(Employee c)
+        {
+            bool isSuccess = false;
+
+            SqlConnection conn = new SqlConnection(myconnstrng);
+            try
+            {
+                //command to insert data
+                string sql = "INSERT INTO Department (depName) VALUES(@depName)";
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                //create parameters to add data
+                cmd.Parameters.AddWithValue("@depName", c.Dept);
+
+                conn.Open();
+                int rows = cmd.ExecuteNonQuery();
+                //if the query runs successfull then the value of rows will be greater than zero else the value will ne 0
+                if (rows > 0)
+                {
+                    isSuccess = true;
+                }
+                else
+                {
+                    isSuccess = false;
+                }
+
+
+            }
+            catch (Exception ex)
+            {
+
+            }
+            finally
+            {
+                conn.Close();
+            }
+            return isSuccess;
+        }
     }
 }
