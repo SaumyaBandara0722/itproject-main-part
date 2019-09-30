@@ -243,14 +243,13 @@ namespace itproject
 	private void View_Load(object sender, EventArgs e)
     	{
 
-      /*      con.Open();
-        	String query = "SELECT * FROM Payroll";
-        	SqlDataAdapter sd = new SqlDataAdapter(query, con);
-        	DataTable dt = new DataTable();
-        	sd.Fill(dt);
-        	dataGridView1.DataSource = dt;
-        	con.Close();*/
-
+            /*      con.Open();
+                  String query = "SELECT * FROM Payroll";
+                  SqlDataAdapter sd = new SqlDataAdapter(query, con);
+                  DataTable dt = new DataTable();
+                  sd.Fill(dt);
+                  dataGridView1.DataSource = dt;
+                  con.Close();*/
         }
 
         private void BtnGetData_Click(object sender, EventArgs e)

@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(View));
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.PayrollBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.itproject_newDataSet = new itproject.itproject_newDataSet();
             this.tabControl1 = new System.Windows.Forms.TabControl();
@@ -87,7 +86,6 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.btnDownload = new System.Windows.Forms.Button();
             this.buttongenarate = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -97,8 +95,6 @@
             this.label20 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-
             ((System.ComponentModel.ISupportInitialize)(this.PayrollBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.itproject_newDataSet)).BeginInit();
             this.tabControl1.SuspendLayout();
@@ -842,8 +838,6 @@
             // tabPage3
             // 
             this.tabPage3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tabPage3.Controls.Add(this.reportViewer1);
-            this.tabPage3.Controls.Add(this.textBox3);
             this.tabPage3.Controls.Add(this.btnDownload);
             this.tabPage3.Controls.Add(this.buttongenarate);
             this.tabPage3.Controls.Add(this.comboBox1);
@@ -859,13 +853,6 @@
             this.tabPage3.Text = "Report";
             this.tabPage3.UseVisualStyleBackColor = true;
             this.tabPage3.Click += new System.EventHandler(this.TabPage3_Click);
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(571, 105);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 28);
-            this.textBox3.TabIndex = 9;
             // 
             // btnDownload
             // 
@@ -963,17 +950,6 @@
             this.button2.Text = "Exit";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.Button2_Click);
-            // 
-            // reportViewer1
-            // 
-            reportDataSource1.Name = "PayrollDataSet";
-            reportDataSource1.Value = this.PayrollBindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "itproject.Report4.rdlc";
-            this.reportViewer1.Location = new System.Drawing.Point(57, 217);
-            this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.Size = new System.Drawing.Size(1177, 350);
-            this.reportViewer1.TabIndex = 10;
             // 
             // View
             // 
@@ -1076,9 +1052,5 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.BindingSource PayrollBindingSource;
         private itproject_newDataSet itproject_newDataSet;
-//        private itproject_newDataSetTableAdapters.PayrollTableAdapter PayrollTableAdapter;
-        private System.Windows.Forms.TextBox textBox3;
-        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
-
     }
 }
