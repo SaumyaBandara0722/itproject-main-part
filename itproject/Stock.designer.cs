@@ -80,6 +80,8 @@ namespace itproject
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.saveFileDialog2 = new System.Windows.Forms.SaveFileDialog();
             this.buttonStockASPDF = new System.Windows.Forms.Button();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.datagridviewstock)).BeginInit();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -98,13 +100,15 @@ namespace itproject
             ((System.ComponentModel.ISupportInitialize)(this.pictureboxstockclose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnmaximize)).BeginInit();
             this.panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.SuspendLayout();
             // 
             // labelstockaddeddate
             // 
             this.labelstockaddeddate.AutoSize = true;
             this.labelstockaddeddate.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelstockaddeddate.ForeColor = System.Drawing.Color.White;
+            this.labelstockaddeddate.ForeColor = System.Drawing.Color.Black;
             this.labelstockaddeddate.Location = new System.Drawing.Point(29, 335);
             this.labelstockaddeddate.Name = "labelstockaddeddate";
             this.labelstockaddeddate.Size = new System.Drawing.Size(140, 29);
@@ -135,7 +139,7 @@ namespace itproject
             // 
             this.labelstockavailablequantity.AutoSize = true;
             this.labelstockavailablequantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelstockavailablequantity.ForeColor = System.Drawing.Color.White;
+            this.labelstockavailablequantity.ForeColor = System.Drawing.Color.Black;
             this.labelstockavailablequantity.Location = new System.Drawing.Point(29, 273);
             this.labelstockavailablequantity.Name = "labelstockavailablequantity";
             this.labelstockavailablequantity.Size = new System.Drawing.Size(204, 29);
@@ -156,7 +160,7 @@ namespace itproject
             // 
             this.labelstockid.AutoSize = true;
             this.labelstockid.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelstockid.ForeColor = System.Drawing.Color.White;
+            this.labelstockid.ForeColor = System.Drawing.Color.Black;
             this.labelstockid.Location = new System.Drawing.Point(29, 85);
             this.labelstockid.Name = "labelstockid";
             this.labelstockid.Size = new System.Drawing.Size(118, 29);
@@ -167,7 +171,7 @@ namespace itproject
             // 
             this.labelstockaddedquantity.AutoSize = true;
             this.labelstockaddedquantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelstockaddedquantity.ForeColor = System.Drawing.Color.White;
+            this.labelstockaddedquantity.ForeColor = System.Drawing.Color.Black;
             this.labelstockaddedquantity.Location = new System.Drawing.Point(29, 214);
             this.labelstockaddedquantity.Name = "labelstockaddedquantity";
             this.labelstockaddedquantity.Size = new System.Drawing.Size(177, 29);
@@ -188,7 +192,7 @@ namespace itproject
             // 
             this.labelstockpatternname.AutoSize = true;
             this.labelstockpatternname.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelstockpatternname.ForeColor = System.Drawing.Color.White;
+            this.labelstockpatternname.ForeColor = System.Drawing.Color.Black;
             this.labelstockpatternname.Location = new System.Drawing.Point(29, 151);
             this.labelstockpatternname.Name = "labelstockpatternname";
             this.labelstockpatternname.Size = new System.Drawing.Size(160, 29);
@@ -346,7 +350,8 @@ namespace itproject
             // panel4
             // 
             this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.panel4.BackColor = System.Drawing.Color.RoyalBlue;
+            this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel4.BackgroundImage")));
             this.panel4.Controls.Add(this.pictureBox1);
             this.panel4.Controls.Add(this.buttonstockclear);
             this.panel4.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -369,7 +374,7 @@ namespace itproject
             // panel3
             // 
             this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.panel3.BackColor = System.Drawing.Color.RoyalBlue;
+            this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.Controls.Add(this.pictureBox3);
             this.panel3.Controls.Add(this.buttonstockupdate);
             this.panel3.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -392,7 +397,8 @@ namespace itproject
             // panel6
             // 
             this.panel6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.panel6.BackColor = System.Drawing.Color.RoyalBlue;
+            this.panel6.BackColor = System.Drawing.Color.White;
+            this.panel6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel6.BackgroundImage")));
             this.panel6.Controls.Add(this.pictureBox5);
             this.panel6.Controls.Add(this.buttonstockadd1);
             this.panel6.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -415,7 +421,8 @@ namespace itproject
             // panel7
             // 
             this.panel7.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.panel7.BackColor = System.Drawing.Color.RoyalBlue;
+            this.panel7.BackColor = System.Drawing.Color.White;
+            this.panel7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel7.BackgroundImage")));
             this.panel7.Controls.Add(this.pictureBox6);
             this.panel7.Controls.Add(this.labelstocksearch);
             this.panel7.Location = new System.Drawing.Point(906, 174);
@@ -438,9 +445,9 @@ namespace itproject
             // 
             this.labelstocksearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelstocksearch.AutoSize = true;
-            this.labelstocksearch.BackColor = System.Drawing.Color.RoyalBlue;
+            this.labelstocksearch.BackColor = System.Drawing.Color.White;
             this.labelstocksearch.Font = new System.Drawing.Font("Myanmar Text", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelstocksearch.ForeColor = System.Drawing.Color.White;
+            this.labelstocksearch.ForeColor = System.Drawing.Color.Black;
             this.labelstocksearch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.labelstocksearch.Location = new System.Drawing.Point(91, 17);
             this.labelstocksearch.Name = "labelstocksearch";
@@ -448,12 +455,12 @@ namespace itproject
             this.labelstocksearch.TabIndex = 112;
             this.labelstocksearch.Text = "Search";
             this.labelstocksearch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelstocksearch.Click += new System.EventHandler(this.Labelstocksearch_Click);
             // 
             // panel2
             // 
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.BackColor = System.Drawing.Color.RoyalBlue;
+            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Controls.Add(this.buttonpattern2);
             this.panel2.Location = new System.Drawing.Point(1006, 35);
@@ -475,7 +482,8 @@ namespace itproject
             // panel1
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.BackColor = System.Drawing.Color.RoyalBlue;
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
             this.panel1.Controls.Add(this.btnminimize);
             this.panel1.Controls.Add(this.pictureboxstockclose);
             this.panel1.Controls.Add(this.btnmaximize);
@@ -543,7 +551,7 @@ namespace itproject
             // 
             this.labelSNo.AutoSize = true;
             this.labelSNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSNo.ForeColor = System.Drawing.Color.White;
+            this.labelSNo.ForeColor = System.Drawing.Color.Black;
             this.labelSNo.Location = new System.Drawing.Point(29, 20);
             this.labelSNo.Name = "labelSNo";
             this.labelSNo.Size = new System.Drawing.Size(100, 29);
@@ -554,7 +562,8 @@ namespace itproject
             // 
             this.labelstock.AutoSize = true;
             this.labelstock.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelstock.ForeColor = System.Drawing.Color.White;
+            this.labelstock.ForeColor = System.Drawing.Color.Black;
+            this.labelstock.Image = ((System.Drawing.Image)(resources.GetObject("labelstock.Image")));
             this.labelstock.Location = new System.Drawing.Point(152, 17);
             this.labelstock.Name = "labelstock";
             this.labelstock.Size = new System.Drawing.Size(423, 135);
@@ -625,6 +634,7 @@ namespace itproject
             this.panel8.Controls.Add(this.textstockpatternname);
             this.panel8.Controls.Add(this.textstockpatternid);
             this.panel8.Controls.Add(this.labelstockaddeddate);
+            this.panel8.Controls.Add(this.pictureBox8);
             this.panel8.Location = new System.Drawing.Point(93, 222);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(732, 427);
@@ -651,7 +661,28 @@ namespace itproject
             this.buttonStockASPDF.TabIndex = 197;
             this.buttonStockASPDF.Text = "Export as a PDF";
             this.buttonStockASPDF.UseVisualStyleBackColor = true;
-            this.buttonStockASPDF.Click += new System.EventHandler(this.ButtonStockASPDF_Click);
+            this.buttonStockASPDF.Click += new System.EventHandler(this.buttonStockASPDF_Click);
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox7.Image = global::itproject.Properties.Resources.angryimg;
+            this.pictureBox7.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(1724, 868);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.TabIndex = 198;
+            this.pictureBox7.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
+            this.pictureBox8.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(732, 427);
+            this.pictureBox8.TabIndex = 195;
+            this.pictureBox8.TabStop = false;
             // 
             // Stock
             // 
@@ -659,7 +690,7 @@ namespace itproject
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.AutoSize = true;
-            this.BackColor = System.Drawing.Color.RoyalBlue;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1724, 868);
             this.Controls.Add(this.buttonStockASPDF);
             this.Controls.Add(this.button1);
@@ -674,6 +705,7 @@ namespace itproject
             this.Controls.Add(this.textstocksearch);
             this.Controls.Add(this.datagridviewstock);
             this.Controls.Add(this.labelstock);
+            this.Controls.Add(this.pictureBox7);
             this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Stock";
@@ -704,6 +736,8 @@ namespace itproject
             ((System.ComponentModel.ISupportInitialize)(this.btnmaximize)).EndInit();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -758,5 +792,7 @@ namespace itproject
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private System.Windows.Forms.SaveFileDialog saveFileDialog2;
         private System.Windows.Forms.Button buttonStockASPDF;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.PictureBox pictureBox8;
     }
 }

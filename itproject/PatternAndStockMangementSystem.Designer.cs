@@ -39,6 +39,7 @@
             this.btnmaximize = new System.Windows.Forms.PictureBox();
             this.btnminimize = new System.Windows.Forms.PictureBox();
             this.pictureboxpatternclose = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel2.SuspendLayout();
@@ -47,17 +48,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnmaximize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnminimize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureboxpatternclose)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.RoyalBlue;
+            this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
             this.panel3.Controls.Add(this.pictureBox3);
             this.panel3.Controls.Add(this.buttonstock);
             this.panel3.Font = new System.Drawing.Font("Microsoft YaHei", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel3.Location = new System.Drawing.Point(142, 428);
+            this.panel3.Location = new System.Drawing.Point(485, 207);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(355, 336);
+            this.panel3.Size = new System.Drawing.Size(349, 304);
             this.panel3.TabIndex = 6;
             // 
             // pictureBox3
@@ -91,14 +94,16 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.RoyalBlue;
+            this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Controls.Add(this.buttonpattern);
             this.panel2.Font = new System.Drawing.Font("Microsoft YaHei", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel2.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.panel2.Location = new System.Drawing.Point(142, 61);
+            this.panel2.Location = new System.Drawing.Point(67, 207);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(355, 304);
             this.panel2.TabIndex = 3;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // pictureBox2
             // 
@@ -133,7 +138,7 @@
             this.panel5.Controls.Add(this.btnminimize);
             this.panel5.Controls.Add(this.pictureboxpatternclose);
             this.panel5.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.panel5.Location = new System.Drawing.Point(655, 12);
+            this.panel5.Location = new System.Drawing.Point(758, 12);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(200, 98);
             this.panel5.TabIndex = 176;
@@ -171,18 +176,30 @@
             this.pictureboxpatternclose.TabStop = false;
             this.pictureboxpatternclose.Click += new System.EventHandler(this.Pictureboxpatternclose_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::itproject.Properties.Resources.angryimg;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(984, 776);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 177;
+            this.pictureBox1.TabStop = false;
+            // 
             // PatternAndStockMangementSystem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(881, 776);
+            this.ClientSize = new System.Drawing.Size(984, 776);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel2);
+            this.Controls.Add(this.pictureBox1);
             this.ForeColor = System.Drawing.Color.Navy;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximizeBox = false;
             this.Name = "PatternAndStockMangementSystem";
             this.Text = "PatternAndStockMangementSystem";
             this.Load += new System.EventHandler(this.PatternAndStockMangementSystem_Load);
@@ -194,6 +211,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnmaximize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnminimize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureboxpatternclose)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -209,5 +227,6 @@
         private System.Windows.Forms.PictureBox btnmaximize;
         private System.Windows.Forms.PictureBox btnminimize;
         private System.Windows.Forms.PictureBox pictureboxpatternclose;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

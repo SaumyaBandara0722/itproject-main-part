@@ -4,6 +4,9 @@
 
     partial class itproject_newDataSet1
     {
+        partial class Projects_TasksDataTable
+        {
+        }
     }
 }
 

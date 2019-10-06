@@ -14,6 +14,7 @@ namespace itproject
 {
     public partial class orders : Form
     {
+        static string myconnstrng = ConfigurationManager.ConnectionStrings["connstrng"].ConnectionString;
         public orders()
         {
             InitializeComponent();
@@ -32,7 +33,41 @@ namespace itproject
 
         private void Oadd_Click(object sender, EventArgs e)
         {
+            SqlConnection conn = new SqlConnection(myconnstrng);
+            conn.Open();
+            string sql = "SELECT AvailableQty FROM Stocks WHERE PatternID=@PatternID";
 
+            SqlCommand sqlCommand = new SqlCommand(sql, conn);
+            sqlCommand.Parameters.AddWithValue("@PatternID", pid.Text.ToString());
+            SqlDataReader dataReader = null;
+
+            dataReader = sqlCommand.ExecuteReader();
+            
+            int availQty = 0, neededQty = 0;
+            while (dataReader.Read())
+            {
+                availQty = int.Parse(dataReader["AvailableQty"].ToString());
+            }
+            
+            if (availQty > int.Parse(qua.Text))
+            {
+                SqlConnection conn1 = new SqlConnection(myconnstrng);
+                conn1.Open();
+                neededQty = 0;
+                availQty = availQty - neededQty;
+                string sql1 = "UPDATE Stocks SET AvailableQty=@qty WHERE PatternID=@PatternID";
+                SqlCommand sqlCommand1 = new SqlCommand(sql1, conn1);
+                sqlCommand1.Parameters.AddWithValue("@qty", availQty-neededQty);
+                sqlCommand1.Parameters.AddWithValue("@PatternID", pid.Text);
+
+                sqlCommand1.ExecuteNonQuery();
+                conn1.Close();
+            }
+            else
+            {
+                neededQty = int.Parse(qua.Text) - availQty;
+            }
+            conn.Close();
             try
             {
                 if (cid.Text != "" && pid.Text != "" && qua.Text != "")
@@ -42,8 +77,10 @@ namespace itproject
                     o.CustomerID = int.Parse(cid.Text);
                     o.PatternID = pid.Text;
                     o.Quantity = int.Parse(qua.Text);
+                    //o.Quantity = neededQty;
                     o.OrderDate = DateTime.Parse(odate.Text);
                     o.ExpectedDate = DateTime.Parse(edate.Text);
+                    o.NeededQty = neededQty;
 
 
                     bool success = o.Insert(o);
@@ -171,6 +208,12 @@ namespace itproject
             DataTable dt = new DataTable();
             sda.Fill(dt);
             ogride.DataSource = dt;
+        }
+
+        private void btnReport_Click(object sender, EventArgs e)
+        {
+            OrderReport orderReport = new OrderReport();
+            orderReport.Show();
         }
     }
 }

@@ -29,27 +29,39 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EmployeeReport));
+            this.EmployeesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.itproject_newDataSet4 = new itproject.itproject_newDataSet4();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.textBoxDepartment = new System.Windows.Forms.TextBox();
             this.buttonReport = new System.Windows.Forms.Button();
-            this.EmployeesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.itproject_newDataSet4 = new itproject.itproject_newDataSet4();
             this.EmployeesTableAdapter = new itproject.itproject_newDataSet4TableAdapters.EmployeesTableAdapter();
             this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.EmployeesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.itproject_newDataSet4)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // EmployeesBindingSource
+            // 
+            this.EmployeesBindingSource.DataMember = "Employees";
+            this.EmployeesBindingSource.DataSource = this.itproject_newDataSet4;
+            // 
+            // itproject_newDataSet4
+            // 
+            this.itproject_newDataSet4.DataSetName = "itproject_newDataSet4";
+            this.itproject_newDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // reportViewer1
             // 
             this.reportViewer1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            reportDataSource2.Name = "DataSetEmployee";
-            reportDataSource2.Value = this.EmployeesBindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource2);
+            reportDataSource1.Name = "DataSetEmployee";
+            reportDataSource1.Value = this.EmployeesBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "itproject.Report5.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(122, 184);
             this.reportViewer1.Name = "reportViewer1";
@@ -75,16 +87,6 @@
             this.buttonReport.UseVisualStyleBackColor = false;
             this.buttonReport.Click += new System.EventHandler(this.ButtonReport_Click);
             // 
-            // EmployeesBindingSource
-            // 
-            this.EmployeesBindingSource.DataMember = "Employees";
-            this.EmployeesBindingSource.DataSource = this.itproject_newDataSet4;
-            // 
-            // itproject_newDataSet4
-            // 
-            this.itproject_newDataSet4.DataSetName = "itproject_newDataSet4";
-            this.itproject_newDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // EmployeesTableAdapter
             // 
             this.EmployeesTableAdapter.ClearBeforeFill = true;
@@ -104,6 +106,7 @@
             // 
             this.tableLayoutPanel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.tableLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.tableLayoutPanel1.BackgroundImage = global::itproject.Properties.Resources.angryimg;
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.38424F));
@@ -118,6 +121,17 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(812, 43);
             this.tableLayoutPanel1.TabIndex = 4;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::itproject.Properties.Resources.angryimg;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1101, 677);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            // 
             // EmployeeReport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -127,6 +141,7 @@
             this.ClientSize = new System.Drawing.Size(1101, 677);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.reportViewer1);
+            this.Controls.Add(this.pictureBox1);
             this.MinimumSize = new System.Drawing.Size(800, 600);
             this.Name = "EmployeeReport";
             this.Text = "EmployeeReport";
@@ -135,6 +150,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.itproject_newDataSet4)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -149,5 +165,6 @@
         private System.Windows.Forms.Button buttonReport;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

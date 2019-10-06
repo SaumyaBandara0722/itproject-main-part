@@ -157,6 +157,19 @@
     <Compile Include="Attendance.Designer.cs">
       <DependentUpon>Attendance.cs</DependentUpon>
     </Compile>
+    <Compile Include="AttendanceClass.cs" />
+    <Compile Include="AttendanceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AttendanceForm.Designer.cs">
+      <DependentUpon>AttendanceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AttendanceUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AttendanceUserControl.designer.cs">
+      <DependentUpon>AttendanceUserControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Classes\ClassPattern.cs" />
     <Compile Include="Classes\ClassStock.cs" />
     <Compile Include="Classes\DatabaseHelper.cs" />
@@ -174,6 +187,12 @@
     </Compile>
     <Compile Include="Customers.designer.cs">
       <DependentUpon>Customers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayAttendanceReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DisplayAttendanceReport.designer.cs">
+      <DependentUpon>DisplayAttendanceReport.cs</DependentUpon>
     </Compile>
     <Compile Include="EmployeeDetailsUserControl.cs">
       <SubType>UserControl</SubType>
@@ -226,10 +245,33 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>itproject_newDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="itproject_newDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>itproject_newDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="itproject_newDataSet3.cs">
+      <DependentUpon>itproject_newDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="itproject_newDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>itproject_newDataSet3.xsd</DependentUpon>
+    </Compile>
     <Compile Include="itproject_newDataSet4.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>itproject_newDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="itproject_newDataSetOrderss.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>itproject_newDataSetOrderss.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="itproject_newDataSetPatternReport.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>itproject_newDataSetPatternReport.xsd</DependentUpon>
     </Compile>
     <Compile Include="itproject_newDataSetPayRoll.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -255,6 +297,12 @@
       <DependentUpon>MainProjectTask.cs</DependentUpon>
     </Compile>
     <Compile Include="OrderClass.cs" />
+    <Compile Include="OrderReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderReport.Designer.cs">
+      <DependentUpon>OrderReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="orders.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -272,6 +320,12 @@
     </Compile>
     <Compile Include="PatternAndStockMangementSystem.Designer.cs">
       <DependentUpon>PatternAndStockMangementSystem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatternReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PatternReportForm.Designer.cs">
+      <DependentUpon>PatternReportForm.cs</DependentUpon>
     </Compile>
     <Compile Include="PayrollManagment.cs">
       <SubType>Form</SubType>
@@ -326,6 +380,18 @@
     <Compile Include="Stock.designer.cs">
       <DependentUpon>Stock.cs</DependentUpon>
     </Compile>
+    <Compile Include="StockReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockReportForm.Designer.cs">
+      <DependentUpon>StockReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateAttendance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateAttendance.designer.cs">
+      <DependentUpon>UpdateAttendance.cs</DependentUpon>
+    </Compile>
     <Compile Include="ViewEmployee.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -341,11 +407,20 @@
     <EmbeddedResource Include="Attendance.resx">
       <DependentUpon>Attendance.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AttendanceForm.resx">
+      <DependentUpon>AttendanceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AttendanceUserControl.resx">
+      <DependentUpon>AttendanceUserControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CustomerRegistration.resx">
       <DependentUpon>CustomerRegistration.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Customers.resx">
       <DependentUpon>Customers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayAttendanceReport.resx">
+      <DependentUpon>DisplayAttendanceReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EmployeeDetailsUserControl.resx">
       <DependentUpon>EmployeeDetailsUserControl.cs</DependentUpon>
@@ -371,6 +446,9 @@
     <EmbeddedResource Include="MainProjectTask.resx">
       <DependentUpon>MainProjectTask.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="OrderReport.resx">
+      <DependentUpon>OrderReport.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="orders.resx">
       <DependentUpon>orders.cs</DependentUpon>
     </EmbeddedResource>
@@ -379,6 +457,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PatternAndStockMangementSystem.resx">
       <DependentUpon>PatternAndStockMangementSystem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatternReportForm.resx">
+      <DependentUpon>PatternReportForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PayrollManagment.resx">
       <DependentUpon>PayrollManagment.cs</DependentUpon>
@@ -403,12 +484,16 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Report1.rdlc" />
     <EmbeddedResource Include="Report2.rdlc" />
     <EmbeddedResource Include="Report3.rdlc" />
     <EmbeddedResource Include="Report4.rdlc" />
     <EmbeddedResource Include="Report5.rdlc" />
+    <EmbeddedResource Include="Report7.rdlc" />
+    <EmbeddedResource Include="Report8.rdlc" />
+    <EmbeddedResource Include="Report9.rdlc" />
     <EmbeddedResource Include="SearchProjects.resx">
       <DependentUpon>SearchProjects.cs</DependentUpon>
     </EmbeddedResource>
@@ -417,6 +502,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Stock.resx">
       <DependentUpon>Stock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockReportForm.resx">
+      <DependentUpon>StockReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateAttendance.resx">
+      <DependentUpon>UpdateAttendance.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ViewEmployee.resx">
       <DependentUpon>ViewEmployee.cs</DependentUpon>
@@ -457,6 +548,28 @@
     <None Include="itproject_newDataSet1.xss">
       <DependentUpon>itproject_newDataSet1.xsd</DependentUpon>
     </None>
+    <None Include="itproject_newDataSet2.xsc">
+      <DependentUpon>itproject_newDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="itproject_newDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>itproject_newDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="itproject_newDataSet2.xss">
+      <DependentUpon>itproject_newDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="itproject_newDataSet3.xsc">
+      <DependentUpon>itproject_newDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="itproject_newDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>itproject_newDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="itproject_newDataSet3.xss">
+      <DependentUpon>itproject_newDataSet3.xsd</DependentUpon>
+    </None>
     <None Include="itproject_newDataSet4.xsc">
       <DependentUpon>itproject_newDataSet4.xsd</DependentUpon>
     </None>
@@ -467,6 +580,28 @@
     </None>
     <None Include="itproject_newDataSet4.xss">
       <DependentUpon>itproject_newDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="itproject_newDataSetOrderss.xsc">
+      <DependentUpon>itproject_newDataSetOrderss.xsd</DependentUpon>
+    </None>
+    <None Include="itproject_newDataSetOrderss.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>itproject_newDataSetOrderss.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="itproject_newDataSetOrderss.xss">
+      <DependentUpon>itproject_newDataSetOrderss.xsd</DependentUpon>
+    </None>
+    <None Include="itproject_newDataSetPatternReport.xsc">
+      <DependentUpon>itproject_newDataSetPatternReport.xsd</DependentUpon>
+    </None>
+    <None Include="itproject_newDataSetPatternReport.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>itproject_newDataSetPatternReport.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="itproject_newDataSetPatternReport.xss">
+      <DependentUpon>itproject_newDataSetPatternReport.xsd</DependentUpon>
     </None>
     <None Include="itproject_newDataSetPayRoll.xsc">
       <DependentUpon>itproject_newDataSetPayRoll.xsd</DependentUpon>
@@ -523,6 +658,7 @@
       <Link>SqlServerTypes\x86\SqlServerSpatial110.dll</Link>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\angryimg.png" />
     <Content Include="SqlServerTypes\readme.htm" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

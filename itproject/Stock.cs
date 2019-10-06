@@ -363,7 +363,10 @@ namespace itproject
         //////////////////////////////////////////////////////////////////  export data to a excel sheet  //////////////////////////////////////////////
         private void Button1_Click_1(object sender, EventArgs e)
         {
+            StockReportForm stockReportForm = new StockReportForm();
+            stockReportForm.Show();
 
+            /*
             saveFileDialog1.InitialDirectory = "Download:";
             saveFileDialog1.Title = "Save as Excel File";
             saveFileDialog1.FileName = "Stock Report";
@@ -392,17 +395,22 @@ namespace itproject
                 }
                 ExcelApp.ActiveWorkbook.SaveCopyAs(saveFileDialog1.FileName.ToString());
                 ExcelApp.ActiveWorkbook.Saved = true;
-                ExcelApp.Quit();
+                ExcelApp.Quit();*/
             }
-        }
 
-        private void Labelstocksearch_Click(object sender, EventArgs e)
+        private void buttonStockASPDF_Click(object sender, EventArgs e)
         {
 
         }
+    }
+
+   /*     private void Labelstocksearch_Click(object sender, EventArgs e)
+        {
+
+        }*/
 
         //////////////////////////////////////////////////////////////////  export data to a PDF  //////////////////////////////////////////////
-        private void ButtonStockASPDF_Click(object sender, EventArgs e)
+    /*    private void ButtonStockASPDF_Click(object sender, EventArgs e)
         {
             if (datagridviewstock == null)
             {
@@ -422,5 +430,5 @@ namespace itproject
                 MessageBox.Show("Something went wrong!", "Report Not Saved.", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
-    }
+    }*/
 }

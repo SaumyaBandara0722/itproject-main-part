@@ -16,6 +16,8 @@ namespace itproject
         public String PatternID { get; set; }
         public int Quantity { get; set; }
 
+        public int NeededQty { get; set; }
+
         public DateTime  OrderDate { get; set; }
 
         public DateTime ExpectedDate { get; set; }
@@ -64,7 +66,7 @@ namespace itproject
 
             try
             {
-                string s = "INSERT INTO Orders(CustomerID, PatternID, Quantity, OrderDate, ExpectedDate) VALUES(@CustomerID, @PatternID, @Quantity, @OrderDate, @ExpectedDate)";
+                string s = "INSERT INTO Orders(CustomerID, PatternID, Quantity, OrderDate, ExpectedDate, NeededQty) VALUES(@CustomerID, @PatternID, @Quantity, @OrderDate, @ExpectedDate, @NeededQty)";
 
                 SqlCommand c2 = new SqlCommand(s, c1);
 
@@ -74,6 +76,7 @@ namespace itproject
                 c2.Parameters.AddWithValue("@Quantity", o.Quantity);
                 c2.Parameters.AddWithValue("@OrderDate", o.OrderDate);
                 c2.Parameters.AddWithValue("@ExpectedDate", o.ExpectedDate);
+                c2.Parameters.AddWithValue("@NeededQty", o.NeededQty);
 
                 c1.Open();
 

@@ -288,7 +288,8 @@ namespace itproject
                 int workedHours = Int32.Parse(dataReader2["hoursWorked"].ToString());
                 int shouldWorked = 8 * 20 * 60;
                 float ot = (workedHours - shouldWorked) / 60;
-                cmbOThours.Text = ot.ToString();
+                //cmbOThours.Text = ot.ToString();
+                cmbOThours.Text = "5";
             }
             con.Close();
         }
@@ -306,7 +307,7 @@ namespace itproject
         {
 
             con.Open();
-            string query = "UPDATE Payroll SET Section = '" + cmbSection.Text + "',OTHours = '" + cmbOThours.Text + "',BasicSalary ='" + Basic_txt.Text + "', PaySlipNo = '" + txtPayslipNo.Text + "',EmployeeID ='" + cmbEmpID.Text + "', OTRate = '" + OTRate_txt.Text + "', Transport = '" + txtTransport.Text + "', Special = '" + txtSpecial.Text + "', Holiday = '" + txtHoliday.Text + "', Attendance = '" + txtAttendence.Text + "', SalaryMonthFrom = '" + dateTimePicker1.Value + "',SalaryMonthTo = '" + dateTimePicker2.Value + "' WHERE EmployeeName = '" + txtEmpName.Text + "'";
+            string query = "UPDATE Payroll SET Section = '" + cmbSection.Text + "',OTHours = '" + cmbOThours.Text + "',BasicSalary ='" + Basic_txt.Text + "', PaySlipNo = '" + txtPayslipNo.Text + "',EmployeeID ='" + cmbEmpID.Text + "', OTRate = '" + OTRate_txt.Text + "', Transport = '" + txtTransport.Text + "', Special = '" + txtSpecial.Text + "', Holiday = '" + txtHoliday.Text + "', Attendance = '" + txtAttendence.Text + "', SalaryMonthFrom = '" + dateTimePicker1.Value + "',SalaryMonthTo = '" + dateTimePicker2.Value + "',GrossPay = '" + float.Parse(txtGross.Text) +  "' WHERE EmployeeName = '" + txtEmpName.Text + "'";
             SqlDataAdapter sd = new SqlDataAdapter(query, con);
             sd.SelectCommand.ExecuteNonQuery();
             con.Close();

@@ -38,20 +38,18 @@
             this.buttonPayroll = new System.Windows.Forms.Button();
             this.buttonLeaveManagement = new System.Windows.Forms.Button();
             this.buttonEmployees = new System.Windows.Forms.Button();
-            this.topPanel = new System.Windows.Forms.Panel();
-            this.logoPanel = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.directoryEntry1 = new System.DirectoryServices.DirectoryEntry();
-            this.employeeDetailsUserControl1 = new itproject.EmployeeDetailsUserControl();
             this.customers1 = new itproject.Customers();
+            this.employeeDetailsUserControl1 = new itproject.EmployeeDetailsUserControl();
             this.sidePanel.SuspendLayout();
-            this.logoPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // sidePanel
             // 
             this.sidePanel.BackColor = System.Drawing.Color.DimGray;
+            this.sidePanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("sidePanel.BackgroundImage")));
             this.sidePanel.Controls.Add(this.buttonViewAttendance);
             this.sidePanel.Controls.Add(this.buttonLoan);
             this.sidePanel.Controls.Add(this.buttonStocks);
@@ -174,64 +172,44 @@
             this.buttonEmployees.UseVisualStyleBackColor = true;
             this.buttonEmployees.Click += new System.EventHandler(this.ButtonEmployees_Click);
             // 
-            // topPanel
-            // 
-            this.topPanel.BackColor = System.Drawing.Color.DodgerBlue;
-            this.topPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.topPanel.Location = new System.Drawing.Point(335, 0);
-            this.topPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.topPanel.Name = "topPanel";
-            this.topPanel.Size = new System.Drawing.Size(1168, 10);
-            this.topPanel.TabIndex = 1;
-            // 
-            // logoPanel
-            // 
-            this.logoPanel.BackColor = System.Drawing.Color.LightBlue;
-            this.logoPanel.Controls.Add(this.pictureBox1);
-            this.logoPanel.Location = new System.Drawing.Point(351, 0);
-            this.logoPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.logoPanel.Name = "logoPanel";
-            this.logoPanel.Size = new System.Drawing.Size(165, 217);
-            this.logoPanel.TabIndex = 2;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(335, 0);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(165, 217);
+            this.pictureBox1.Size = new System.Drawing.Size(1168, 269);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.PictureBox1_Click);
+            // 
+            // customers1
+            // 
+            this.customers1.Location = new System.Drawing.Point(376, 294);
+            this.customers1.MinimumSize = new System.Drawing.Size(900, 569);
+            this.customers1.Name = "customers1";
+            this.customers1.Size = new System.Drawing.Size(990, 569);
+            this.customers1.TabIndex = 6;
             // 
             // employeeDetailsUserControl1
             // 
             this.employeeDetailsUserControl1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("employeeDetailsUserControl1.BackgroundImage")));
             this.employeeDetailsUserControl1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.employeeDetailsUserControl1.ForeColor = System.Drawing.Color.White;
-            this.employeeDetailsUserControl1.Location = new System.Drawing.Point(351, 224);
+            this.employeeDetailsUserControl1.Location = new System.Drawing.Point(409, 317);
             this.employeeDetailsUserControl1.Margin = new System.Windows.Forms.Padding(5);
             this.employeeDetailsUserControl1.Name = "employeeDetailsUserControl1";
-            this.employeeDetailsUserControl1.Size = new System.Drawing.Size(1043, 565);
+            this.employeeDetailsUserControl1.Size = new System.Drawing.Size(957, 499);
             this.employeeDetailsUserControl1.TabIndex = 3;
-            // 
-            // customers1
-            // 
-            this.customers1.Location = new System.Drawing.Point(335, 222);
-            this.customers1.MinimumSize = new System.Drawing.Size(1099, 569);
-            this.customers1.Name = "customers1";
-            this.customers1.Size = new System.Drawing.Size(1156, 656);
-            this.customers1.TabIndex = 6;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1503, 886);
-            this.Controls.Add(this.logoPanel);
-            this.Controls.Add(this.topPanel);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.sidePanel);
             this.Controls.Add(this.employeeDetailsUserControl1);
             this.Controls.Add(this.customers1);
@@ -242,7 +220,6 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.sidePanel.ResumeLayout(false);
-            this.logoPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -251,10 +228,8 @@
         #endregion
 
         private System.Windows.Forms.Panel sidePanel;
-        private System.Windows.Forms.Panel topPanel;
         private System.Windows.Forms.Button buttonStocks;
         private System.Windows.Forms.Button buttonEmployees;
-        private System.Windows.Forms.Panel logoPanel;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button buttonProjectsAndTasks;
         private System.Windows.Forms.Button buttonCustomers;

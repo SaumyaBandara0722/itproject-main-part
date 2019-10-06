@@ -78,6 +78,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.buttonReport = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.btnSearch = new System.Windows.Forms.Button();
             this.txtId = new System.Windows.Forms.TextBox();
@@ -87,7 +88,6 @@
             this.button6 = new System.Windows.Forms.Button();
             this.itproject_newDataSetPayRoll = new itproject.itproject_newDataSetPayRoll();
             this.PayrollTableAdapter = new itproject.itproject_newDataSetPayRollTableAdapters.PayrollTableAdapter();
-            this.buttonReport = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.PayrollBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.itproject_newDataSet)).BeginInit();
             this.tabControl1.SuspendLayout();
@@ -130,7 +130,8 @@
             // tabPage1
             // 
             this.tabPage1.AutoScroll = true;
-            this.tabPage1.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.tabPage1.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.tabPage1.BackgroundImage = global::itproject.Properties.Resources.angryimg;
             this.tabPage1.Controls.Add(this.label17);
             this.tabPage1.Controls.Add(this.button1);
             this.tabPage1.Controls.Add(this.txtHoliday);
@@ -180,7 +181,7 @@
             // button1
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.BackColor = System.Drawing.Color.SteelBlue;
+            this.button1.BackColor = System.Drawing.Color.Firebrick;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
@@ -247,7 +248,7 @@
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.BackColor = System.Drawing.Color.SteelBlue;
+            this.panel1.BackColor = System.Drawing.Color.Crimson;
             this.panel1.Controls.Add(this.label19);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(6, 6);
@@ -303,7 +304,7 @@
             // button5
             // 
             this.button5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button5.BackColor = System.Drawing.Color.SteelBlue;
+            this.button5.BackColor = System.Drawing.Color.Firebrick;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button5.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
@@ -368,7 +369,7 @@
             // Save_btn
             // 
             this.Save_btn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.Save_btn.BackColor = System.Drawing.Color.SteelBlue;
+            this.Save_btn.BackColor = System.Drawing.Color.Firebrick;
             this.Save_btn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Save_btn.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Save_btn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
@@ -397,6 +398,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
             this.panel2.Controls.Add(this.btnGetData);
             this.panel2.Controls.Add(this.txtPayslipNo);
             this.panel2.Controls.Add(this.txtEmpName);
@@ -421,7 +423,7 @@
             // btnGetData
             // 
             this.btnGetData.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnGetData.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnGetData.BackColor = System.Drawing.Color.Firebrick;
             this.btnGetData.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnGetData.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGetData.ForeColor = System.Drawing.SystemColors.ControlLightLight;
@@ -715,6 +717,7 @@
             this.groupBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox4.BackgroundImage = global::itproject.Properties.Resources.angryimg;
             this.groupBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.groupBox4.Controls.Add(this.buttonReport);
             this.groupBox4.Controls.Add(this.button7);
@@ -733,9 +736,22 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "View Salary Details";
             // 
+            // buttonReport
+            // 
+            this.buttonReport.BackColor = System.Drawing.Color.Firebrick;
+            this.buttonReport.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonReport.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.buttonReport.Location = new System.Drawing.Point(705, 92);
+            this.buttonReport.Name = "buttonReport";
+            this.buttonReport.Size = new System.Drawing.Size(113, 40);
+            this.buttonReport.TabIndex = 62;
+            this.buttonReport.Text = "Report";
+            this.buttonReport.UseVisualStyleBackColor = false;
+            this.buttonReport.Click += new System.EventHandler(this.buttonReport_Click);
+            // 
             // button7
             // 
-            this.button7.BackColor = System.Drawing.Color.SteelBlue;
+            this.button7.BackColor = System.Drawing.Color.Firebrick;
             this.button7.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.button7.Location = new System.Drawing.Point(878, 94);
@@ -785,7 +801,7 @@
             // 
             this.dataGridView1.AccessibleRole = System.Windows.Forms.AccessibleRole.Row;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.InactiveCaption;
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ControlLight;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(12, 209);
             this.dataGridView1.Name = "dataGridView1";
@@ -799,7 +815,7 @@
             // button3
             // 
             this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button3.BackColor = System.Drawing.Color.SteelBlue;
+            this.button3.BackColor = System.Drawing.Color.Firebrick;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button3.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
@@ -814,7 +830,7 @@
             // button6
             // 
             this.button6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button6.BackColor = System.Drawing.Color.SteelBlue;
+            this.button6.BackColor = System.Drawing.Color.Firebrick;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button6.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.Color.Transparent;
@@ -835,26 +851,15 @@
             // 
             this.PayrollTableAdapter.ClearBeforeFill = true;
             // 
-            // buttonReport
-            // 
-            this.buttonReport.BackColor = System.Drawing.Color.SteelBlue;
-            this.buttonReport.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonReport.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buttonReport.Location = new System.Drawing.Point(705, 92);
-            this.buttonReport.Name = "buttonReport";
-            this.buttonReport.Size = new System.Drawing.Size(113, 40);
-            this.buttonReport.TabIndex = 62;
-            this.buttonReport.Text = "Report";
-            this.buttonReport.UseVisualStyleBackColor = false;
-            this.buttonReport.Click += new System.EventHandler(this.buttonReport_Click);
-            // 
             // View
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::itproject.Properties.Resources.angryimg;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1465, 731);
             this.Controls.Add(this.tabControl1);
+            this.DoubleBuffered = true;
             this.Name = "View";
             this.Text = "View";
             this.Load += new System.EventHandler(this.View_Load);

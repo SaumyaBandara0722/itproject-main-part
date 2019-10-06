@@ -87,6 +87,8 @@ namespace itproject
             DataTable dt = new DataTable();
             sda.Fill(dt);
             dgvEmployeeList.DataSource = dt;
+
+            textBox1.Text = "";
         }
 
         //update details of a selected employee

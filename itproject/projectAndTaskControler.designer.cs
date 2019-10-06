@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(projectAndTaskControler));
             this.lblProjectID = new System.Windows.Forms.Label();
             this.txtBoxProjectID = new System.Windows.Forms.TextBox();
@@ -79,7 +79,7 @@
             // txtBoxProjectID
             // 
             this.txtBoxProjectID.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBoxProjectID.Location = new System.Drawing.Point(215, 71);
+            this.txtBoxProjectID.Location = new System.Drawing.Point(214, 71);
             this.txtBoxProjectID.Name = "txtBoxProjectID";
             this.txtBoxProjectID.ReadOnly = true;
             this.txtBoxProjectID.Size = new System.Drawing.Size(311, 24);
@@ -90,7 +90,7 @@
             // txtBoxDescription
             // 
             this.txtBoxDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBoxDescription.Location = new System.Drawing.Point(215, 275);
+            this.txtBoxDescription.Location = new System.Drawing.Point(214, 275);
             this.txtBoxDescription.Multiline = true;
             this.txtBoxDescription.Name = "txtBoxDescription";
             this.txtBoxDescription.Size = new System.Drawing.Size(311, 99);
@@ -150,7 +150,7 @@
             this.cmbBoxStatus.Items.AddRange(new object[] {
             "Pending",
             "Completed"});
-            this.cmbBoxStatus.Location = new System.Drawing.Point(215, 400);
+            this.cmbBoxStatus.Location = new System.Drawing.Point(214, 400);
             this.cmbBoxStatus.Name = "cmbBoxStatus";
             this.cmbBoxStatus.Size = new System.Drawing.Size(311, 37);
             this.cmbBoxStatus.TabIndex = 4;
@@ -160,7 +160,7 @@
             // 
             this.datePickerAddedDate.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.datePickerAddedDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.datePickerAddedDate.Location = new System.Drawing.Point(215, 139);
+            this.datePickerAddedDate.Location = new System.Drawing.Point(214, 139);
             this.datePickerAddedDate.Name = "datePickerAddedDate";
             this.datePickerAddedDate.Size = new System.Drawing.Size(311, 27);
             this.datePickerAddedDate.TabIndex = 1;
@@ -169,14 +169,14 @@
             // 
             this.datePickerDeadlineDate.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.datePickerDeadlineDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.datePickerDeadlineDate.Location = new System.Drawing.Point(215, 207);
+            this.datePickerDeadlineDate.Location = new System.Drawing.Point(214, 207);
             this.datePickerDeadlineDate.Name = "datePickerDeadlineDate";
             this.datePickerDeadlineDate.Size = new System.Drawing.Size(311, 27);
             this.datePickerDeadlineDate.TabIndex = 2;
             // 
             // btnAdd
             // 
-            this.btnAdd.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnAdd.BackColor = System.Drawing.Color.Firebrick;
             this.btnAdd.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.Color.Black;
             this.btnAdd.Location = new System.Drawing.Point(30, 635);
@@ -192,7 +192,7 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.BackColor = System.Drawing.Color.SpringGreen;
+            this.btnUpdate.BackColor = System.Drawing.Color.Firebrick;
             this.btnUpdate.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.Color.Black;
             this.btnUpdate.Location = new System.Drawing.Point(212, 634);
@@ -206,7 +206,7 @@
             // 
             // btnClear
             // 
-            this.btnClear.BackColor = System.Drawing.Color.Yellow;
+            this.btnClear.BackColor = System.Drawing.Color.Firebrick;
             this.btnClear.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClear.ForeColor = System.Drawing.Color.Black;
             this.btnClear.Location = new System.Drawing.Point(397, 634);
@@ -225,14 +225,14 @@
             this.dataGridViewInForm.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewInForm.BackgroundColor = System.Drawing.Color.LightSeaGreen;
             this.dataGridViewInForm.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Transparent;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewInForm.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Transparent;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewInForm.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridViewInForm.GridColor = System.Drawing.Color.Black;
             this.dataGridViewInForm.Location = new System.Drawing.Point(3, 3);
             this.dataGridViewInForm.Name = "dataGridViewInForm";
@@ -261,7 +261,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.DodgerBlue;
+            this.pictureBox1.BackColor = System.Drawing.Color.Firebrick;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(38, 647);
             this.pictureBox1.Name = "pictureBox1";
@@ -273,7 +273,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.SpringGreen;
+            this.pictureBox2.BackColor = System.Drawing.Color.Firebrick;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(223, 647);
             this.pictureBox2.Name = "pictureBox2";
@@ -284,7 +284,7 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Yellow;
+            this.pictureBox3.BackColor = System.Drawing.Color.Firebrick;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(411, 645);
             this.pictureBox3.Name = "pictureBox3";
@@ -331,7 +331,7 @@
             // txtBoxOrderID
             // 
             this.txtBoxOrderID.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBoxOrderID.Location = new System.Drawing.Point(215, 3);
+            this.txtBoxOrderID.Location = new System.Drawing.Point(214, 3);
             this.txtBoxOrderID.Name = "txtBoxOrderID";
             this.txtBoxOrderID.Size = new System.Drawing.Size(311, 32);
             this.txtBoxOrderID.TabIndex = 21;

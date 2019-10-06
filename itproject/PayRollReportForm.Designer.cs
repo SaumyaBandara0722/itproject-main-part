@@ -30,37 +30,40 @@
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.itproject_newDataSetPayRoll = new itproject.itproject_newDataSetPayRoll();
             this.PayrollBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.itproject_newDataSetPayRoll = new itproject.itproject_newDataSetPayRoll();
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.PayrollTableAdapter = new itproject.itproject_newDataSetPayRollTableAdapters.PayrollTableAdapter();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.btnGenerate = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.itproject_newDataSetPayRoll)).BeginInit();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.PayrollBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.itproject_newDataSetPayRoll)).BeginInit();
             this.SuspendLayout();
             // 
-            // reportViewer1
+            // PayrollBindingSource
             // 
-            reportDataSource1.Name = "DataSetPayRoll";
-            reportDataSource1.Value = this.PayrollBindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "itproject.Report4.rdlc";
-            this.reportViewer1.Location = new System.Drawing.Point(31, 61);
-            this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.Size = new System.Drawing.Size(733, 326);
-            this.reportViewer1.TabIndex = 0;
-            this.reportViewer1.Load += new System.EventHandler(this.reportViewer1_Load);
+            this.PayrollBindingSource.DataMember = "Payroll";
+            this.PayrollBindingSource.DataSource = this.itproject_newDataSetPayRoll;
             // 
             // itproject_newDataSetPayRoll
             // 
             this.itproject_newDataSetPayRoll.DataSetName = "itproject_newDataSetPayRoll";
             this.itproject_newDataSetPayRoll.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // PayrollBindingSource
+            // reportViewer1
             // 
-            this.PayrollBindingSource.DataMember = "Payroll";
-            this.PayrollBindingSource.DataSource = this.itproject_newDataSetPayRoll;
+            this.reportViewer1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            reportDataSource1.Name = "DataSetPayRoll";
+            reportDataSource1.Value = this.PayrollBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "itproject.Report4.rdlc";
+            this.reportViewer1.Location = new System.Drawing.Point(31, 142);
+            this.reportViewer1.Name = "reportViewer1";
+            this.reportViewer1.Size = new System.Drawing.Size(1180, 326);
+            this.reportViewer1.TabIndex = 0;
+            this.reportViewer1.Load += new System.EventHandler(this.reportViewer1_Load);
             // 
             // PayrollTableAdapter
             // 
@@ -68,34 +71,48 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(244, 25);
+            this.textBox1.Location = new System.Drawing.Point(181, 84);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(159, 22);
             this.textBox1.TabIndex = 1;
+            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBox1_KeyPress);
             // 
             // btnGenerate
             // 
-            this.btnGenerate.Location = new System.Drawing.Point(466, 25);
+            this.btnGenerate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnGenerate.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGenerate.Location = new System.Drawing.Point(1054, 78);
             this.btnGenerate.Name = "btnGenerate";
-            this.btnGenerate.Size = new System.Drawing.Size(107, 23);
+            this.btnGenerate.Size = new System.Drawing.Size(131, 49);
             this.btnGenerate.TabIndex = 2;
             this.btnGenerate.Text = "Generate";
             this.btnGenerate.UseVisualStyleBackColor = true;
             this.btnGenerate.Click += new System.EventHandler(this.btnGenerate_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(42, 78);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(133, 29);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Department";
+            // 
             // PayRollReportForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1247, 614);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnGenerate);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.reportViewer1);
             this.Name = "PayRollReportForm";
             this.Text = "PayRollReportForm";
             this.Load += new System.EventHandler(this.PayRollReportForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.itproject_newDataSetPayRoll)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PayrollBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.itproject_newDataSetPayRoll)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -109,5 +126,6 @@
         private itproject_newDataSetPayRollTableAdapters.PayrollTableAdapter PayrollTableAdapter;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button btnGenerate;
+        private System.Windows.Forms.Label label1;
     }
 }

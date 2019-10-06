@@ -19,12 +19,14 @@ namespace itproject
 
         private void Button2_Click(object sender, EventArgs e)
         {
-           
+            ProjectsReportsGenerater projectsReportsGenerater = new ProjectsReportsGenerater();
+            projectsReportsGenerater.Show();
         }
 
         private void BtnADDPROJECTS_Click(object sender, EventArgs e)
         {
-           
+            projectAndTaskControler projectAndTask = new projectAndTaskControler();
+            projectAndTask.Show();
         }
 
         private void MainProjectTask_Load(object sender, EventArgs e)

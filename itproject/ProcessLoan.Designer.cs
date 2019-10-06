@@ -41,12 +41,14 @@
             this.label3 = new System.Windows.Forms.Label();
             this.textBoxEmpID = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonView
             // 
-            this.buttonView.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonView.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonView.Location = new System.Drawing.Point(762, 103);
             this.buttonView.Name = "buttonView";
             this.buttonView.Size = new System.Drawing.Size(236, 68);
@@ -79,13 +81,15 @@
             // 
             // buttonProcess
             // 
-            this.buttonProcess.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonProcess.BackColor = System.Drawing.Color.Firebrick;
+            this.buttonProcess.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonProcess.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonProcess.Location = new System.Drawing.Point(186, 358);
             this.buttonProcess.Name = "buttonProcess";
             this.buttonProcess.Size = new System.Drawing.Size(286, 82);
             this.buttonProcess.TabIndex = 11;
             this.buttonProcess.Text = "Process the Loan";
-            this.buttonProcess.UseVisualStyleBackColor = true;
+            this.buttonProcess.UseVisualStyleBackColor = false;
             this.buttonProcess.Click += new System.EventHandler(this.ButtonProcess_Click);
             // 
             // textBoxInstallment
@@ -179,19 +183,32 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Employee ID";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::itproject.Properties.Resources.angryimg;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1012, 622);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
+            // 
             // ProcessLoan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1071, 679);
+            this.ClientSize = new System.Drawing.Size(1012, 622);
             this.Controls.Add(this.buttonView);
             this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.pictureBox1);
             this.MaximizeBox = false;
             this.Name = "ProcessLoan";
             this.Text = "ProcessLoan";
             this.Load += new System.EventHandler(this.ProcessLoan_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -211,5 +228,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBoxEmpID;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

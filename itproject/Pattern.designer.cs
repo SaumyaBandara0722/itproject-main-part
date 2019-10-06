@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pattern));
             this.labelpatternsearch = new System.Windows.Forms.Label();
             this.textpatternsearch = new System.Windows.Forms.TextBox();
@@ -77,6 +77,8 @@
             this.button1 = new System.Windows.Forms.Button();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.saveFileDialog2 = new System.Windows.Forms.SaveFileDialog();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewpattern)).BeginInit();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -97,13 +99,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.itprojectDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.itprojectDataSetBindingSource)).BeginInit();
             this.panel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.SuspendLayout();
             // 
             // labelpatternsearch
             // 
             this.labelpatternsearch.AutoSize = true;
             this.labelpatternsearch.Font = new System.Drawing.Font("Myanmar Text", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelpatternsearch.ForeColor = System.Drawing.Color.White;
+            this.labelpatternsearch.ForeColor = System.Drawing.Color.Black;
             this.labelpatternsearch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.labelpatternsearch.Location = new System.Drawing.Point(77, 24);
             this.labelpatternsearch.Name = "labelpatternsearch";
@@ -132,38 +136,38 @@
             this.dataGridViewpattern.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewpattern.BackgroundColor = System.Drawing.Color.White;
             this.dataGridViewpattern.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Sitka Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewpattern.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Sitka Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewpattern.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridViewpattern.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewpattern.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewpattern.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewpattern.DefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridViewpattern.GridColor = System.Drawing.Color.White;
             this.dataGridViewpattern.Location = new System.Drawing.Point(835, 288);
             this.dataGridViewpattern.Name = "dataGridViewpattern";
             this.dataGridViewpattern.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.dataGridViewpattern.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Sitka Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle9.Padding = new System.Windows.Forms.Padding(2);
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewpattern.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Sitka Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle6.Padding = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewpattern.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridViewpattern.RowHeadersWidth = 23;
             this.dataGridViewpattern.RowTemplate.Height = 24;
             this.dataGridViewpattern.Size = new System.Drawing.Size(928, 533);
@@ -173,7 +177,7 @@
             // 
             // buttonpatternclear
             // 
-            this.buttonpatternclear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(141)))), ((int)(((byte)(117)))));
+            this.buttonpatternclear.BackColor = System.Drawing.Color.Red;
             this.buttonpatternclear.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonpatternclear.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonpatternclear.Location = new System.Drawing.Point(113, 10);
@@ -186,7 +190,7 @@
             // 
             // buttonpatternupdate
             // 
-            this.buttonpatternupdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(141)))), ((int)(((byte)(117)))));
+            this.buttonpatternupdate.BackColor = System.Drawing.Color.Red;
             this.buttonpatternupdate.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonpatternupdate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonpatternupdate.Location = new System.Drawing.Point(106, 10);
@@ -212,7 +216,7 @@
             // 
             // buttonpatternadd
             // 
-            this.buttonpatternadd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(141)))), ((int)(((byte)(117)))));
+            this.buttonpatternadd.BackColor = System.Drawing.Color.Red;
             this.buttonpatternadd.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonpatternadd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonpatternadd.Location = new System.Drawing.Point(106, 10);
@@ -241,8 +245,9 @@
             // 
             this.labelpattern.AutoSize = true;
             this.labelpattern.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelpattern.ForeColor = System.Drawing.Color.White;
-            this.labelpattern.Location = new System.Drawing.Point(105, 20);
+            this.labelpattern.ForeColor = System.Drawing.Color.Black;
+            this.labelpattern.Image = ((System.Drawing.Image)(resources.GetObject("labelpattern.Image")));
+            this.labelpattern.Location = new System.Drawing.Point(129, 30);
             this.labelpattern.Name = "labelpattern";
             this.labelpattern.Size = new System.Drawing.Size(512, 135);
             this.labelpattern.TabIndex = 109;
@@ -250,7 +255,7 @@
             // 
             // panel5
             // 
-            this.panel5.BackColor = System.Drawing.Color.RoyalBlue;
+            this.panel5.BackColor = System.Drawing.Color.White;
             this.panel5.Controls.Add(this.pictureBox4);
             this.panel5.Controls.Add(this.buttonpatterndelete);
             this.panel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -273,7 +278,8 @@
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.RoyalBlue;
+            this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel4.BackgroundImage")));
             this.panel4.Controls.Add(this.pictureBox2);
             this.panel4.Controls.Add(this.buttonpatternclear);
             this.panel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -296,7 +302,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.RoyalBlue;
+            this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.buttonpatternupdate);
             this.panel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -319,7 +325,8 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.RoyalBlue;
+            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
             this.panel3.Controls.Add(this.pictureBox3);
             this.panel3.Controls.Add(this.buttonpatternadd);
             this.panel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -343,7 +350,8 @@
             // panel6
             // 
             this.panel6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel6.BackColor = System.Drawing.Color.RoyalBlue;
+            this.panel6.BackColor = System.Drawing.Color.White;
+            this.panel6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel6.BackgroundImage")));
             this.panel6.Controls.Add(this.pictureBox5);
             this.panel6.Controls.Add(this.buttonstock2);
             this.panel6.Location = new System.Drawing.Point(1171, 12);
@@ -365,7 +373,8 @@
             // panel7
             // 
             this.panel7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel7.BackColor = System.Drawing.Color.RoyalBlue;
+            this.panel7.BackColor = System.Drawing.Color.White;
+            this.panel7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel7.BackgroundImage")));
             this.panel7.Controls.Add(this.pictureBox6);
             this.panel7.Controls.Add(this.labelpatternsearch);
             this.panel7.Location = new System.Drawing.Point(917, 184);
@@ -387,7 +396,8 @@
             // panel1
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.BackColor = System.Drawing.Color.RoyalBlue;
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
             this.panel1.Controls.Add(this.btnmaximize);
             this.panel1.Controls.Add(this.btnminimize);
             this.panel1.Controls.Add(this.pictureboxpatternclose);
@@ -455,6 +465,7 @@
             this.panel9.Controls.Add(this.label4);
             this.panel9.Controls.Add(this.label2);
             this.panel9.Controls.Add(this.label1);
+            this.panel9.Controls.Add(this.pictureBox8);
             this.panel9.Location = new System.Drawing.Point(68, 179);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(708, 442);
@@ -464,6 +475,7 @@
             // 
             this.textPNumber.BackColor = System.Drawing.Color.White;
             this.textPNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textPNumber.ForeColor = System.Drawing.Color.Black;
             this.textPNumber.Location = new System.Drawing.Point(212, 80);
             this.textPNumber.Name = "textPNumber";
             this.textPNumber.ReadOnly = true;
@@ -474,7 +486,7 @@
             // 
             this.labelPNumber.AutoSize = true;
             this.labelPNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPNumber.ForeColor = System.Drawing.Color.White;
+            this.labelPNumber.ForeColor = System.Drawing.Color.Black;
             this.labelPNumber.Location = new System.Drawing.Point(13, 83);
             this.labelPNumber.Name = "labelPNumber";
             this.labelPNumber.Size = new System.Drawing.Size(100, 29);
@@ -485,6 +497,7 @@
             // 
             this.textpatternpatternid.BackColor = System.Drawing.Color.White;
             this.textpatternpatternid.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textpatternpatternid.ForeColor = System.Drawing.Color.Black;
             this.textpatternpatternid.Location = new System.Drawing.Point(212, 144);
             this.textpatternpatternid.Name = "textpatternpatternid";
             this.textpatternpatternid.Size = new System.Drawing.Size(327, 32);
@@ -494,6 +507,7 @@
             // 
             this.textpatternpatternname.BackColor = System.Drawing.Color.White;
             this.textpatternpatternname.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textpatternpatternname.ForeColor = System.Drawing.Color.Black;
             this.textpatternpatternname.Location = new System.Drawing.Point(212, 207);
             this.textpatternpatternname.Name = "textpatternpatternname";
             this.textpatternpatternname.Size = new System.Drawing.Size(327, 32);
@@ -504,7 +518,7 @@
             // 
             this.labelpatternunitprice.AutoSize = true;
             this.labelpatternunitprice.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelpatternunitprice.ForeColor = System.Drawing.Color.White;
+            this.labelpatternunitprice.ForeColor = System.Drawing.Color.Black;
             this.labelpatternunitprice.Location = new System.Drawing.Point(13, 262);
             this.labelpatternunitprice.Name = "labelpatternunitprice";
             this.labelpatternunitprice.Size = new System.Drawing.Size(117, 29);
@@ -515,6 +529,7 @@
             // 
             this.textpatterndescription.BackColor = System.Drawing.Color.White;
             this.textpatterndescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textpatterndescription.ForeColor = System.Drawing.Color.Black;
             this.textpatterndescription.Location = new System.Drawing.Point(212, 322);
             this.textpatterndescription.Name = "textpatterndescription";
             this.textpatterndescription.Size = new System.Drawing.Size(327, 32);
@@ -524,7 +539,7 @@
             // 
             this.labelpatternpatternid.AutoSize = true;
             this.labelpatternpatternid.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelpatternpatternid.ForeColor = System.Drawing.Color.White;
+            this.labelpatternpatternid.ForeColor = System.Drawing.Color.Black;
             this.labelpatternpatternid.Location = new System.Drawing.Point(13, 144);
             this.labelpatternpatternid.Name = "labelpatternpatternid";
             this.labelpatternpatternid.Size = new System.Drawing.Size(118, 29);
@@ -535,7 +550,7 @@
             // 
             this.labelpatterndescription.AutoSize = true;
             this.labelpatterndescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelpatterndescription.ForeColor = System.Drawing.Color.White;
+            this.labelpatterndescription.ForeColor = System.Drawing.Color.Black;
             this.labelpatterndescription.Location = new System.Drawing.Point(13, 325);
             this.labelpatterndescription.Name = "labelpatterndescription";
             this.labelpatterndescription.Size = new System.Drawing.Size(135, 29);
@@ -546,6 +561,7 @@
             // 
             this.textpatternunitprice.BackColor = System.Drawing.Color.White;
             this.textpatternunitprice.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textpatternunitprice.ForeColor = System.Drawing.Color.Black;
             this.textpatternunitprice.Location = new System.Drawing.Point(212, 262);
             this.textpatternunitprice.Name = "textpatternunitprice";
             this.textpatternunitprice.Size = new System.Drawing.Size(327, 32);
@@ -556,7 +572,7 @@
             // 
             this.labelpatternpatternname.AutoSize = true;
             this.labelpatternpatternname.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelpatternpatternname.ForeColor = System.Drawing.Color.White;
+            this.labelpatternpatternname.ForeColor = System.Drawing.Color.Black;
             this.labelpatternpatternname.Location = new System.Drawing.Point(13, 207);
             this.labelpatternpatternname.Name = "labelpatternpatternname";
             this.labelpatternpatternname.Size = new System.Drawing.Size(160, 29);
@@ -618,13 +634,34 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox7.Image = global::itproject.Properties.Resources.angryimg;
+            this.pictureBox7.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(1821, 843);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.TabIndex = 203;
+            this.pictureBox7.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
+            this.pictureBox8.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(708, 442);
+            this.pictureBox8.TabIndex = 213;
+            this.pictureBox8.TabStop = false;
+            // 
             // Pattern
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BackColor = System.Drawing.Color.RoyalBlue;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1821, 843);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel9);
@@ -638,6 +675,8 @@
             this.Controls.Add(this.textpatternsearch);
             this.Controls.Add(this.dataGridViewpattern);
             this.Controls.Add(this.labelpattern);
+            this.Controls.Add(this.pictureBox7);
+            this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Pattern";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -672,6 +711,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.itprojectDataSetBindingSource)).EndInit();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -723,5 +764,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private System.Windows.Forms.SaveFileDialog saveFileDialog2;
+        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.PictureBox pictureBox7;
     }
 }

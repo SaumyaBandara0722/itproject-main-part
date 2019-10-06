@@ -48,6 +48,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.osearch = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.btnReport = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.ogride)).BeginInit();
             this.SuspendLayout();
             // 
@@ -161,7 +162,7 @@
             // oupdate
             // 
             this.oupdate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.oupdate.Font = new System.Drawing.Font("Modern No. 20", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.oupdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.oupdate.Location = new System.Drawing.Point(1187, 207);
             this.oupdate.Name = "oupdate";
             this.oupdate.Size = new System.Drawing.Size(170, 50);
@@ -173,7 +174,7 @@
             // oadd
             // 
             this.oadd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.oadd.Font = new System.Drawing.Font("Modern No. 20", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.oadd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.oadd.Location = new System.Drawing.Point(981, 656);
             this.oadd.Name = "oadd";
             this.oadd.Size = new System.Drawing.Size(170, 50);
@@ -185,7 +186,7 @@
             // odelete
             // 
             this.odelete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.odelete.Font = new System.Drawing.Font("Modern No. 20", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.odelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.odelete.Location = new System.Drawing.Point(1187, 656);
             this.odelete.Name = "odelete";
             this.odelete.Size = new System.Drawing.Size(170, 50);
@@ -197,7 +198,7 @@
             // oclear
             // 
             this.oclear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.oclear.Font = new System.Drawing.Font("Modern No. 20", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.oclear.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.oclear.Location = new System.Drawing.Point(981, 205);
             this.oclear.Name = "oclear";
             this.oclear.Size = new System.Drawing.Size(170, 50);
@@ -254,11 +255,24 @@
             this.label8.TabIndex = 19;
             this.label8.Text = "Search";
             // 
+            // btnReport
+            // 
+            this.btnReport.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnReport.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReport.Location = new System.Drawing.Point(784, 656);
+            this.btnReport.Name = "btnReport";
+            this.btnReport.Size = new System.Drawing.Size(170, 50);
+            this.btnReport.TabIndex = 21;
+            this.btnReport.Text = "Report";
+            this.btnReport.UseVisualStyleBackColor = true;
+            this.btnReport.Click += new System.EventHandler(this.btnReport_Click);
+            // 
             // orders
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1386, 718);
+            this.Controls.Add(this.btnReport);
             this.Controls.Add(this.osearch);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -311,5 +325,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox osearch;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button btnReport;
     }
 }

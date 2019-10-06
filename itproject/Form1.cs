@@ -90,8 +90,11 @@ namespace itproject
             //   Attendance attendance = new Attendance();
             //  attendance.Show();
 
-            ShowAttendance showAttendance = new ShowAttendance();
-            showAttendance.Show();
+            //     ShowAttendance showAttendance = new ShowAttendance();
+            //     showAttendance.Show();
+
+            AttendanceForm attendanceForm = new AttendanceForm();
+            attendanceForm.Show();
         }
 
         private void ButtonLeaveManagement_Click(object sender, EventArgs e)
@@ -101,6 +104,11 @@ namespace itproject
         }
 
         private void sidePanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void logoPanel_Paint(object sender, PaintEventArgs e)
         {
 
         }

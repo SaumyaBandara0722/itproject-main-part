@@ -34,5 +34,13 @@ namespace itproject
 
             this.reportViewer1.RefreshReport();
         }
+
+        private void TextBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
     }
 }

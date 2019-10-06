@@ -379,7 +379,9 @@ namespace itproject
         //////////////////////////////////////////////////////////////////  conveting pattern daat to PDF  //////////////////////////////////////////////
         private void Button1_Click(object sender, EventArgs e)
         {
-            if (dataGridViewpattern == null)
+            PatternReportForm patternReportForm = new PatternReportForm();
+            patternReportForm.Show();
+      /*      if (dataGridViewpattern == null)
             {
                 MessageBox.Show("Coudn't create report because the Dataset is Empty", "Unsuccessful", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
@@ -396,7 +398,7 @@ namespace itproject
             {
                 MessageBox.Show("Something went wrong!", "Report Not Saved.", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-
+            */
         }
 
      
